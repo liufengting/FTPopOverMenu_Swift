@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2ACAB6731DDC5ECE00FDCEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACAB6721DDC5ECE00FDCEAF /* AppDelegate.swift */; };
+		2ACAB6751DDC5ECE00FDCEAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACAB6741DDC5ECE00FDCEAF /* ViewController.swift */; };
+		2ACAB6781DDC5ECE00FDCEAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB6761DDC5ECE00FDCEAF /* Main.storyboard */; };
+		2ACAB67A1DDC5ECE00FDCEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB6791DDC5ECE00FDCEAF /* Assets.xcassets */; };
+		2ACAB67D1DDC5ECE00FDCEAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB67B1DDC5ECE00FDCEAF /* LaunchScreen.storyboard */; };
+		2ACAB6861DDC5F1400FDCEAF /* FTPopOverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACAB6851DDC5F1400FDCEAF /* FTPopOverMenu.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2ACAB66F1DDC5ECE00FDCEAF /* FTPopOverMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTPopOverMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ACAB6721DDC5ECE00FDCEAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2ACAB6741DDC5ECE00FDCEAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2ACAB6771DDC5ECE00FDCEAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2ACAB6791DDC5ECE00FDCEAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2ACAB67C1DDC5ECE00FDCEAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2ACAB67E1DDC5ECE00FDCEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ACAB6851DDC5F1400FDCEAF /* FTPopOverMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTPopOverMenu.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2ACAB66C1DDC5ECE00FDCEAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2ACAB6661DDC5ECE00FDCEAF = {
+			isa = PBXGroup;
+			children = (
+				2ACAB6711DDC5ECE00FDCEAF /* FTPopOverMenuDemo */,
+				2ACAB6701DDC5ECE00FDCEAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2ACAB6701DDC5ECE00FDCEAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2ACAB66F1DDC5ECE00FDCEAF /* FTPopOverMenuDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2ACAB6711DDC5ECE00FDCEAF /* FTPopOverMenuDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2ACAB6841DDC5EF800FDCEAF /* FTPopOverMenu */,
+				2ACAB6721DDC5ECE00FDCEAF /* AppDelegate.swift */,
+				2ACAB6741DDC5ECE00FDCEAF /* ViewController.swift */,
+				2ACAB6761DDC5ECE00FDCEAF /* Main.storyboard */,
+				2ACAB6791DDC5ECE00FDCEAF /* Assets.xcassets */,
+				2ACAB67B1DDC5ECE00FDCEAF /* LaunchScreen.storyboard */,
+				2ACAB67E1DDC5ECE00FDCEAF /* Info.plist */,
+			);
+			path = FTPopOverMenuDemo;
+			sourceTree = "<group>";
+		};
+		2ACAB6841DDC5EF800FDCEAF /* FTPopOverMenu */ = {
+			isa = PBXGroup;
+			children = (
+				2ACAB6851DDC5F1400FDCEAF /* FTPopOverMenu.swift */,
+			);
+			name = FTPopOverMenu;
+			path = ../../FTPopOverMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2ACAB66E1DDC5ECE00FDCEAF /* FTPopOverMenuDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ACAB6811DDC5ECE00FDCEAF /* Build configuration list for PBXNativeTarget "FTPopOverMenuDemo" */;
+			buildPhases = (
+				2ACAB66B1DDC5ECE00FDCEAF /* Sources */,
+				2ACAB66C1DDC5ECE00FDCEAF /* Frameworks */,
+				2ACAB66D1DDC5ECE00FDCEAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTPopOverMenuDemo;
+			productName = FTPopOverMenuDemo;
+			productReference = 2ACAB66F1DDC5ECE00FDCEAF /* FTPopOverMenuDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2ACAB6671DDC5ECE00FDCEAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = LiuFengting;
+				TargetAttributes = {
+					2ACAB66E1DDC5ECE00FDCEAF = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = E83AC9WR2F;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2ACAB66A1DDC5ECE00FDCEAF /* Build configuration list for PBXProject "FTPopOverMenuDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2ACAB6661DDC5ECE00FDCEAF;
+			productRefGroup = 2ACAB6701DDC5ECE00FDCEAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2ACAB66E1DDC5ECE00FDCEAF /* FTPopOverMenuDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2ACAB66D1DDC5ECE00FDCEAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACAB67D1DDC5ECE00FDCEAF /* LaunchScreen.storyboard in Resources */,
+				2ACAB67A1DDC5ECE00FDCEAF /* Assets.xcassets in Resources */,
+				2ACAB6781DDC5ECE00FDCEAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2ACAB66B1DDC5ECE00FDCEAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACAB6751DDC5ECE00FDCEAF /* ViewController.swift in Sources */,
+				2ACAB6861DDC5F1400FDCEAF /* FTPopOverMenu.swift in Sources */,
+				2ACAB6731DDC5ECE00FDCEAF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2ACAB6761DDC5ECE00FDCEAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ACAB6771DDC5ECE00FDCEAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2ACAB67B1DDC5ECE00FDCEAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ACAB67C1DDC5ECE00FDCEAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2ACAB67F1DDC5ECE00FDCEAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2ACAB6801DDC5ECE00FDCEAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2ACAB6821DDC5ECE00FDCEAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E83AC9WR2F;
+				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPopOverMenuDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2ACAB6831DDC5ECE00FDCEAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E83AC9WR2F;
+				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPopOverMenuDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2ACAB66A1DDC5ECE00FDCEAF /* Build configuration list for PBXProject "FTPopOverMenuDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ACAB67F1DDC5ECE00FDCEAF /* Debug */,
+				2ACAB6801DDC5ECE00FDCEAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ACAB6811DDC5ECE00FDCEAF /* Build configuration list for PBXNativeTarget "FTPopOverMenuDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2ACAB6821DDC5ECE00FDCEAF /* Debug */,
+				2ACAB6831DDC5ECE00FDCEAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2ACAB6671DDC5ECE00FDCEAF /* Project object */;
+}
