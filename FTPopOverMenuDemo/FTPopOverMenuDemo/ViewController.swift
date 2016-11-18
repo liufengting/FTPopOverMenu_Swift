@@ -14,6 +14,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    @IBAction func handleButtonTap(_ sender: UIButton) {
+        
+        FTPopOverMenu.showForSender(sender: sender, with: ["",""], done: { (selectedIndex) -> () in
+            
+        }) {
+            
+        }
+        
+    }
+    
+    @IBAction func handleBarButtonItemTap(_ sender: UIBarButtonItem) {
+        
+        
+    }
+    
+    
+    
 
 
 }

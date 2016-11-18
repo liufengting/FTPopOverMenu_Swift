@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AB5A3201DDEF2DF00EC6555 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A31F1DDEF2DF00EC6555 /* MoreTableViewController.swift */; };
+		2AB5A3221DDEFC1C00EC6555 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A3211DDEFC1C00EC6555 /* MoreTableViewCell.swift */; };
 		2ACAB6731DDC5ECE00FDCEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACAB6721DDC5ECE00FDCEAF /* AppDelegate.swift */; };
 		2ACAB6751DDC5ECE00FDCEAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACAB6741DDC5ECE00FDCEAF /* ViewController.swift */; };
 		2ACAB6781DDC5ECE00FDCEAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB6761DDC5ECE00FDCEAF /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AB5A31F1DDEF2DF00EC6555 /* MoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
+		2AB5A3211DDEFC1C00EC6555 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
 		2ACAB66F1DDC5ECE00FDCEAF /* FTPopOverMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTPopOverMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACAB6721DDC5ECE00FDCEAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ACAB6741DDC5ECE00FDCEAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				2ACAB6841DDC5EF800FDCEAF /* FTPopOverMenu */,
 				2ACAB6721DDC5ECE00FDCEAF /* AppDelegate.swift */,
 				2ACAB6741DDC5ECE00FDCEAF /* ViewController.swift */,
+				2AB5A31F1DDEF2DF00EC6555 /* MoreTableViewController.swift */,
+				2AB5A3211DDEFC1C00EC6555 /* MoreTableViewCell.swift */,
 				2ACAB6761DDC5ECE00FDCEAF /* Main.storyboard */,
 				2ACAB6791DDC5ECE00FDCEAF /* Assets.xcassets */,
 				2ACAB67B1DDC5ECE00FDCEAF /* LaunchScreen.storyboard */,
@@ -150,7 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ACAB6751DDC5ECE00FDCEAF /* ViewController.swift in Sources */,
+				2AB5A3221DDEFC1C00EC6555 /* MoreTableViewCell.swift in Sources */,
 				2ACAB6861DDC5F1400FDCEAF /* FTPopOverMenu.swift in Sources */,
+				2AB5A3201DDEF2DF00EC6555 /* MoreTableViewController.swift in Sources */,
 				2ACAB6731DDC5ECE00FDCEAF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +321,7 @@
 				2ACAB6831DDC5ECE00FDCEAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
