@@ -17,7 +17,8 @@ class ViewController: UIViewController {
     
     @IBAction func handleButtonTap(_ sender: UIButton) {
         
-        FTPopOverMenu.showForSender(sender: sender, with: ["",""], done: { (selectedIndex) -> () in
+        let menu = ["123","234","345","456","567","678","789","890"]
+        FTPopOverMenu.showForSender(sender: sender, with: menu, done: { (selectedIndex) -> () in
             
         }) {
             
