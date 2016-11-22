@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FTPopOverMenu.xcodeproj">
+      location = "self:FTPopOverMenu_Swift.xcodeproj">
    </FileRef>
 </Workspace>

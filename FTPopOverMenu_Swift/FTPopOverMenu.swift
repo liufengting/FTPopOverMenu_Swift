@@ -8,25 +8,6 @@
 
 import UIKit
 
-fileprivate let FTDefaultMargin : CGFloat = 4
-fileprivate let FTDefaultCellMargin : CGFloat = 6
-fileprivate let FTDefaultMenuIconSize : CGFloat = 24
-fileprivate let FTDefaultMenuCornerRadius : CGFloat = 4
-fileprivate let FTDefaultMenuArrowWidth : CGFloat = 8
-fileprivate let FTDefaultMenuArrowHeight : CGFloat = 10
-fileprivate let FTDefaultAnimationDuration : TimeInterval = 0.3
-fileprivate let FTDefaultBorderWidth : CGFloat = 0.5
-fileprivate let FTDefaultCornerRadius : CGFloat = 4
-fileprivate let FTDefaultTintColor : UIColor = UIColor(red: 80/255, green: 80/255, blue: 80/255, alpha: 1)
-
-fileprivate let FTPopOverMenuTableViewCellIndentifier : String = "FTPopOverMenuTableViewCellIndentifier"
-
-public enum FTPopOverMenuArrowDirection {
-    case Up
-    case Down
-}
-
-
 extension FTPopOverMenu {
     
     public static func showForSender(sender : UIView, with menuArray: [String], done: @escaping (NSInteger)->(), cancel:@escaping ()->()) {
@@ -40,14 +21,14 @@ extension FTPopOverMenu {
         self.sharedMenu.showForSender(sender: event.allTouches?.first?.view!, or: nil, with: menuArray, menuImageArray: [], done: done, cancel: cancel)
     }
     public static func showForEvent(event : UIEvent, with menuArray: [String], menuImageArray: [String], done: @escaping (NSInteger)->(), cancel:@escaping ()->()) {
-        self.sharedMenu.showForSender(sender: event.allTouches?.first?.view!, or: nil, with: menuArray, menuImageArray: [], done: done, cancel: cancel)
+        self.sharedMenu.showForSender(sender: event.allTouches?.first?.view!, or: nil, with: menuArray, menuImageArray: menuImageArray, done: done, cancel: cancel)
     }
     
     public static func showFromSenderFrame(senderFrame : CGRect, with menuArray: [String], done: @escaping (NSInteger)->(), cancel:@escaping ()->()) {
         self.sharedMenu.showForSender(sender: nil, or: senderFrame, with: menuArray, menuImageArray: [], done: done, cancel: cancel)
     }
     public static func showFromSenderFrame(senderFrame : CGRect, with menuArray: [String], menuImageArray: [String], done: @escaping (NSInteger)->(), cancel:@escaping ()->()) {
-        self.sharedMenu.showForSender(sender: nil, or: senderFrame, with: menuArray, menuImageArray: [], done: done, cancel: cancel)
+        self.sharedMenu.showForSender(sender: nil, or: senderFrame, with: menuArray, menuImageArray: menuImageArray, done: done, cancel: cancel)
     }
     
     public static func dismiss() {
@@ -55,7 +36,47 @@ extension FTPopOverMenu {
     }
 }
 
+public class FTConfiguration : NSObject {
+    
+    var menuRowHeight : CGFloat = FTDefaultMenuRowHeight
+    var menuWidth : CGFloat = FTDefaultMenuWidth
+    var textColor : UIColor = UIColor.white
+    var textFont : UIFont = UIFont.systemFont(ofSize: 14)
+    var borderColor : UIColor = FTDefaultTintColor
+    var borderWidth : CGFloat = FTDefaultBorderWidth
+    var backgoundTintColor : UIColor = FTDefaultTintColor
+    var cornerRadius : CGFloat = FTDefaultCornerRadius
+    var textAlignment : NSTextAlignment = NSTextAlignment.left
+    var ignoreImageOriginalColor : Bool = false
+    var menuSeparatorInset : UIEdgeInsets = UIEdgeInsetsMake(0, FTDefaultCellMargin, 0, FTDefaultCellMargin)
+    
+    public static var shared : FTConfiguration {
+        struct StaticConfig {
+            static let instance : FTConfiguration = FTConfiguration()
+        }
+        return StaticConfig.instance
+    }
+}
 
+fileprivate let FTDefaultMargin : CGFloat = 4
+fileprivate let FTDefaultCellMargin : CGFloat = 6
+fileprivate let FTDefaultMenuIconSize : CGFloat = 24
+fileprivate let FTDefaultMenuCornerRadius : CGFloat = 4
+fileprivate let FTDefaultMenuArrowWidth : CGFloat = 8
+fileprivate let FTDefaultMenuArrowHeight : CGFloat = 10
+fileprivate let FTDefaultAnimationDuration : TimeInterval = 0.3
+fileprivate let FTDefaultBorderWidth : CGFloat = 0.5
+fileprivate let FTDefaultCornerRadius : CGFloat = 4
+fileprivate let FTDefaultMenuRowHeight : CGFloat = 40
+fileprivate let FTDefaultMenuWidth : CGFloat = 120
+fileprivate let FTDefaultTintColor : UIColor = UIColor(red: 80/255, green: 80/255, blue: 80/255, alpha: 1)
+
+fileprivate let FTPopOverMenuTableViewCellIndentifier : String = "FTPopOverMenuTableViewCellIndentifier"
+
+fileprivate enum FTPopOverMenuArrowDirection {
+    case Up
+    case Down
+}
 
 public class FTPopOverMenu : NSObject {
 
@@ -295,30 +316,6 @@ extension FTPopOverMenu: UIGestureRecognizerDelegate {
 
 }
 
-
-public class FTConfiguration : NSObject {
-
-    var menuRowHeight : CGFloat = 40
-    var menuWidth : CGFloat = 120
-    var textColor : UIColor = UIColor.white
-    var textFont : UIFont = UIFont.systemFont(ofSize: 14)
-    var borderColor : UIColor = FTDefaultTintColor
-    var borderWidth : CGFloat = FTDefaultBorderWidth
-    var backgoundTintColor : UIColor = FTDefaultTintColor
-    var cornerRadius : CGFloat = FTDefaultCornerRadius
-    var textAlignment : NSTextAlignment = NSTextAlignment.left
-    var ignoreImageOriginalColor : Bool = false
-    var menuSeparatorInset : UIEdgeInsets = UIEdgeInsetsMake(0, FTDefaultCellMargin, 0, FTDefaultCellMargin)
-    
-    public static var shared : FTConfiguration {
-        struct StaticConfig {
-            static let instance : FTConfiguration = FTConfiguration()
-        }
-        return StaticConfig.instance
-    }
-}
-
-
 private class FTPopOverMenuView: UIControl {
     
     fileprivate var menuNameArray : [String]!
@@ -438,7 +435,7 @@ extension FTPopOverMenuView : UITableViewDataSource {
         if (indexPath.row == menuNameArray.count-1) {
             cell.separatorInset = UIEdgeInsetsMake(0, self.bounds.size.width, 0, 0)
         }else{
-            cell.separatorInset = UIEdgeInsetsMake(0, FTDefaultCellMargin, 0, FTDefaultCellMargin)
+            cell.separatorInset = configuration.menuSeparatorInset
         }
         return cell
     }
@@ -479,7 +476,7 @@ class FTPopOverMenuCell: UITableViewCell {
                 }
                 iconImageView.frame =  CGRect(x: FTDefaultCellMargin, y: (configuration.menuRowHeight - FTDefaultMenuIconSize)/2, width: FTDefaultMenuIconSize, height: FTDefaultMenuIconSize)
                 iconImageView.image = iconImage
-                nameLabel.frame = CGRect(x: FTDefaultCellMargin*2 + FTDefaultMenuIconSize, y: 0, width: (configuration.menuRowHeight - FTDefaultMenuIconSize - FTDefaultCellMargin*3), height: configuration.menuRowHeight)
+                nameLabel.frame = CGRect(x: FTDefaultCellMargin*2 + FTDefaultMenuIconSize, y: 0, width: (configuration.menuWidth - FTDefaultMenuIconSize - FTDefaultCellMargin*3), height: configuration.menuRowHeight)
             }else{
                 nameLabel.frame = CGRect(x: FTDefaultCellMargin, y: 0, width: configuration.menuWidth - FTDefaultCellMargin*2, height: configuration.menuRowHeight)
             }

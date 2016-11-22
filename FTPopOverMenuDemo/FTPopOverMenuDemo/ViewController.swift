@@ -14,11 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
 
     @IBAction func handleButtonTap(_ sender: UIButton) {
-        let menu = ["123","234","345","456","567","678","789","890"]
-        FTPopOverMenu.showForSender(sender: sender, with: menu, done: { (selectedIndex) -> () in
+        FTPopOverMenu.showForSender(sender: sender, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray, done: { (selectedIndex) -> () in
             
         }) {
             
@@ -27,7 +25,7 @@ class ViewController: UIViewController {
     
     @IBAction func handleNavgationBarButtonTap(_ sender: UIBarButtonItem, event: UIEvent) {
         
-        FTPopOverMenu.showForEvent(event: event, with: ["123","234","345","456","567","678","789","890"], done: { (selectedIndex) -> () in
+        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray, done: { (selectedIndex) -> () in
             
         }) {
             
@@ -36,17 +34,23 @@ class ViewController: UIViewController {
     
     
     @IBAction func handleBarButtonItemTap(_ sender: UIBarButtonItem, event: UIEvent) {
-        FTPopOverMenu.showForEvent(event: event, with: ["123","234","345","456","567","678","789","890"], done: { (selectedIndex) -> () in
+        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray, done: { (selectedIndex) -> () in
             
         }) {
             
         }
         
     }
-    
-    
-    
+}
 
-
+extension UIViewController {
+    
+    var menuOptionNameArray : [String] {
+        return ["123","234","345","456"]
+    }
+    var menuOptionImageNameArray : [String] {
+        return ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04"]
+    }
+    
 }
 

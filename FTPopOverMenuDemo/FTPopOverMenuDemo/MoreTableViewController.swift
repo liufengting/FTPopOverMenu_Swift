@@ -17,26 +17,15 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
     
     @IBAction func handleAddBarButtonItem(_ sender: UIBarButtonItem, event: UIEvent) {
         
-        FTPopOverMenu.showForEvent(event: event, with: ["123","234","345","456","567","678","789","890"], done: { (selectedIndex) -> () in
-            
+        FTPopOverMenu.showForEvent(event: event,
+                                   with: menuOptionNameArray,
+                                   menuImageArray: menuOptionImageNameArray,
+                                   done: { (selectedIndex) -> () in
+                                    
         }) {
             
         }
-        
     }
-    
-    // MARK: - MoreTableViewCellDelegate
-    
-    func moreTableViewCellDidTappedButton(sender: UIButton) {
-        
-        FTPopOverMenu.showForSender(sender: sender, with: ["123","234","345","456","567","678","789","890"], done: { (selectedIndex) -> () in
-            
-        }) {
-            
-        }
-        
-    }
-
 
     // MARK: - Table view data source
 
@@ -59,6 +48,19 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
     }
     
     
+    // MARK: - MoreTableViewCellDelegate
     
+    func moreTableViewCellDidTappedButton(sender: UIButton) {
+        
+        FTPopOverMenu.showForSender(sender: sender,
+                                    with: menuOptionNameArray,
+                                    menuImageArray: menuOptionImageNameArray,
+                                    done: { (selectedIndex) -> () in
+                                        
+        }) {
+            
+        }
+        
+    }
 
 }
