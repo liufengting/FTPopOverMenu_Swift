@@ -8,11 +8,33 @@
 
 import UIKit
 
-class MoreTableViewController: UITableViewController {
+class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    @IBAction func handleAddBarButtonItem(_ sender: UIBarButtonItem, event: UIEvent) {
+        
+        FTPopOverMenu.showForEvent(event: event, with: ["123","234","345","456","567","678","789","890"], done: { (selectedIndex) -> () in
+            
+        }) {
+            
+        }
+        
+    }
+    
+    // MARK: - MoreTableViewCellDelegate
+    
+    func moreTableViewCellDidTappedButton(sender: UIButton) {
+        
+        FTPopOverMenu.showForSender(sender: sender, with: ["123","234","345","456","567","678","789","890"], done: { (selectedIndex) -> () in
+            
+        }) {
+            
+        }
+        
     }
 
 
@@ -32,8 +54,11 @@ class MoreTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : MoreTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MoreCellIdentifier", for: indexPath) as! MoreTableViewCell
+        cell.delegate = self
         return cell
     }
-
+    
+    
+    
 
 }
