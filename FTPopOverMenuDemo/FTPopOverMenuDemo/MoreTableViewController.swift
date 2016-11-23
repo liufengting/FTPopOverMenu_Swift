@@ -21,7 +21,9 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
                                    with: menuOptionNameArray,
                                    menuImageArray: menuOptionImageNameArray,
                                    done: { (selectedIndex) -> () in
-                                    
+                                
+                                    print(selectedIndex)
+
         }) {
             
         }
@@ -52,11 +54,14 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
     
     func moreTableViewCellDidTappedButton(sender: UIButton) {
         
+        
         FTPopOverMenu.showForSender(sender: sender,
                                     with: menuOptionNameArray,
                                     menuImageArray: menuOptionImageNameArray,
                                     done: { (selectedIndex) -> () in
-                                        
+                              
+                                        print(selectedIndex)
+
         }) {
             
         }

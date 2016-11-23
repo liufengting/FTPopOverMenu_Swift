@@ -48,6 +48,7 @@ public class FTConfiguration : NSObject {
     var cornerRadius : CGFloat = FTDefaultCornerRadius
     var textAlignment : NSTextAlignment = NSTextAlignment.left
     var ignoreImageOriginalColor : Bool = false
+    var menuSeparatorColor : UIColor = UIColor.lightGray
     var menuSeparatorInset : UIEdgeInsets = UIEdgeInsetsMake(0, FTDefaultCellMargin, 0, FTDefaultCellMargin)
     
     public static var shared : FTConfiguration {
@@ -154,6 +155,7 @@ public class FTPopOverMenu : NSObject {
         self.backgroundView.frame = CGRect(x: 0, y: 0, width: UIScreen.ft_width(), height: UIScreen.ft_height())
 
         popOverMenu.showWithAnglePoint(point: menuArrowPoint, frame: popOverMenuFrame, menuNameArray: menuNameArray, menuImageArray: menuImageArray, arrowDirection: arrowDirection, done: { (selectedIndex: NSInteger) in
+            self.isOnScreen = false
             self.doneActionWithSelectedIndex(selectedIndex: selectedIndex)
         })
         
@@ -162,14 +164,24 @@ public class FTPopOverMenu : NSObject {
 
     
     fileprivate var senderRect : CGRect {
-        var senderRect = CGRect.zero
-        if self.sender != nil {
-            senderRect = (sender?.superview?.convert((sender?.frame)!, to: backgroundView))!
-        }else if senderFrame != nil {
-            senderRect = senderFrame!
+        get{
+            var senderRect = CGRect.zero
+            if self.sender != nil {
+                if sender?.superview != nil {
+                    senderRect = (sender?.superview?.convert((sender?.frame)!, to: backgroundView))!
+                }else{
+                    
+                    // UINavgationBarButtonItem has no superview when rotated. maybe this is a bug of swift?
+                    
+                    senderRect = (sender?.convert((sender?.frame)!, to: UIApplication.shared.keyWindow))!
+                }
+
+            }else if senderFrame != nil {
+                senderRect = senderFrame!
+            }
+            senderRect.origin.y = min(UIScreen.ft_height(), senderRect.origin.y)
+            return senderRect
         }
-        senderRect.origin.y = min(UIScreen.ft_height(), senderRect.origin.y)
-        return senderRect
     }
     
     fileprivate var arrowDirection : FTPopOverMenuArrowDirection {
@@ -292,7 +304,7 @@ extension FTPopOverMenu {
     }
     
     @objc fileprivate func onChangeStatusBarOrientationNotification(notification : Notification) {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(0.1 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(0.2 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: {
             self.adjustPostionForPopOverMenu()
         })
     }
@@ -332,6 +344,7 @@ private class FTPopOverMenuView: UIControl {
         tableView.backgroundColor = UIColor.clear
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorColor = FTConfiguration.shared.menuSeparatorColor
         tableView.layer.cornerRadius = FTConfiguration.shared.cornerRadius
         tableView.clipsToBounds = true
         return tableView

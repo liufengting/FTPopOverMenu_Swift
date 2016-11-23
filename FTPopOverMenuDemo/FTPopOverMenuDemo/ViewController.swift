@@ -16,8 +16,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func handleButtonTap(_ sender: UIButton) {
+        
         FTPopOverMenu.showForSender(sender: sender, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray, done: { (selectedIndex) -> () in
             
+            print(selectedIndex)
+
         }) {
             
         }
@@ -27,6 +30,8 @@ class ViewController: UIViewController {
         
         FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray, done: { (selectedIndex) -> () in
             
+            print(selectedIndex)
+            
         }) {
             
         }
@@ -35,7 +40,9 @@ class ViewController: UIViewController {
     
     @IBAction func handleBarButtonItemTap(_ sender: UIBarButtonItem, event: UIEvent) {
         FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray, done: { (selectedIndex) -> () in
-            
+                        
+            print(selectedIndex)
+
         }) {
             
         }
@@ -46,7 +53,7 @@ class ViewController: UIViewController {
 extension UIViewController {
     
     var menuOptionNameArray : [String] {
-        return ["123","234","345","456"]
+        return ["Share","Delete","Upload","Download",]
     }
     var menuOptionImageNameArray : [String] {
         return ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04"]

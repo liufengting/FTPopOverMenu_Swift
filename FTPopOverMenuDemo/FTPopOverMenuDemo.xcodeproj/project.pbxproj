@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2A10E9E41DE437C600E10A3E /* FTPopOverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10E9E11DE437C600E10A3E /* FTPopOverMenu.swift */; };
-		2A10E9E51DE437C600E10A3E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A10E9E31DE437C600E10A3E /* Info.plist */; };
 		2AB5A3201DDEF2DF00EC6555 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A31F1DDEF2DF00EC6555 /* MoreTableViewController.swift */; };
 		2AB5A3221DDEFC1C00EC6555 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A3211DDEFC1C00EC6555 /* MoreTableViewCell.swift */; };
 		2ACAB6731DDC5ECE00FDCEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACAB6721DDC5ECE00FDCEAF /* AppDelegate.swift */; };
@@ -20,8 +19,6 @@
 
 /* Begin PBXFileReference section */
 		2A10E9E11DE437C600E10A3E /* FTPopOverMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTPopOverMenu.swift; sourceTree = "<group>"; };
-		2A10E9E21DE437C600E10A3E /* FTPopOverMenu_Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPopOverMenu_Swift.h; sourceTree = "<group>"; };
-		2A10E9E31DE437C600E10A3E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AB5A31F1DDEF2DF00EC6555 /* MoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
 		2AB5A3211DDEFC1C00EC6555 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
 		2ACAB66F1DDC5ECE00FDCEAF /* FTPopOverMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTPopOverMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,8 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				2A10E9E11DE437C600E10A3E /* FTPopOverMenu.swift */,
-				2A10E9E21DE437C600E10A3E /* FTPopOverMenu_Swift.h */,
-				2A10E9E31DE437C600E10A3E /* Info.plist */,
 			);
 			name = FTPopOverMenu_Swift;
 			path = ../../FTPopOverMenu_Swift;
@@ -147,7 +142,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A10E9E51DE437C600E10A3E /* Info.plist in Resources */,
 				2ACAB67D1DDC5ECE00FDCEAF /* LaunchScreen.storyboard in Resources */,
 				2ACAB67A1DDC5ECE00FDCEAF /* Assets.xcassets in Resources */,
 				2ACAB6781DDC5ECE00FDCEAF /* Main.storyboard in Resources */,
@@ -285,8 +279,10 @@
 		2ACAB6821DDC5ECE00FDCEAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E83AC9WR2F;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPopOverMenuDemo;
@@ -298,8 +294,10 @@
 		2ACAB6831DDC5ECE00FDCEAF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E83AC9WR2F;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPopOverMenuDemo;
