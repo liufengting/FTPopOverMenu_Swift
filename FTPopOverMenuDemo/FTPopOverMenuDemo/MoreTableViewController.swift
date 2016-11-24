@@ -15,15 +15,18 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
 
     }
     
+    var menuOptionNameArray : [String] {
+        return ["Share","Delete","Upload","Download","Share"]
+    }
+
+    // MARK: - handle UIBarButtonItem tapped
     @IBAction func handleAddBarButtonItem(_ sender: UIBarButtonItem, event: UIEvent) {
         
         FTPopOverMenu.showForEvent(event: event,
                                    with: menuOptionNameArray,
-                                   menuImageArray: menuOptionImageNameArray,
+                                   menuImageArray: ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01"],
                                    done: { (selectedIndex) -> () in
-                                
-                                    print(selectedIndex)
-
+                                    
         }) {
             
         }
@@ -49,15 +52,17 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     
     // MARK: - MoreTableViewCellDelegate
     
     func moreTableViewCellDidTappedButton(sender: UIButton) {
         
-        
         FTPopOverMenu.showForSender(sender: sender,
                                     with: menuOptionNameArray,
-                                    menuImageArray: menuOptionImageNameArray,
                                     done: { (selectedIndex) -> () in
                               
                                         print(selectedIndex)

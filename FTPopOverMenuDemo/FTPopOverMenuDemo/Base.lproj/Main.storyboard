@@ -90,13 +90,27 @@
                                     <action selector="handleButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TgK-HA-7Sz"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Xxj-mK-OVk">
+                                <rect key="frame" x="16" y="287" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="WeChat"/>
+                                    <segment title="QQ"/>
+                                    <segment title="More"/>
+                                </segments>
+                                <connections>
+                                    <action selector="handleStyleChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="HbP-C4-jJ6"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="kD6-43-2c4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="0eP-fm-Zdq"/>
                             <constraint firstItem="Bov-Ok-pdl" firstAttribute="top" secondItem="VyU-1J-Q0W" secondAttribute="bottom" constant="8" id="1ZG-E6-UOA"/>
+                            <constraint firstItem="Xxj-mK-OVk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3hJ-Zi-NMO"/>
                             <constraint firstItem="vza-Cv-LCe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="4eJ-Ha-oDp"/>
                             <constraint firstItem="XIM-bl-sGS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="9Mb-tb-wP0"/>
+                            <constraint firstItem="Xxj-mK-OVk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="GUx-t9-Qpw"/>
                             <constraint firstItem="Bov-Ok-pdl" firstAttribute="top" secondItem="7Jj-rD-LEC" secondAttribute="bottom" constant="8" id="HWR-aZ-w4v"/>
                             <constraint firstItem="Bov-Ok-pdl" firstAttribute="top" secondItem="P83-xK-0Te" secondAttribute="bottom" constant="8" id="HdA-V6-3Qg"/>
                             <constraint firstItem="7Jj-rD-LEC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="J8C-xK-nYa"/>
@@ -107,6 +121,7 @@
                             <constraint firstAttribute="trailing" secondItem="VyU-1J-Q0W" secondAttribute="trailing" constant="16" id="lP8-dg-epG"/>
                             <constraint firstItem="Bov-Ok-pdl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lon-0J-xzF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bov-Ok-pdl" secondAttribute="bottom" id="nj4-oN-Odo"/>
+                            <constraint firstAttribute="trailing" secondItem="Xxj-mK-OVk" secondAttribute="trailing" constant="16" id="yWI-PU-3n7"/>
                             <constraint firstItem="vza-Cv-LCe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="z5P-Lv-S3Z"/>
                         </constraints>
                     </view>
@@ -125,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="242" y="-600"/>
+            <point key="canvasLocation" x="240.80000000000001" y="-600.44977511244383"/>
         </scene>
         <!--More-->
         <scene sceneID="b46-hF-OEf">

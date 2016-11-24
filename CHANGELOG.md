@@ -8,5 +8,6 @@
 | 0.0.2 | 2016.11.22 | Retry uploading | Success |
 | 0.0.2 | 2016.11.23 | Retry uploading | Success |
 | 0.0.4 | 2016.11.24 | Fix some bugs | Success |
+| 0.0.5 | 2016.11.24 | Fix some bugs | Success |
 
 
