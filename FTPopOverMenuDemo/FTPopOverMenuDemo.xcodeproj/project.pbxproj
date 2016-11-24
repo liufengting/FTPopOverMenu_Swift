@@ -281,6 +281,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = E83AC9WR2F;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;
@@ -296,6 +297,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = E83AC9WR2F;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;

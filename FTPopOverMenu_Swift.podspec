@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FTPopOverMenu_Swift"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Swift version of FTPopOverMenu. A pop over menu for iOS which is maybe the easiest one to use, highly customizable."
   s.description  = <<-DESC
           `FTPopOverMenu` is a pop over menu for `iOS` which is maybe the easiest one to use, supports both portrait and landscape. It can show from any `UIView`, any `UIBarButtonItem` and any `CGRect`. Simplest APIs, enable you to change the style in one line of code.
