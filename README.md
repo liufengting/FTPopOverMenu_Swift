@@ -16,8 +16,7 @@ Swift version of [FTPopOverMenu](https://github.com/liufengting/FTPopOverMenu).
 
 # ScreenShots
 
-
-
+![screenshot](https://raw.githubusercontent.com/liufengting/FTResourceRepo/master/Resource/FTPopOverMenu/screenshots.gif)
 
 # Installation
 
