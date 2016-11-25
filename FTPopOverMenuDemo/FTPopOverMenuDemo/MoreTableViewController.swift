@@ -30,6 +30,8 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
         }) {
             
         }
+        
+
     }
 
     // MARK: - Table view data source
@@ -61,6 +63,14 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
     
     func moreTableViewCellDidTappedButton(sender: UIButton) {
         
+//        FTPopOverMenu.showFromSenderFrame(senderFrame: sender.frame,
+//                                          with: ["Share"],
+//                                          done: { (selectedIndex) -> () in
+//                                            
+//        }) {
+//            
+//        }
+
         FTPopOverMenu.showForSender(sender: sender,
                                     with: menuOptionNameArray,
                                     done: { (selectedIndex) -> () in
