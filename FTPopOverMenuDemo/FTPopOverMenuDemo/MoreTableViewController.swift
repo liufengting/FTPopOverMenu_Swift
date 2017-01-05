@@ -31,7 +31,6 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
             
         }
         
-
     }
 
     // MARK: - Table view data source

@@ -38,18 +38,18 @@ extension FTPopOverMenu {
 
 public class FTConfiguration : NSObject {
     
-    var menuRowHeight : CGFloat = FTDefaultMenuRowHeight
-    var menuWidth : CGFloat = FTDefaultMenuWidth
-    var textColor : UIColor = UIColor.white
-    var textFont : UIFont = UIFont.systemFont(ofSize: 14)
-    var borderColor : UIColor = FTDefaultTintColor
-    var borderWidth : CGFloat = FTDefaultBorderWidth
-    var backgoundTintColor : UIColor = FTDefaultTintColor
-    var cornerRadius : CGFloat = FTDefaultCornerRadius
-    var textAlignment : NSTextAlignment = NSTextAlignment.left
-    var ignoreImageOriginalColor : Bool = false
-    var menuSeparatorColor : UIColor = UIColor.lightGray
-    var menuSeparatorInset : UIEdgeInsets = UIEdgeInsetsMake(0, FTDefaultCellMargin, 0, FTDefaultCellMargin)
+    public var menuRowHeight : CGFloat = FTDefaultMenuRowHeight
+    public var menuWidth : CGFloat = FTDefaultMenuWidth
+    public var textColor : UIColor = UIColor.white
+    public var textFont : UIFont = UIFont.systemFont(ofSize: 14)
+    public var borderColor : UIColor = FTDefaultTintColor
+    public var borderWidth : CGFloat = FTDefaultBorderWidth
+    public var backgoundTintColor : UIColor = FTDefaultTintColor
+    public var cornerRadius : CGFloat = FTDefaultCornerRadius
+    public var textAlignment : NSTextAlignment = NSTextAlignment.left
+    public var ignoreImageOriginalColor : Bool = false
+    public var menuSeparatorColor : UIColor = UIColor.lightGray
+    public var menuSeparatorInset : UIEdgeInsets = UIEdgeInsetsMake(0, FTDefaultCellMargin, 0, FTDefaultCellMargin)
     
     public static var shared : FTConfiguration {
         struct StaticConfig {
