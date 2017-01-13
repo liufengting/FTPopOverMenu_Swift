@@ -29,11 +29,11 @@ Swift version of [FTPopOverMenu](https://github.com/liufengting/FTPopOverMenu).
 
 `FTPopOverMenu_Swift` is available through [CocoaPods](https://cocoapods.org/pods/FTPopOverMenu_Swift). To install it, simply add the following line to your `Podfile`:
 
-* Please use version >= 0.0.5
+* Please use version >= [![Version](https://img.shields.io/cocoapods/v/FTPopOverMenu_Swift.svg?style=flat)](http://cocoapods.org/pods/FTPopOverMenu_Swift)
 
 ```ruby
 target 'MyApp' do
-    pod 'FTPopOverMenu_Swift', '~> 0.0.5'
+    pod 'FTPopOverMenu_Swift', '~> 0.0.6'
 end
 ```
 Then run a pod install inside your terminal, or from CocoaPods.app.
