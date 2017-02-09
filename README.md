@@ -1,6 +1,7 @@
 # FTPopOverMenu_Swift
 
 [![Twitter](https://img.shields.io/badge/twitter-@liufengting-blue.svg?style=flat)](http://twitter.com/liufengting) 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/liufengting/FTPopOverMenu_Swift/master/LICENSE)
 [![Version](https://img.shields.io/cocoapods/v/FTPopOverMenu_Swift.svg?style=flat)](http://cocoapods.org/pods/FTPopOverMenu_Swift)
 [![Download](https://img.shields.io/cocoapods/dt/FTPopOverMenu_Swift.svg?maxAge=2592000)](http://cocoapods.org/pods/FTPopOverMenu_Swift)

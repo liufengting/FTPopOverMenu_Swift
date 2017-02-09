@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
     
     var menuOptionNameArray : [String] = ["Share","Delete","Upload","Download"]
