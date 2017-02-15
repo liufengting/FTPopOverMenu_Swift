@@ -50,6 +50,7 @@ public class FTConfiguration : NSObject {
     public var ignoreImageOriginalColor : Bool = false
     public var menuSeparatorColor : UIColor = UIColor.lightGray
     public var menuSeparatorInset : UIEdgeInsets = UIEdgeInsetsMake(0, FTDefaultCellMargin, 0, FTDefaultCellMargin)
+    public var cellSelectionStyle : UITableViewCellSelectionStyle = .none
     
     public static var shared : FTConfiguration {
         struct StaticConfig {
@@ -555,6 +556,7 @@ extension FTPopOverMenuView : UITableViewDataSource {
         }else{
             cell.separatorInset = configuration.menuSeparatorInset
         }
+        cell.selectionStyle = configuration.cellSelectionStyle;
         return cell
     }
 
