@@ -452,26 +452,26 @@ private class FTPopOverMenuView: UIControl {
             path.addLine(to: CGPoint(x: self.bounds.size.width - radius, y: FTDefaultMenuArrowHeight))
             path.addArc(withCenter: CGPoint(x: self.bounds.size.width - radius, y: FTDefaultMenuArrowHeight + radius),
                         radius: radius,
-                        startAngle: CGFloat(M_PI_2*3),
+                        startAngle: .pi / 2 * 3,
                         endAngle: 0,
                         clockwise: true)
             path.addLine(to: CGPoint(x: self.bounds.size.width, y: self.bounds.size.height - radius))
             path.addArc(withCenter: CGPoint(x: self.bounds.size.width - radius, y: self.bounds.size.height - radius),
                         radius: radius,
                         startAngle: 0,
-                        endAngle: CGFloat(M_PI_2),
+                        endAngle: .pi / 2,
                         clockwise: true)
             path.addLine(to: CGPoint(x: radius, y: self.bounds.size.height))
             path.addArc(withCenter: CGPoint(x: radius, y: self.bounds.size.height - radius),
                         radius: radius,
-                        startAngle: CGFloat(M_PI_2),
-                        endAngle: CGFloat(M_PI),
+                        startAngle: .pi / 2,
+                        endAngle: .pi,
                         clockwise: true)
             path.addLine(to: CGPoint(x: 0, y: FTDefaultMenuArrowHeight + radius))
             path.addArc(withCenter: CGPoint(x: radius, y: FTDefaultMenuArrowHeight + radius),
                         radius: radius,
-                        startAngle: CGFloat(M_PI),
-                        endAngle: CGFloat(M_PI_2*3),
+                        startAngle: .pi,
+                        endAngle: .pi / 2 * 3,
                         clockwise: true)
             path.close()
             //            path = UIBezierPath(roundedRect: CGRect.init(x: 0, y: FTDefaultMenuArrowHeight, width: self.bounds.size.width, height: self.bounds.height - FTDefaultMenuArrowHeight), cornerRadius: configuration.cornerRadius)
@@ -486,26 +486,26 @@ private class FTPopOverMenuView: UIControl {
             path.addLine(to: CGPoint(x: self.bounds.size.width - radius, y: self.bounds.size.height - FTDefaultMenuArrowHeight))
             path.addArc(withCenter: CGPoint(x: self.bounds.size.width - radius, y: self.bounds.size.height - FTDefaultMenuArrowHeight - radius),
                         radius: radius,
-                        startAngle: CGFloat(M_PI_2),
+                        startAngle: .pi / 2,
                         endAngle: 0,
                         clockwise: false)
             path.addLine(to: CGPoint(x: self.bounds.size.width, y: radius))
             path.addArc(withCenter: CGPoint(x: self.bounds.size.width - radius, y: radius),
                         radius: radius,
                         startAngle: 0,
-                        endAngle: CGFloat(M_PI_2*3),
+                        endAngle: .pi / 2 * 3,
                         clockwise: false)
             path.addLine(to: CGPoint(x: radius, y: 0))
             path.addArc(withCenter: CGPoint(x: radius, y: radius),
                         radius: radius,
-                        startAngle: CGFloat(M_PI_2*3),
-                        endAngle: CGFloat(M_PI),
+                        startAngle: .pi / 2 * 3,
+                        endAngle: .pi,
                         clockwise: false)
             path.addLine(to: CGPoint(x: 0, y: self.bounds.size.height - FTDefaultMenuArrowHeight - radius))
             path.addArc(withCenter: CGPoint(x: radius, y: self.bounds.size.height - FTDefaultMenuArrowHeight - radius),
                         radius: radius,
-                        startAngle: CGFloat(M_PI),
-                        endAngle: CGFloat(M_PI_2),
+                        startAngle: .pi,
+                        endAngle: .pi / 2,
                         clockwise: false)
             path.close()
             //            path = UIBezierPath(roundedRect: CGRect.init(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.height - FTDefaultMenuArrowHeight), cornerRadius: configuration.cornerRadius)
