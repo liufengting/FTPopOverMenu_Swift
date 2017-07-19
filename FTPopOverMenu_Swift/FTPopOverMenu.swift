@@ -191,20 +191,18 @@ public class FTPopOverMenu : NSObject {
     }
     
     fileprivate func configureSenderRect() {
-        if self.sender != nil {
-            if sender?.superview != nil {
-                senderRect = (sender?.superview?.convert((sender?.frame)!, to: backgroundView))!
-            }else{
-                senderRect = (sender?.frame)!
+        if let sender = self.sender {
+            if let superView = sender.superview {
+                senderRect = superView.convert(sender.frame, to: backgroundView)
             }
-        }else if senderFrame != nil {
-            senderRect = senderFrame!
+        } else if let frame = senderFrame {
+            senderRect = frame
         }
         senderRect.origin.y = min(UIScreen.ft_height(), senderRect.origin.y)
         
         if senderRect.origin.y + senderRect.size.height/2 < UIScreen.ft_height()/2 {
             arrowDirection = .Up
-        }else{
+        } else {
             arrowDirection = .Down
         }
     }
