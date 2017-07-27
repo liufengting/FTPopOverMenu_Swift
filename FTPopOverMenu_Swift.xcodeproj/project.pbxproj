@@ -10,6 +10,7 @@
 		2A10E9D81DE436AB00E10A3E /* FTPopOverMenu_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A10E9D61DE436AB00E10A3E /* FTPopOverMenu_Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A10E9DF1DE436C900E10A3E /* FTPopOverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10E9DE1DE436C900E10A3E /* FTPopOverMenu.swift */; };
 		A4711BE41F2A85B800C52275 /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4711BE31F2A85B800C52275 /* UIScreen+Frame.swift */; };
+		A4711BE81F2A871D00C52275 /* FTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4711BE71F2A871D00C52275 /* FTConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		2A10E9D71DE436AB00E10A3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A10E9DE1DE436C900E10A3E /* FTPopOverMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTPopOverMenu.swift; sourceTree = "<group>"; };
 		A4711BE31F2A85B800C52275 /* UIScreen+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Frame.swift"; sourceTree = "<group>"; };
+		A4711BE71F2A871D00C52275 /* FTConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			children = (
 				2A10E9DE1DE436C900E10A3E /* FTPopOverMenu.swift */,
 				A4711BE31F2A85B800C52275 /* UIScreen+Frame.swift */,
+				A4711BE71F2A871D00C52275 /* FTConstants.swift */,
 				2A10E9D61DE436AB00E10A3E /* FTPopOverMenu_Swift.h */,
 				2A10E9D71DE436AB00E10A3E /* Info.plist */,
 			);
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A10E9DF1DE436C900E10A3E /* FTPopOverMenu.swift in Sources */,
+				A4711BE81F2A871D00C52275 /* FTConstants.swift in Sources */,
 				A4711BE41F2A85B800C52275 /* UIScreen+Frame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
