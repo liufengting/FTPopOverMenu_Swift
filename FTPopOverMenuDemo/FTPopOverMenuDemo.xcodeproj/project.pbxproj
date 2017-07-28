@@ -15,6 +15,9 @@
 		2ACAB6781DDC5ECE00FDCEAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB6761DDC5ECE00FDCEAF /* Main.storyboard */; };
 		2ACAB67A1DDC5ECE00FDCEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB6791DDC5ECE00FDCEAF /* Assets.xcassets */; };
 		2ACAB67D1DDC5ECE00FDCEAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB67B1DDC5ECE00FDCEAF /* LaunchScreen.storyboard */; };
+		A405CB031F2BBFB200CCC81A /* FTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405CB001F2BBFB200CCC81A /* FTConstants.swift */; };
+		A405CB041F2BBFB200CCC81A /* FTPopOverMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405CB011F2BBFB200CCC81A /* FTPopOverMenuCell.swift */; };
+		A405CB051F2BBFB200CCC81A /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405CB021F2BBFB200CCC81A /* UIScreen+Frame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		2ACAB6791DDC5ECE00FDCEAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ACAB67C1DDC5ECE00FDCEAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ACAB67E1DDC5ECE00FDCEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A405CB001F2BBFB200CCC81A /* FTConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTConstants.swift; sourceTree = "<group>"; };
+		A405CB011F2BBFB200CCC81A /* FTPopOverMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTPopOverMenuCell.swift; sourceTree = "<group>"; };
+		A405CB021F2BBFB200CCC81A /* UIScreen+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Frame.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,9 @@
 		2A10E9E01DE437C600E10A3E /* FTPopOverMenu_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				A405CB001F2BBFB200CCC81A /* FTConstants.swift */,
+				A405CB011F2BBFB200CCC81A /* FTPopOverMenuCell.swift */,
+				A405CB021F2BBFB200CCC81A /* UIScreen+Frame.swift */,
 				2A10E9E11DE437C600E10A3E /* FTPopOverMenu.swift */,
 			);
 			name = FTPopOverMenu_Swift;
@@ -156,10 +165,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ACAB6751DDC5ECE00FDCEAF /* ViewController.swift in Sources */,
+				A405CB031F2BBFB200CCC81A /* FTConstants.swift in Sources */,
 				2AB5A3221DDEFC1C00EC6555 /* MoreTableViewCell.swift in Sources */,
+				A405CB051F2BBFB200CCC81A /* UIScreen+Frame.swift in Sources */,
 				2A10E9E41DE437C600E10A3E /* FTPopOverMenu.swift in Sources */,
 				2AB5A3201DDEF2DF00EC6555 /* MoreTableViewController.swift in Sources */,
 				2ACAB6731DDC5ECE00FDCEAF /* AppDelegate.swift in Sources */,
+				A405CB041F2BBFB200CCC81A /* FTPopOverMenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
