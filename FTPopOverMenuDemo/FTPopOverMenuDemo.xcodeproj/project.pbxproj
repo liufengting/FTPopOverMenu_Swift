@@ -18,6 +18,7 @@
 		A405CB031F2BBFB200CCC81A /* FTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405CB001F2BBFB200CCC81A /* FTConstants.swift */; };
 		A405CB041F2BBFB200CCC81A /* FTPopOverMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405CB011F2BBFB200CCC81A /* FTPopOverMenuCell.swift */; };
 		A405CB051F2BBFB200CCC81A /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405CB021F2BBFB200CCC81A /* UIScreen+Frame.swift */; };
+		A405CB091F2BC0D900CCC81A /* FTConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405CB081F2BC0D900CCC81A /* FTConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A405CB001F2BBFB200CCC81A /* FTConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTConstants.swift; sourceTree = "<group>"; };
 		A405CB011F2BBFB200CCC81A /* FTPopOverMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTPopOverMenuCell.swift; sourceTree = "<group>"; };
 		A405CB021F2BBFB200CCC81A /* UIScreen+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Frame.swift"; sourceTree = "<group>"; };
+		A405CB081F2BC0D900CCC81A /* FTConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		2A10E9E01DE437C600E10A3E /* FTPopOverMenu_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				A405CB081F2BC0D900CCC81A /* FTConfiguration.swift */,
 				A405CB001F2BBFB200CCC81A /* FTConstants.swift */,
 				A405CB011F2BBFB200CCC81A /* FTPopOverMenuCell.swift */,
 				A405CB021F2BBFB200CCC81A /* UIScreen+Frame.swift */,
@@ -167,6 +170,7 @@
 				2ACAB6751DDC5ECE00FDCEAF /* ViewController.swift in Sources */,
 				A405CB031F2BBFB200CCC81A /* FTConstants.swift in Sources */,
 				2AB5A3221DDEFC1C00EC6555 /* MoreTableViewCell.swift in Sources */,
+				A405CB091F2BC0D900CCC81A /* FTConfiguration.swift in Sources */,
 				A405CB051F2BBFB200CCC81A /* UIScreen+Frame.swift in Sources */,
 				2A10E9E41DE437C600E10A3E /* FTPopOverMenu.swift in Sources */,
 				2AB5A3201DDEF2DF00EC6555 /* MoreTableViewController.swift in Sources */,
