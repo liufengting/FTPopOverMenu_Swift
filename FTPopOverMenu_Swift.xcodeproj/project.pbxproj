@@ -11,6 +11,7 @@
 		2A10E9DF1DE436C900E10A3E /* FTPopOverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10E9DE1DE436C900E10A3E /* FTPopOverMenu.swift */; };
 		A405CAF01F2BB40900CCC81A /* FTPopOverMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405CAEF1F2BB40900CCC81A /* FTPopOverMenuCell.swift */; };
 		A405CB071F2BC0B000CCC81A /* FTConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405CB061F2BC0B000CCC81A /* FTConfiguration.swift */; };
+		A405CB0B1F2BC14700CCC81A /* UIControl+Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405CB0A1F2BC14700CCC81A /* UIControl+Point.swift */; };
 		A4711BE41F2A85B800C52275 /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4711BE31F2A85B800C52275 /* UIScreen+Frame.swift */; };
 		A4711BE81F2A871D00C52275 /* FTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4711BE71F2A871D00C52275 /* FTConstants.swift */; };
 /* End PBXBuildFile section */
@@ -22,6 +23,7 @@
 		2A10E9DE1DE436C900E10A3E /* FTPopOverMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTPopOverMenu.swift; sourceTree = "<group>"; };
 		A405CAEF1F2BB40900CCC81A /* FTPopOverMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTPopOverMenuCell.swift; sourceTree = "<group>"; };
 		A405CB061F2BC0B000CCC81A /* FTConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTConfiguration.swift; sourceTree = "<group>"; };
+		A405CB0A1F2BC14700CCC81A /* UIControl+Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Point.swift"; sourceTree = "<group>"; };
 		A4711BE31F2A85B800C52275 /* UIScreen+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Frame.swift"; sourceTree = "<group>"; };
 		A4711BE71F2A871D00C52275 /* FTConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 				2A10E9D61DE436AB00E10A3E /* FTPopOverMenu_Swift.h */,
 				2A10E9D71DE436AB00E10A3E /* Info.plist */,
 				A405CB061F2BC0B000CCC81A /* FTConfiguration.swift */,
+				A405CB0A1F2BC14700CCC81A /* UIControl+Point.swift */,
 			);
 			path = FTPopOverMenu_Swift;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				A405CAF01F2BB40900CCC81A /* FTPopOverMenuCell.swift in Sources */,
 				2A10E9DF1DE436C900E10A3E /* FTPopOverMenu.swift in Sources */,
+				A405CB0B1F2BC14700CCC81A /* UIControl+Point.swift in Sources */,
 				A405CB071F2BC0B000CCC81A /* FTConfiguration.swift in Sources */,
 				A4711BE81F2A871D00C52275 /* FTConstants.swift in Sources */,
 				A4711BE41F2A85B800C52275 /* UIScreen+Frame.swift in Sources */,
