@@ -48,6 +48,7 @@ public class FTConfiguration : NSObject {
     public var cornerRadius : CGFloat = FTDefaultCornerRadius
     public var textAlignment : NSTextAlignment = NSTextAlignment.left
     public var ignoreImageOriginalColor : Bool = false
+    public var menuIconSize : CGFloat = FTDefaultMenuIconSize
     public var menuSeparatorColor : UIColor = UIColor.lightGray
     public var menuSeparatorInset : UIEdgeInsets = UIEdgeInsetsMake(0, FTDefaultCellMargin, 0, FTDefaultCellMargin)
     public var cellSelectionStyle : UITableViewCellSelectionStyle = .none
@@ -589,9 +590,9 @@ class FTPopOverMenuCell: UITableViewCell {
                     iconImage = iconImage.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
                 }
                 iconImageView.tintColor = configuration.textColor
-                iconImageView.frame =  CGRect(x: FTDefaultCellMargin, y: (configuration.menuRowHeight - FTDefaultMenuIconSize)/2, width: FTDefaultMenuIconSize, height: FTDefaultMenuIconSize)
+                iconImageView.frame =  CGRect(x: FTDefaultCellMargin, y: (configuration.menuRowHeight - configuration.menuIconSize)/2, width: configuration.menuIconSize, height: configuration.menuIconSize)
                 iconImageView.image = iconImage
-                nameLabel.frame = CGRect(x: FTDefaultCellMargin*2 + FTDefaultMenuIconSize, y: (configuration.menuRowHeight - FTDefaultMenuIconSize)/2, width: (configuration.menuWidth - FTDefaultMenuIconSize - FTDefaultCellMargin*3), height: FTDefaultMenuIconSize)
+                nameLabel.frame = CGRect(x: FTDefaultCellMargin*2 + configuration.menuIconSize, y: (configuration.menuRowHeight - configuration.menuIconSize)/2, width: (configuration.menuWidth - configuration.menuIconSize - FTDefaultCellMargin*3), height: configuration.menuIconSize)
             }else{
                 nameLabel.frame = CGRect(x: FTDefaultCellMargin, y: 0, width: configuration.menuWidth - FTDefaultCellMargin*2, height: configuration.menuRowHeight)
             }
