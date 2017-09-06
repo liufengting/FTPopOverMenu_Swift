@@ -3,7 +3,7 @@
 //  FTPopOverMenu_Swift
 //
 //  Created by Abdullah Selek on 28/07/2017.
-//  Copyright © 2017 LiuFengting. All rights reserved.
+//  Copyright © 2016 LiuFengting (https://github.com/liufengting) . All rights reserved.
 //
 
 import UIKit
@@ -29,7 +29,7 @@ class FTPopOverMenuCell: UITableViewCell {
         return label
     }()
 
-    internal func setupCellWith(menuName: String, menuImage: String?) {
+    func setupCellWith(menuName: String, menuImage: String?) {
         self.backgroundColor = UIColor.clear
         if menuImage != nil {
             if var iconImage : UIImage = UIImage(named: menuImage!) {
@@ -37,9 +37,9 @@ class FTPopOverMenuCell: UITableViewCell {
                     iconImage = iconImage.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
                 }
                 iconImageView.tintColor = configuration.textColor
-                iconImageView.frame =  CGRect(x: FT.DefaultCellMargin, y: (configuration.menuRowHeight - FT.DefaultMenuIconSize)/2, width: FT.DefaultMenuIconSize, height: FT.DefaultMenuIconSize)
+                iconImageView.frame =  CGRect(x: FT.DefaultCellMargin, y: (configuration.menuRowHeight - configuration.menuIconSize)/2, width: configuration.menuIconSize, height: configuration.menuIconSize)
                 iconImageView.image = iconImage
-                nameLabel.frame = CGRect(x: FT.DefaultCellMargin*2 + FT.DefaultMenuIconSize, y: (configuration.menuRowHeight - FT.DefaultMenuIconSize)/2, width: (configuration.menuWidth - FT.DefaultMenuIconSize - FT.DefaultCellMargin*3), height: FT.DefaultMenuIconSize)
+                nameLabel.frame = CGRect(x: FT.DefaultCellMargin*2 + configuration.menuIconSize, y: (configuration.menuRowHeight - configuration.menuIconSize)/2, width: (configuration.menuWidth - configuration.menuIconSize - FT.DefaultCellMargin*3), height: configuration.menuIconSize)
             }else{
                 nameLabel.frame = CGRect(x: FT.DefaultCellMargin, y: 0, width: configuration.menuWidth - FT.DefaultCellMargin*2, height: configuration.menuRowHeight)
             }
@@ -49,5 +49,4 @@ class FTPopOverMenuCell: UITableViewCell {
         nameLabel.textAlignment = configuration.textAlignment
         nameLabel.text = menuName
     }
-
 }

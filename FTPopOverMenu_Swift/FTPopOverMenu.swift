@@ -36,31 +36,6 @@ extension FTPopOverMenu {
     }
 }
 
-public class FTConfiguration : NSObject {
-    
-    public var menuRowHeight : CGFloat = FTDefaultMenuRowHeight
-    public var menuWidth : CGFloat = FTDefaultMenuWidth
-    public var textColor : UIColor = UIColor.white
-    public var textFont : UIFont = UIFont.systemFont(ofSize: 14)
-    public var borderColor : UIColor = FTDefaultTintColor
-    public var borderWidth : CGFloat = FTDefaultBorderWidth
-    public var backgoundTintColor : UIColor = FTDefaultTintColor
-    public var cornerRadius : CGFloat = FTDefaultCornerRadius
-    public var textAlignment : NSTextAlignment = NSTextAlignment.left
-    public var ignoreImageOriginalColor : Bool = false
-    public var menuIconSize : CGFloat = FTDefaultMenuIconSize
-    public var menuSeparatorColor : UIColor = UIColor.lightGray
-    public var menuSeparatorInset : UIEdgeInsets = UIEdgeInsetsMake(0, FTDefaultCellMargin, 0, FTDefaultCellMargin)
-    public var cellSelectionStyle : UITableViewCellSelectionStyle = .none
-    
-    public static var shared : FTConfiguration {
-        struct StaticConfig {
-            static let instance : FTConfiguration = FTConfiguration()
-        }
-        return StaticConfig.instance
-    } 
-}
-
 fileprivate enum FTPopOverMenuArrowDirection {
     case up
     case down
@@ -352,8 +327,6 @@ private class FTPopOverMenuView: UIControl {
     fileprivate func showWithAnglePoint(point: CGPoint, frame: CGRect, menuNameArray: [String]!, menuImageArray: [String]!, arrowDirection: FTPopOverMenuArrowDirection, done: @escaping ((NSInteger) -> Void)) {
         
         self.frame = frame
-        
-
 
         self.menuNameArray = menuNameArray
         self.menuImageArray = menuImageArray
@@ -476,9 +449,7 @@ private class FTPopOverMenuView: UIControl {
         }
         return path
     }
-    
-    
-    
+
 }
 
 extension FTPopOverMenuView : UITableViewDelegate {
@@ -493,7 +464,7 @@ extension FTPopOverMenuView : UITableViewDelegate {
             self.done(indexPath.row)
         }
     }
-    
+
 }
 
 extension FTPopOverMenuView : UITableViewDataSource {
@@ -520,59 +491,4 @@ extension FTPopOverMenuView : UITableViewDataSource {
         return cell
     }
 
-}
-
-class FTPopOverMenuCell: UITableViewCell {
-    
-    fileprivate lazy var configuration : FTConfiguration = {
-        return FTConfiguration.shared
-    }()
-
-    fileprivate lazy var iconImageView : UIImageView = {
-        let imageView = UIImageView(frame: CGRect.zero)
-        imageView.backgroundColor = UIColor.clear
-        imageView.contentMode = UIViewContentMode.scaleAspectFit
-        self.contentView.addSubview(imageView)
-        return imageView
-    }()
-    
-    fileprivate lazy var nameLabel : UILabel = {
-        let label = UILabel(frame: CGRect.zero)
-        label.backgroundColor = UIColor.clear
-        self.contentView.addSubview(label)
-        return label
-    }()
-    
-    fileprivate func setupCellWith(menuName: String, menuImage: String?) {
-        self.backgroundColor = UIColor.clear
-        if menuImage != nil {
-            if var iconImage : UIImage = UIImage(named: menuImage!) {
-                if  configuration.ignoreImageOriginalColor {
-                    iconImage = iconImage.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-                }
-                iconImageView.tintColor = configuration.textColor
-                iconImageView.frame =  CGRect(x: FTDefaultCellMargin, y: (configuration.menuRowHeight - configuration.menuIconSize)/2, width: configuration.menuIconSize, height: configuration.menuIconSize)
-                iconImageView.image = iconImage
-                nameLabel.frame = CGRect(x: FTDefaultCellMargin*2 + configuration.menuIconSize, y: (configuration.menuRowHeight - configuration.menuIconSize)/2, width: (configuration.menuWidth - configuration.menuIconSize - FTDefaultCellMargin*3), height: configuration.menuIconSize)
-            }else{
-                nameLabel.frame = CGRect(x: FTDefaultCellMargin, y: 0, width: configuration.menuWidth - FTDefaultCellMargin*2, height: configuration.menuRowHeight)
-            }
-        }
-        nameLabel.font = configuration.textFont
-        nameLabel.textColor = configuration.textColor
-        nameLabel.textAlignment = configuration.textAlignment
-        nameLabel.text = menuName
-    }
-
-}
-
-extension UIScreen {
-    
-    public static func ft_width() -> CGFloat {
-        return self.main.bounds.size.width
-    }
-    public static func ft_height() -> CGFloat {
-        return self.main.bounds.size.height
-    }
-    
 }
