@@ -475,7 +475,7 @@ extension FTPopOverMenuView : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : FTPopOverMenuCell = FTPopOverMenuCell(style: .default, reuseIdentifier: FT.PopOverMenuTableViewCellIndentifier)
-        var imageName = ""
+        var imageName: String? = nil
         if menuImageArray != nil {
             if (menuImageArray?.count)! >= indexPath.row + 1 {
                 imageName = (menuImageArray?[indexPath.row])!
