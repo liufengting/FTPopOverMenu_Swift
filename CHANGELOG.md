@@ -13,5 +13,6 @@
 | 0.0.7 | 2017.04.17 | Fix warning: modify M_PI to CGFloat.pi | Success |
 | 0.0.8 | 2017.07.15 | abdullahselek: Use of better syntax for void closures | Success |
 | 0.0.9 | 2017.09.06 | ems305: Expose menu icon size for configuration | Success |
+| 0.1.0 | 2018.02.05 | merge pull requests | Success |
 
 

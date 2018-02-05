@@ -3,7 +3,7 @@
 //  FTPopOverMenuDemo
 //
 //  Created by liufengting on 18/11/2016.
-//  Copyright © 2016 LiuFengting. All rights reserved.
+//  Copyright © 2016 LiuFengting (https://github.com/liufengting) . All rights reserved.
 //
 
 import UIKit
@@ -24,7 +24,7 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
         
         FTPopOverMenu.showForEvent(event: event,
                                    with: menuOptionNameArray,
-                                   menuImageArray: ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01"],
+                                   menuImageArray: ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01"] as [AnyObject],
                                    done: { (selectedIndex) -> () in
                                     
         }) {

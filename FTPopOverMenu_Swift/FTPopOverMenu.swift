@@ -63,8 +63,8 @@ public class FTPopOverMenu : NSObject {
     
     fileprivate lazy var backgroundView : UIView = {
         let view = UIView(frame: UIScreen.main.bounds)
-        if configuration.globalShadow {
-            view.backgroundColor = UIColor.black.withAlphaComponent(configuration.shadowAlpha)
+        if self.configuration.globalShadow {
+            view.backgroundColor = UIColor.black.withAlphaComponent(self.configuration.shadowAlpha)
         }
         view.addGestureRecognizer(self.tapGesture)
         return view

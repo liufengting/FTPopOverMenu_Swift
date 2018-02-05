@@ -3,7 +3,7 @@
 //  FTPopOverMenuDemo
 //
 //  Created by liufengting on 16/11/2016.
-//  Copyright © 2016 LiuFengting. All rights reserved.
+//  Copyright © 2016 LiuFengting (https://github.com/liufengting) . All rights reserved.
 //
 
 import UIKit
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
     // MARK: -  handle nornal button
     @IBAction func handleButtonTap(_ sender: UIButton) {
-        FTPopOverMenu.showForSender(sender: sender, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray, done: { (selectedIndex) -> () in
+        FTPopOverMenu.showForSender(sender: sender, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray as [AnyObject], done: { (selectedIndex) -> () in
             print(selectedIndex)
         }) {
             
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     // MARK: -  handle NavgationBarButtonItem
     @IBAction func handleNavgationBarButtonTap(_ sender: UIBarButtonItem, event: UIEvent) {
-        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray, done: { (selectedIndex) -> () in
+        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray as [AnyObject], done: { (selectedIndex) -> () in
             print(selectedIndex)
         }) {
             
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     
     // MARK: -  handle normal UIBarButtonItem
     @IBAction func handleBarButtonItemTap(_ sender: UIBarButtonItem, event: UIEvent) {
-        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray, done: { (selectedIndex) -> () in
+        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray as [AnyObject], done: { (selectedIndex) -> () in
             print(selectedIndex)
         }) {
             

@@ -3,7 +3,7 @@
 //  FTPopOverMenuDemo
 //
 //  Created by liufengting on 16/11/2016.
-//  Copyright © 2016 LiuFengting. All rights reserved.
+//  Copyright © 2016 LiuFengting (https://github.com/liufengting) . All rights reserved.
 //
 
 import UIKit
