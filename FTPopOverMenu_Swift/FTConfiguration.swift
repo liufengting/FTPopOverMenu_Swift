@@ -24,6 +24,9 @@ public class FTConfiguration : NSObject {
     public var menuSeparatorColor : UIColor = UIColor.lightGray
     public var menuSeparatorInset : UIEdgeInsets = UIEdgeInsetsMake(0, FT.DefaultCellMargin, 0, FT.DefaultCellMargin)
     public var cellSelectionStyle : UITableViewCellSelectionStyle = .none
+    public var globalShadow : Bool = false
+    public var shadowAlpha : CGFloat = 0.6
+    public var localShadow : Bool = false
 
     public static var shared : FTConfiguration {
         struct StaticConfig {

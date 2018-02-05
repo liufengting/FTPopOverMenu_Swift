@@ -29,7 +29,7 @@ class FTPopOverMenuCell: UITableViewCell {
         return label
     }()
 
-    func setupCellWith(menuName: String, menuImage: String?) {
+    func setupCellWith(menuName: String, menuImage: AnyObject?) {
         self.backgroundColor = UIColor.clear
         
         // Configure cell text
@@ -40,14 +40,22 @@ class FTPopOverMenuCell: UITableViewCell {
         nameLabel.frame = CGRect(x: FT.DefaultCellMargin, y: 0, width: configuration.menuWidth - FT.DefaultCellMargin*2, height: configuration.menuRowHeight)
         
         // Configure cell icon if available
+        var iconImage: AnyObject? = nil
         if let menuImage = menuImage {
-            if var iconImage = UIImage(named: menuImage) {
+            if menuImage is String {
+                iconImage = UIImage(named: menuImage as! String)
+            } else {
+                if menuImage is UIImage {
+                    iconImage = menuImage
+                }
+            }
+            if iconImage != nil {
                 if  configuration.ignoreImageOriginalColor {
-                    iconImage = iconImage.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+                    iconImage = iconImage?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
                 }
                 iconImageView.tintColor = configuration.textColor
                 iconImageView.frame =  CGRect(x: FT.DefaultCellMargin, y: (configuration.menuRowHeight - configuration.menuIconSize)/2, width: configuration.menuIconSize, height: configuration.menuIconSize)
-                iconImageView.image = iconImage
+                iconImageView.image = iconImage as? UIImage
                 nameLabel.frame = CGRect(x: FT.DefaultCellMargin*2 + configuration.menuIconSize, y: (configuration.menuRowHeight - configuration.menuIconSize)/2, width: (configuration.menuWidth - configuration.menuIconSize - FT.DefaultCellMargin*3), height: configuration.menuIconSize)
             }
         }

@@ -13,21 +13,21 @@ extension FTPopOverMenu {
     public static func showForSender(sender : UIView, with menuArray: [String], done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void) {
         self.sharedMenu.showForSender(sender: sender, or: nil, with: menuArray, menuImageArray: [], done: done, cancel: cancel)
     }
-    public static func showForSender(sender : UIView, with menuArray: [String], menuImageArray: [String], done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void) {
+    public static func showForSender(sender : UIView, with menuArray: [String], menuImageArray: [AnyObject], done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void) {
         self.sharedMenu.showForSender(sender: sender, or: nil, with: menuArray, menuImageArray: menuImageArray, done: done, cancel: cancel)
     }
     
     public static func showForEvent(event : UIEvent, with menuArray: [String], done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void) {
         self.sharedMenu.showForSender(sender: event.allTouches?.first?.view!, or: nil, with: menuArray, menuImageArray: [], done: done, cancel: cancel)
     }
-    public static func showForEvent(event : UIEvent, with menuArray: [String], menuImageArray: [String], done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void) {
+    public static func showForEvent(event : UIEvent, with menuArray: [String], menuImageArray: [AnyObject], done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void) {
         self.sharedMenu.showForSender(sender: event.allTouches?.first?.view!, or: nil, with: menuArray, menuImageArray: menuImageArray, done: done, cancel: cancel)
     }
     
     public static func showFromSenderFrame(senderFrame : CGRect, with menuArray: [String], done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void) {
         self.sharedMenu.showForSender(sender: nil, or: senderFrame, with: menuArray, menuImageArray: [], done: done, cancel: cancel)
     }
-    public static func showFromSenderFrame(senderFrame : CGRect, with menuArray: [String], menuImageArray: [String], done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void) {
+    public static func showFromSenderFrame(senderFrame : CGRect, with menuArray: [String], menuImageArray: [AnyObject], done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void) {
         self.sharedMenu.showForSender(sender: nil, or: senderFrame, with: menuArray, menuImageArray: menuImageArray, done: done, cancel: cancel)
     }
     
@@ -46,7 +46,7 @@ public class FTPopOverMenu : NSObject {
     var sender : UIView?
     var senderFrame : CGRect?
     var menuNameArray : [String]!
-    var menuImageArray : [String]!
+    var menuImageArray : [AnyObject]!
     var done : ((_ selectedIndex : NSInteger) -> Void)!
     var cancel : (() -> Void)!
 
@@ -63,7 +63,9 @@ public class FTPopOverMenu : NSObject {
     
     fileprivate lazy var backgroundView : UIView = {
         let view = UIView(frame: UIScreen.main.bounds)
-        view.backgroundColor = UIColor.clear
+        if configuration.globalShadow {
+            view.backgroundColor = UIColor.black.withAlphaComponent(configuration.shadowAlpha)
+        }
         view.addGestureRecognizer(self.tapGesture)
         return view
     }()
@@ -91,7 +93,7 @@ public class FTPopOverMenu : NSObject {
         return gesture
     }()
 
-    fileprivate func showForSender(sender: UIView?, or senderFrame: CGRect?, with menuNameArray: [String]!, menuImageArray: [String]?, done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void){
+    fileprivate func showForSender(sender: UIView?, or senderFrame: CGRect?, with menuNameArray: [String]!, menuImageArray: [AnyObject]?, done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void){
         
         if sender == nil && senderFrame == nil {
             return
@@ -305,7 +307,7 @@ extension FTPopOverMenu: UIGestureRecognizerDelegate {
 private class FTPopOverMenuView: UIControl {
     
     fileprivate var menuNameArray : [String]!
-    fileprivate var menuImageArray : [String]?
+    fileprivate var menuImageArray : [AnyObject]?
     fileprivate var arrowDirection : FTPopOverMenuArrowDirection = .up
     fileprivate var done : ((NSInteger) -> Void)!
     
@@ -324,7 +326,7 @@ private class FTPopOverMenuView: UIControl {
         return tableView
     }()
     
-    fileprivate func showWithAnglePoint(point: CGPoint, frame: CGRect, menuNameArray: [String]!, menuImageArray: [String]!, arrowDirection: FTPopOverMenuArrowDirection, done: @escaping ((NSInteger) -> Void)) {
+    fileprivate func showWithAnglePoint(point: CGPoint, frame: CGRect, menuNameArray: [String]!, menuImageArray: [AnyObject]!, arrowDirection: FTPopOverMenuArrowDirection, done: @escaping ((NSInteger) -> Void)) {
         
         self.frame = frame
 
@@ -368,6 +370,16 @@ private class FTPopOverMenuView: UIControl {
         backgroundLayer.fillColor = configuration.backgoundTintColor.cgColor
         backgroundLayer.strokeColor = configuration.borderColor.cgColor
         backgroundLayer.lineWidth = configuration.borderWidth
+        if configuration.localShadow {
+            backgroundLayer.shadowColor = UIColor.black.cgColor
+            backgroundLayer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+            backgroundLayer.shadowRadius = 24.0
+            backgroundLayer.shadowOpacity = 0.9
+            backgroundLayer.masksToBounds = false
+            backgroundLayer.shouldRasterize = true
+            backgroundLayer.rasterizationScale = UIScreen.main.scale
+
+        }
         self.layer.insertSublayer(backgroundLayer, at: 0)
         //        backgroundLayer.transform = CATransform3DMakeAffineTransform(CGAffineTransform(rotationAngle: CGFloat(M_PI))) //CATransform3DMakeRotation(CGFloat(M_PI), 1, 1, 0)
     }
@@ -475,13 +487,13 @@ extension FTPopOverMenuView : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : FTPopOverMenuCell = FTPopOverMenuCell(style: .default, reuseIdentifier: FT.PopOverMenuTableViewCellIndentifier)
-        var imageName: String? = nil
+        var imageObject: AnyObject? = nil
         if menuImageArray != nil {
             if (menuImageArray?.count)! >= indexPath.row + 1 {
-                imageName = (menuImageArray?[indexPath.row])!
+                imageObject = (menuImageArray?[indexPath.row])!
             }
         }
-        cell.setupCellWith(menuName: menuNameArray[indexPath.row], menuImage: imageName)
+        cell.setupCellWith(menuName: menuNameArray[indexPath.row], menuImage: imageObject)
         if (indexPath.row == menuNameArray.count-1) {
             cell.separatorInset = UIEdgeInsetsMake(0, self.bounds.size.width, 0, 0)
         }else{
@@ -492,3 +504,4 @@ extension FTPopOverMenuView : UITableViewDataSource {
     }
 
 }
+
