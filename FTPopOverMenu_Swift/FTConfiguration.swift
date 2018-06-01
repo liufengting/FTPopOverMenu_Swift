@@ -8,25 +8,20 @@
 
 import UIKit
 
-public class FTConfiguration : NSObject {
+public class FTConfiguration {
 
-    public var menuRowHeight : CGFloat = FT.DefaultMenuRowHeight
-    public var menuWidth : CGFloat = FT.DefaultMenuWidth
-    public var textColor : UIColor = UIColor.white
-    public var textFont : UIFont = UIFont.systemFont(ofSize: 14)
-    public var borderColor : UIColor = FT.DefaultTintColor
-    public var borderWidth : CGFloat = FT.DefaultBorderWidth
-    public var backgoundTintColor : UIColor = FT.DefaultTintColor
-    public var cornerRadius : CGFloat = FT.DefaultCornerRadius
-    public var textAlignment : NSTextAlignment = NSTextAlignment.left
-    public var ignoreImageOriginalColor : Bool = false
-    public var menuIconSize : CGFloat = FT.DefaultMenuIconSize
-    public var menuSeparatorColor : UIColor = UIColor.lightGray
-    public var menuSeparatorInset : UIEdgeInsets = UIEdgeInsetsMake(0, FT.DefaultCellMargin, 0, FT.DefaultCellMargin)
-    public var cellSelectionStyle : UITableViewCellSelectionStyle = .none
-    public var globalShadow : Bool = false
-    public var shadowAlpha : CGFloat = 0.6
-    public var localShadow : Bool = false
+    public var menuRowHeight = FT.DefaultMenuRowHeight
+    public var menuWidth = FT.DefaultMenuWidth
+    public var borderColor = FT.DefaultTintColor
+    public var borderWidth = FT.DefaultBorderWidth
+    public var backgoundTintColor = FT.DefaultTintColor
+    public var cornerRadius = FT.DefaultCornerRadius
+    public var menuSeparatorColor = UIColor.lightGray
+    public var menuSeparatorInset = UIEdgeInsetsMake(0, FT.DefaultCellMargin, 0, FT.DefaultCellMargin)
+    public var cellSelectionStyle = UITableViewCellSelectionStyle.none
+    public var globalShadow = false
+    public var shadowAlpha: CGFloat = 0.6
+    public var localShadow = false
 
     public static var shared : FTConfiguration {
         struct StaticConfig {
@@ -36,26 +31,4 @@ public class FTConfiguration : NSObject {
     }
 
 }
-//public class FTConfiguration : NSObject {
-//
-//    public var menuRowHeight : CGFloat = FTDefaultMenuRowHeight
-//    public var menuWidth : CGFloat = FTDefaultMenuWidth
-//    public var textColor : UIColor = UIColor.white
-//    public var textFont : UIFont = UIFont.systemFont(ofSize: 14)
-//    public var borderColor : UIColor = FTDefaultTintColor
-//    public var borderWidth : CGFloat = FTDefaultBorderWidth
-//    public var backgoundTintColor : UIColor = FTDefaultTintColor
-//    public var cornerRadius : CGFloat = FTDefaultCornerRadius
-//    public var textAlignment : NSTextAlignment = NSTextAlignment.left
-//    public var ignoreImageOriginalColor : Bool = false
-//    public var menuSeparatorColor : UIColor = UIColor.lightGray
-//    public var menuSeparatorInset : UIEdgeInsets = UIEdgeInsetsMake(0, FTDefaultCellMargin, 0, FTDefaultCellMargin)
-//    public var cellSelectionStyle : UITableViewCellSelectionStyle = .none
-//
-//    public static var shared : FTConfiguration {
-//        struct StaticConfig {
-//            static let instance : FTConfiguration = FTConfiguration()
-//        }
-//        return StaticConfig.instance
-//    }
-//}
+

@@ -24,7 +24,7 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
         
         FTPopOverMenu.showForEvent(event: event,
                                    with: menuOptionNameArray,
-                                   menuImageArray: ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01"] as [AnyObject],
+                                   menuImageArray: ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01"],
                                    done: { (selectedIndex) -> () in
                                     
         }) {
