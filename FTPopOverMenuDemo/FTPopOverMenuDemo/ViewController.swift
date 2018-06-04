@@ -9,43 +9,59 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
-    var menuOptionNameArray : [String] = ["Share","Delete","Upload","Download"]
-
-    var menuOptionImageNameArray : [String] = ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04"]
+    var menuOptionNameArray = ["Share", "Delete", "Upload", "Download"]
     
-
+    var menuOptionImageNameArray = ["Pokemon_Go_01", "Pokemon_Go_02", "Pokemon_Go_03", "Pokemon_Go_04"]
+    var menuOptionImageImageArray = [#imageLiteral(resourceName: "Pokemon_Go_01"), #imageLiteral(resourceName: "Pokemon_Go_02"), #imageLiteral(resourceName: "Pokemon_Go_03"), #imageLiteral(resourceName: "Pokemon_Go_04")]
+    
+    
     // MARK: -  handle nornal button
     @IBAction func handleButtonTap(_ sender: UIButton) {
-        FTPopOverMenu.showForSender(sender: sender, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray as [AnyObject], done: { (selectedIndex) -> () in
+        
+        let cellConfi = FTCellConfiguration()
+        cellConfi.textColor = UIColor.black
+        cellConfi.textAlignment = .left
+        cellConfi.textFont = UIFont.systemFont(ofSize: 14)
+        var cellConfis = Array(repeating: cellConfi, count: 4)
+        
+        let cellConfi1 = FTCellConfiguration()
+        cellConfi1.textColor = UIColor.black
+        cellConfis[1] = cellConfi1
+        
+        FTPopOverMenu.showForSender(sender: sender, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray, cellConfigurationArray: cellConfis, done: { (selectedIndex) in
             print(selectedIndex)
         }) {
-            
+            print("cancel")
         }
     }
     
     // MARK: -  handle NavgationBarButtonItem
     @IBAction func handleNavgationBarButtonTap(_ sender: UIBarButtonItem, event: UIEvent) {
-        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray as [AnyObject], done: { (selectedIndex) -> () in
+        
+        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: menuOptionImageImageArray, done: { (selectedIndex) in
             print(selectedIndex)
-        }) {
-            
-        }
+        }, cancel: nil)
     }
     
     // MARK: -  handle normal UIBarButtonItem
     @IBAction func handleBarButtonItemTap(_ sender: UIBarButtonItem, event: UIEvent) {
-        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray as [AnyObject], done: { (selectedIndex) -> () in
+        
+        let cellConfi = FTCellConfiguration()
+        cellConfi.textColor = UIColor.blue
+        cellConfi.textAlignment = .left
+        cellConfi.textFont = UIFont.systemFont(ofSize: 14)
+        let cellConfis = Array(repeating: cellConfi, count: 4)
+        
+        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: nil, cellConfigurationArray: cellConfis, done: { (selectedIndex) in
             print(selectedIndex)
-        }) {
-            
-        }
+        })
         
     }
     
@@ -69,7 +85,7 @@ class ViewController: UIViewController {
 
 extension ViewController {
     
-
+    
     
     func changeToNormalStyle() {
         
@@ -77,13 +93,10 @@ extension ViewController {
         
         
         let config = FTConfiguration.shared
-        config.textColor = UIColor.white
         config.backgoundTintColor = UIColor(red: 80/255, green: 80/255, blue: 80/255, alpha: 1)
         config.borderColor = UIColor(red: 80/255, green: 80/255, blue: 80/255, alpha: 1)
         config.menuWidth = 120
         config.menuSeparatorColor = UIColor.lightGray
-        config.textAlignment = .left
-        config.textFont = UIFont.systemFont(ofSize: 14)
         config.menuRowHeight = 40
         config.cornerRadius = 6
     }
@@ -94,34 +107,27 @@ extension ViewController {
         
         
         let config = FTConfiguration.shared
-        config.textColor = UIColor.black
         config.backgoundTintColor = UIColor.white
         config.borderColor = UIColor.lightGray
         config.menuWidth = 80
         config.menuSeparatorColor = UIColor.lightGray
-        config.textAlignment = .center
-        config.textFont = UIFont.systemFont(ofSize: 14)
         config.menuRowHeight = 40
         config.cornerRadius = 6
-
+        
     }
     
     func changeToQQStyle() {
         
         menuOptionImageNameArray = ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04"]
         
-        
         let config = FTConfiguration.shared
-        config.textColor = UIColor.black
         config.backgoundTintColor = UIColor(white: 0.97, alpha: 1)
         config.borderColor = UIColor.white
         config.menuWidth = 150
         config.menuSeparatorColor = UIColor.lightGray
-        config.textAlignment = .left
-        config.textFont = UIFont.systemFont(ofSize: 16)
         config.menuRowHeight = 50
         config.cornerRadius = 20
-
+        
         
     }
     
@@ -131,13 +137,10 @@ extension ViewController {
         
         
         let config = FTConfiguration.shared
-        config.textColor = UIColor.white
         config.backgoundTintColor = UIColor.red
         config.borderColor = UIColor.red
         config.menuWidth = 120
         config.menuSeparatorColor = UIColor.white
-        config.textAlignment = .left
-        config.textFont = UIFont.systemFont(ofSize: 14)
         config.menuRowHeight = 40
         config.cornerRadius = 10
     }
