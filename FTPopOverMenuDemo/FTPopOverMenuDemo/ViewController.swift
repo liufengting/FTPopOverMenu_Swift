@@ -7,8 +7,18 @@
 //
 
 import UIKit
+import FTPopOverMenu_Swift
+
+enum MenuStyle {
+    case normal
+    case qq
+    case wechat
+    case more
+}
 
 class ViewController: UIViewController {
+    
+    var menuStyle : MenuStyle = .normal
     
     
     override func viewDidLoad() {
@@ -26,13 +36,14 @@ class ViewController: UIViewController {
     @IBAction func handleButtonTap(_ sender: UIButton) {
         
         let cellConfi = FTCellConfiguration()
-        cellConfi.textColor = UIColor.black
-        cellConfi.textAlignment = .left
+        cellConfi.textColor = UIColor.white
         cellConfi.textFont = UIFont.systemFont(ofSize: 14)
+        cellConfi.textAlignment = self.menuStyle == .wechat ? .center : .left
+
         var cellConfis = Array(repeating: cellConfi, count: 4)
         
         let cellConfi1 = FTCellConfiguration()
-        cellConfi1.textColor = UIColor.black
+        cellConfi1.textColor = UIColor.red
         cellConfis[1] = cellConfi1
         
         FTPopOverMenu.showForSender(sender: sender, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray, cellConfigurationArray: cellConfis, done: { (selectedIndex) in
@@ -47,7 +58,9 @@ class ViewController: UIViewController {
         
         FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: menuOptionImageImageArray, done: { (selectedIndex) in
             print(selectedIndex)
-        }, cancel: nil)
+        }, cancel: {
+            
+        })
     }
     
     // MARK: -  handle normal UIBarButtonItem
@@ -88,9 +101,9 @@ extension ViewController {
     
     
     func changeToNormalStyle() {
+        self.menuStyle = .normal
         
         menuOptionImageNameArray = ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04"]
-        
         
         let config = FTConfiguration.shared
         config.backgoundTintColor = UIColor(red: 80/255, green: 80/255, blue: 80/255, alpha: 1)
@@ -102,9 +115,9 @@ extension ViewController {
     }
     
     func changeToWeChatStyle() {
+        self.menuStyle = .wechat
         
         self.menuOptionImageNameArray = []
-        
         
         let config = FTConfiguration.shared
         config.backgoundTintColor = UIColor.white
@@ -117,7 +130,8 @@ extension ViewController {
     }
     
     func changeToQQStyle() {
-        
+        self.menuStyle = .qq
+
         menuOptionImageNameArray = ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04"]
         
         let config = FTConfiguration.shared
@@ -132,9 +146,9 @@ extension ViewController {
     }
     
     func changeToMoreStyle() {
-        
+        self.menuStyle = .more
+
         menuOptionImageNameArray = ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04"]
-        
         
         let config = FTConfiguration.shared
         config.backgoundTintColor = UIColor.red

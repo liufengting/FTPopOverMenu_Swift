@@ -10,15 +10,39 @@ import UIKit
 
 extension FTPopOverMenu {
     
-    public static func showForSender(sender : UIView, with menuArray: [String], menuImageArray: [Imageable]? = nil, cellConfigurationArray: [FTCellConfiguration]? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
+    public static func showForSender(sender : UIView, with menuArray: [String], done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void) {
+        self.sharedMenu.showForSender(sender: sender, or: nil, with: menuArray, menuImageArray: [], done: done, cancel: cancel)
+    }
+    
+    public static func showForSender(sender : UIView, with menuArray: [String], menuImageArray: [Imageable]?, done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void) {
+        self.sharedMenu.showForSender(sender: sender, or: nil, with: menuArray, menuImageArray: menuImageArray, done: done, cancel: cancel)
+    }
+    
+    public static func showForEvent(event : UIEvent, with menuArray: [String], done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void) {
+        self.sharedMenu.showForSender(sender: event.allTouches?.first?.view!, or: nil, with: menuArray, menuImageArray: [], done: done, cancel: cancel)
+    }
+    
+    public static func showForEvent(event : UIEvent, with menuArray: [String], menuImageArray: [Imageable]?, done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void) {
+        self.sharedMenu.showForSender(sender: event.allTouches?.first?.view!, or: nil, with: menuArray, menuImageArray: menuImageArray, done: done, cancel: cancel)
+    }
+    
+    public static func showFromSenderFrame(senderFrame : CGRect, with menuArray: [String], done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void) {
+        self.sharedMenu.showForSender(sender: nil, or: senderFrame, with: menuArray, menuImageArray: [], done: done, cancel: cancel)
+    }
+    
+    public static func showFromSenderFrame(senderFrame : CGRect, with menuArray: [String], menuImageArray: [Imageable]?, done: @escaping (NSInteger) -> Void, cancel:@escaping () -> Void) {
+        self.sharedMenu.showForSender(sender: nil, or: senderFrame, with: menuArray, menuImageArray: menuImageArray, done: done, cancel: cancel)
+    }
+    
+    public static func showForSender(sender : UIView, with menuArray: [String], menuImageArray: [Imageable]?, cellConfigurationArray: [FTCellConfiguration]?, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
         self.sharedMenu.showForSender(sender: sender, or: nil, with: menuArray, menuImageArray: menuImageArray, cellConfigurationArray: cellConfigurationArray, done: done, cancel: cancel)
     }
-
-    public static func showForEvent(event : UIEvent, with menuArray: [String], menuImageArray: [Imageable]? = nil, cellConfigurationArray: [FTCellConfiguration]? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
+    
+    public static func showForEvent(event : UIEvent, with menuArray: [String], menuImageArray: [Imageable]?, cellConfigurationArray: [FTCellConfiguration]?, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
         self.sharedMenu.showForSender(sender: event.allTouches?.first?.view!, or: nil, with: menuArray, menuImageArray: menuImageArray, cellConfigurationArray: cellConfigurationArray, done: done, cancel: cancel)
     }
     
-    public static func showFromSenderFrame(senderFrame : CGRect, with menuArray: [String], menuImageArray: [Imageable]? = nil, cellConfigurationArray: [FTCellConfiguration]? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
+    public static func showFromSenderFrame(senderFrame : CGRect, with menuArray: [String], menuImageArray: [Imageable]?, cellConfigurationArray: [FTCellConfiguration]?, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
         self.sharedMenu.showForSender(sender: nil, or: senderFrame, with: menuArray, menuImageArray: menuImageArray, cellConfigurationArray: cellConfigurationArray, done: done, cancel: cancel)
     }
     

@@ -12,7 +12,6 @@ protocol MoreTableViewCellDelegate {
     func moreTableViewCellDidTappedButton(sender: UIButton)
 }
 
-
 class MoreTableViewCell: UITableViewCell {
 
     @IBOutlet weak var leftButton: UIButton!
@@ -28,6 +27,5 @@ class MoreTableViewCell: UITableViewCell {
         }
         
     }
-    
     
 }

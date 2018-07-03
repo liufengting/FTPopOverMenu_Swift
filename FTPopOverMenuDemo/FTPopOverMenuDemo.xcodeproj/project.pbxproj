@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A10E9E41DE437C600E10A3E /* FTPopOverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10E9E11DE437C600E10A3E /* FTPopOverMenu.swift */; };
 		2AB5A3201DDEF2DF00EC6555 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A31F1DDEF2DF00EC6555 /* MoreTableViewController.swift */; };
 		2AB5A3221DDEFC1C00EC6555 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A3211DDEFC1C00EC6555 /* MoreTableViewCell.swift */; };
 		2ACAB6731DDC5ECE00FDCEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACAB6721DDC5ECE00FDCEAF /* AppDelegate.swift */; };
@@ -15,15 +14,9 @@
 		2ACAB6781DDC5ECE00FDCEAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB6761DDC5ECE00FDCEAF /* Main.storyboard */; };
 		2ACAB67A1DDC5ECE00FDCEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB6791DDC5ECE00FDCEAF /* Assets.xcassets */; };
 		2ACAB67D1DDC5ECE00FDCEAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB67B1DDC5ECE00FDCEAF /* LaunchScreen.storyboard */; };
-		A405CB031F2BBFB200CCC81A /* FTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405CB001F2BBFB200CCC81A /* FTConstants.swift */; };
-		A405CB041F2BBFB200CCC81A /* FTPopOverMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405CB011F2BBFB200CCC81A /* FTPopOverMenuCell.swift */; };
-		A405CB051F2BBFB200CCC81A /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405CB021F2BBFB200CCC81A /* UIScreen+Frame.swift */; };
-		A405CB091F2BC0D900CCC81A /* FTConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405CB081F2BC0D900CCC81A /* FTConfiguration.swift */; };
-		A405CB0D1F2BC17C00CCC81A /* UIControl+Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405CB0C1F2BC17C00CCC81A /* UIControl+Point.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A10E9E11DE437C600E10A3E /* FTPopOverMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTPopOverMenu.swift; sourceTree = "<group>"; };
 		2AB5A31F1DDEF2DF00EC6555 /* MoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
 		2AB5A3211DDEFC1C00EC6555 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
 		2ACAB66F1DDC5ECE00FDCEAF /* FTPopOverMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTPopOverMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,11 +26,6 @@
 		2ACAB6791DDC5ECE00FDCEAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ACAB67C1DDC5ECE00FDCEAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ACAB67E1DDC5ECE00FDCEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A405CB001F2BBFB200CCC81A /* FTConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTConstants.swift; sourceTree = "<group>"; };
-		A405CB011F2BBFB200CCC81A /* FTPopOverMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTPopOverMenuCell.swift; sourceTree = "<group>"; };
-		A405CB021F2BBFB200CCC81A /* UIScreen+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Frame.swift"; sourceTree = "<group>"; };
-		A405CB081F2BC0D900CCC81A /* FTConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTConfiguration.swift; sourceTree = "<group>"; };
-		A405CB0C1F2BC17C00CCC81A /* UIControl+Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Point.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,20 +39,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A10E9E01DE437C600E10A3E /* FTPopOverMenu_Swift */ = {
-			isa = PBXGroup;
-			children = (
-				A405CB0C1F2BC17C00CCC81A /* UIControl+Point.swift */,
-				A405CB081F2BC0D900CCC81A /* FTConfiguration.swift */,
-				A405CB001F2BBFB200CCC81A /* FTConstants.swift */,
-				A405CB011F2BBFB200CCC81A /* FTPopOverMenuCell.swift */,
-				A405CB021F2BBFB200CCC81A /* UIScreen+Frame.swift */,
-				2A10E9E11DE437C600E10A3E /* FTPopOverMenu.swift */,
-			);
-			name = FTPopOverMenu_Swift;
-			path = ../../FTPopOverMenu_Swift;
-			sourceTree = "<group>";
-		};
 		2ACAB6661DDC5ECE00FDCEAF = {
 			isa = PBXGroup;
 			children = (
@@ -84,7 +58,6 @@
 		2ACAB6711DDC5ECE00FDCEAF /* FTPopOverMenuDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2A10E9E01DE437C600E10A3E /* FTPopOverMenu_Swift */,
 				2ACAB6721DDC5ECE00FDCEAF /* AppDelegate.swift */,
 				2ACAB6741DDC5ECE00FDCEAF /* ViewController.swift */,
 				2AB5A31F1DDEF2DF00EC6555 /* MoreTableViewController.swift */,
@@ -124,7 +97,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = LiuFengting;
 				TargetAttributes = {
 					2ACAB66E1DDC5ECE00FDCEAF = {
@@ -170,16 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A405CB0D1F2BC17C00CCC81A /* UIControl+Point.swift in Sources */,
 				2ACAB6751DDC5ECE00FDCEAF /* ViewController.swift in Sources */,
-				A405CB031F2BBFB200CCC81A /* FTConstants.swift in Sources */,
 				2AB5A3221DDEFC1C00EC6555 /* MoreTableViewCell.swift in Sources */,
-				A405CB091F2BC0D900CCC81A /* FTConfiguration.swift in Sources */,
-				A405CB051F2BBFB200CCC81A /* UIScreen+Frame.swift in Sources */,
-				2A10E9E41DE437C600E10A3E /* FTPopOverMenu.swift in Sources */,
 				2AB5A3201DDEF2DF00EC6555 /* MoreTableViewController.swift in Sources */,
 				2ACAB6731DDC5ECE00FDCEAF /* AppDelegate.swift in Sources */,
-				A405CB041F2BBFB200CCC81A /* FTPopOverMenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +185,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -225,6 +193,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -274,6 +243,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -281,6 +251,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -320,6 +291,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPopOverMenuDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -339,6 +311,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPopOverMenuDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
