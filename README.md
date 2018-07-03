@@ -1,6 +1,4 @@
-<div align=center>
-![FTPopOverMenu](https://github.com/Tobaloidee/FTPopOverMenu_Swift/blob/master/logo/logotype.png)
-</div>
+<img src='https://github.com/liufengting/FTPopOverMenu_Swift/blob/master/logo/logotype.png?raw=true' align='center'/>
 
 [![Twitter](https://img.shields.io/badge/twitter-@liufengting-blue.svg?style=flat)](http://twitter.com/liufengting) 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
