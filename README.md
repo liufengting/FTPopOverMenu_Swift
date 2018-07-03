@@ -1,6 +1,5 @@
-<!-- ![FTPopOverMenu](https://github.com/Tobaloidee/FTPopOverMenu_Swift/blob/master/logo/logotype.png) -->
-<div style="align: center">
-<img src="https://github.com/Tobaloidee/FTPopOverMenu_Swift/blob/master/logo/logotype.png"/>
+<div align=center>
+![FTPopOverMenu](https://github.com/Tobaloidee/FTPopOverMenu_Swift/blob/master/logo/logotype.png)
 </div>
 
 [![Twitter](https://img.shields.io/badge/twitter-@liufengting-blue.svg?style=flat)](http://twitter.com/liufengting) 
