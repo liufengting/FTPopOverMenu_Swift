@@ -1,4 +1,4 @@
-<img src='https://github.com/liufengting/FTPopOverMenu_Swift/blob/master/logo/logotype.png?raw=true' align='center'/>
+![FTPopOverMenu](https://github.com/liufengting/FTResourceRepo/blob/master/Resource/FTPopOverMenu_logo/logotype_1280.png?raw=true)
 
 [![Twitter](https://img.shields.io/badge/twitter-@liufengting-blue.svg?style=flat)](http://twitter.com/liufengting) 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
@@ -137,6 +137,7 @@ Do any of the following settings to set the style (Only set the ones you want to
 # More
 
 * Swift version of [FTPopOverMenu](https://github.com/liufengting/FTPopOverMenu).
+* Logo Designed by @Tobaloidee
 * Images in the demo from [https://www.iconfinder.com/iconsets/pokemon-go](https://www.iconfinder.com/iconsets/pokemon-go).
 * If you like it, or maybe wanna use it in your own projects, please give me a `star`.
 * Looking for another way of doing this? Take a look at my another [FTPopMenu at here](https://github.com/liufengting/FTPopMenu).  It was another way of showing pop over menus, which is wrapped from `UIPopoverViewController`, and more genetic and more good-looking. Feel free to try it.
