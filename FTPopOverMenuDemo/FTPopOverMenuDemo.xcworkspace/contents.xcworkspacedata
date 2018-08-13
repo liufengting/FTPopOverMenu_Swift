@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:FTPopOverMenuDemo/FTPopOverMenuDemo.xcodeproj">
+      location = "group:FTPopOverMenuDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:FTPopOverMenu_Swift.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,0 +1,16 @@
+PODS:
+  - FTPopOverMenu_Swift (0.1.1)
+
+DEPENDENCIES:
+  - FTPopOverMenu_Swift (from `../`)
+
+EXTERNAL SOURCES:
+  FTPopOverMenu_Swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FTPopOverMenu_Swift: 401deab047c0d1ae877b8e7dd9131dd5a1fdc1f9
+
+PODFILE CHECKSUM: 1b7f202d9ac9c36abf8f7ddee5306bc45b248428
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,9 @@
+platform :ios, '9.0'
+
+target 'FTPopOverMenuDemo' do
+
+  use_frameworks!
+
+pod 'FTPopOverMenu_Swift', :path => '../'
+
+end
