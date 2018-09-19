@@ -17,7 +17,7 @@ class FTPopOverMenuCell: UITableViewCell {
     fileprivate lazy var iconImageView : UIImageView = {
         let imageView = UIImageView(frame: CGRect.zero)
         imageView.backgroundColor = UIColor.clear
-        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        imageView.contentMode = UIView.ContentMode.scaleAspectFit
         self.contentView.addSubview(imageView)
         return imageView
     }()
@@ -42,7 +42,7 @@ class FTPopOverMenuCell: UITableViewCell {
         // Configure cell icon if available
         if var iconImage = menuImage?.getImage() {
             if  cellConfiguration.ignoreImageOriginalColor {
-                iconImage = iconImage.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+                iconImage = iconImage.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
             }
             iconImageView.tintColor = cellConfiguration.textColor
             iconImageView.frame =  CGRect(x: FT.DefaultCellMargin, y: (configuration.menuRowHeight - cellConfiguration.menuIconSize)/2, width: cellConfiguration.menuIconSize, height: cellConfiguration.menuIconSize)

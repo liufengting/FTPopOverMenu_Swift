@@ -287,7 +287,7 @@ extension FTPopOverMenu {
     
     fileprivate func addOrientationChangeNotification() {
         NotificationCenter.default.addObserver(self,selector: #selector(onChangeStatusBarOrientationNotification(notification:)),
-                                               name: NSNotification.Name.UIApplicationDidChangeStatusBarOrientation,
+                                               name: UIApplication.didChangeStatusBarOrientationNotification,
                                                object: nil)
         
     }
@@ -334,7 +334,7 @@ private class FTPopOverMenuView: UIControl {
     }()
     
     lazy var menuTableView : UITableView = {
-        let tableView = UITableView.init(frame: CGRect.zero, style: UITableViewStyle.plain)
+        let tableView = UITableView.init(frame: CGRect.zero, style: UITableView.Style.plain)
         tableView.backgroundColor = UIColor.clear
         tableView.delegate = self
         tableView.dataSource = self
@@ -526,7 +526,7 @@ extension FTPopOverMenuView : UITableViewDataSource {
         
         cell.setupCellWith(menuName: menuNameArray[indexPath.row], menuImage: imageObject, cellConfiguration: cellConfiguration)
         if (indexPath.row == menuNameArray.count-1) {
-            cell.separatorInset = UIEdgeInsetsMake(0, bounds.size.width, 0, 0)
+            cell.separatorInset = UIEdgeInsets.init(top: 0, left: bounds.size.width, bottom: 0, right: 0)
         } else {
             cell.separatorInset = configuration.menuSeparatorInset
         }

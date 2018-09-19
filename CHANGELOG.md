@@ -16,5 +16,6 @@
 | 0.1.0 | 2018.02.05 | merge pull requests | Success |
 | 0.1.1 | 2018.03.03 | add cell configure, swift 4.1 | Success |
 | 0.1.2 | 2018.08.13 | swift 4.1 | Success |
+| 0.1.3 | 2018.09.19 | swift 4.2 | Success |
 
 

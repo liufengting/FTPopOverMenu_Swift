@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13557C01741FEACDE39EA52C44ABD26B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		13557C01741FEACDE39EA52C44ABD26B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		23C4276950FE5E6C0406B1DE24A3FC7C /* FTPopOverMenuCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenuCell.swift; path = FTPopOverMenu_Swift/FTPopOverMenuCell.swift; sourceTree = "<group>"; };
 		24A3B1B67EA7093E3FBD110CB95A1729 /* FTPopOverMenu_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTPopOverMenu_Swift.xcconfig; sourceTree = "<group>"; };
 		3012657CEEB23546B037F9AD99563EF3 /* UIScreen+Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreen+Frame.swift"; path = "FTPopOverMenu_Swift/UIScreen+Frame.swift"; sourceTree = "<group>"; };
@@ -42,15 +42,15 @@
 		463EA0D57B0B8F6F56DBB73927435283 /* Pods-FTPopOverMenuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTPopOverMenuDemo.release.xcconfig"; sourceTree = "<group>"; };
 		533A8B158149D7006BE29F01CB32AA80 /* FTPopOverMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenu.swift; path = FTPopOverMenu_Swift/FTPopOverMenu.swift; sourceTree = "<group>"; };
 		53DF77AE17B61D6DB653C8CB55C6D9B1 /* Pods-FTPopOverMenuDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FTPopOverMenuDemo-dummy.m"; sourceTree = "<group>"; };
-		5FFC4CDB983B048EF6C3DF9CAE3D7D7C /* FTPopOverMenu_Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = FTPopOverMenu_Swift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5FFC4CDB983B048EF6C3DF9CAE3D7D7C /* FTPopOverMenu_Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = FTPopOverMenu_Swift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6609DF88C0F6B4B25FF9C845E7C6AB6D /* FTCellConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTCellConfiguration.swift; path = FTPopOverMenu_Swift/FTCellConfiguration.swift; sourceTree = "<group>"; };
 		6FCE9253D3BAD8D4D8467305AC3F1FFB /* UIControl+Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Point.swift"; path = "FTPopOverMenu_Swift/UIControl+Point.swift"; sourceTree = "<group>"; };
 		79283191418BBD938568C564CA972CB3 /* FTConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConstants.swift; path = FTPopOverMenu_Swift/FTConstants.swift; sourceTree = "<group>"; };
 		803DAACA7BBEC7170B52C65493320A1F /* FT+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FT+Extension.swift"; path = "FTPopOverMenu_Swift/FT+Extension.swift"; sourceTree = "<group>"; };
 		8F29363B475F32905A585B7F0FAD7F1B /* Pods-FTPopOverMenuDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTPopOverMenuDemo-frameworks.sh"; sourceTree = "<group>"; };
-		93682A1A0234B795074E7EB3A2B94DA8 /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FTPopOverMenu_Swift.framework; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93682A1A0234B795074E7EB3A2B94DA8 /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B56FC0BF20A5422D8A904B79FF64C2F /* Pods-FTPopOverMenuDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FTPopOverMenuDemo.modulemap"; sourceTree = "<group>"; };
 		AB62453C0873A89731016B5F50E10DE6 /* Pods-FTPopOverMenuDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FTPopOverMenuDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B0CDB5218E42BE6B9FB148FC517C4B4D /* Pods-FTPopOverMenuDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTPopOverMenuDemo-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -58,13 +58,13 @@
 		C2A7D5F2F87C9B6C6277FDE4D8223F8D /* Pods-FTPopOverMenuDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTPopOverMenuDemo-resources.sh"; sourceTree = "<group>"; };
 		C72EC8436C88A58FB04830A8BD15B0D9 /* FTConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConfiguration.swift; path = FTPopOverMenu_Swift/FTConfiguration.swift; sourceTree = "<group>"; };
 		D2BF27C416B489519A7124BB588EB2C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D943085E13A4A3BAA2643BD9F59E377B /* Pods_FTPopOverMenuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FTPopOverMenuDemo.framework; path = "Pods-FTPopOverMenuDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D943085E13A4A3BAA2643BD9F59E377B /* Pods_FTPopOverMenuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTPopOverMenuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94CB04D1B8E7A2DEE51E507B3A9A889 /* FTPopOverMenu_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTPopOverMenu_Swift-dummy.m"; sourceTree = "<group>"; };
 		DB18DF8F963EA9C0CE4DA9FEE6A57F62 /* Pods-FTPopOverMenuDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FTPopOverMenuDemo-umbrella.h"; sourceTree = "<group>"; };
 		E3FD76C4AE57DB64F91A3A6059C0109A /* Pods-FTPopOverMenuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTPopOverMenuDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E99E291891FF26A448101F24E5C182A9 /* FTPopOverMenu_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-umbrella.h"; sourceTree = "<group>"; };
 		EACF0F587F8E71D90C95BB0319510912 /* FTPopOverMenu_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FTPopOverMenu_Swift.modulemap; sourceTree = "<group>"; };
-		F476DC585A88909A6006700CA2D2B9EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F476DC585A88909A6006700CA2D2B9EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +264,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					81533182AC46E85D807A4D28696F7BFC = {
+						LastSwiftMigration = 1000;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -443,7 +448,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -510,7 +515,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";

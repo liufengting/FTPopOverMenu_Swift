@@ -128,7 +128,7 @@
 				TargetAttributes = {
 					2ACAB66E1DDC5ECE00FDCEAF = {
 						CreatedOnToolsVersion = 8.1;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -362,8 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPopOverMenuDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -383,8 +382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPopOverMenuDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

@@ -62,16 +62,16 @@
 		2A10E9D51DE436AB00E10A3E /* FTPopOverMenu_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				2A10E9DE1DE436C900E10A3E /* FTPopOverMenu.swift */,
+				A4711BE71F2A871D00C52275 /* FTConstants.swift */,
+				A405CB061F2BC0B000CCC81A /* FTConfiguration.swift */,
+				A405CAEF1F2BB40900CCC81A /* FTPopOverMenuCell.swift */,
 				2A5F052720EB2188002A0FEA /* FTCellConfiguration.swift */,
 				2A5F052520EB2172002A0FEA /* FT+Extension.swift */,
-				2A10E9DE1DE436C900E10A3E /* FTPopOverMenu.swift */,
+				A405CB0A1F2BC14700CCC81A /* UIControl+Point.swift */,
 				A4711BE31F2A85B800C52275 /* UIScreen+Frame.swift */,
-				A4711BE71F2A871D00C52275 /* FTConstants.swift */,
-				A405CAEF1F2BB40900CCC81A /* FTPopOverMenuCell.swift */,
 				2A10E9D61DE436AB00E10A3E /* FTPopOverMenu_Swift.h */,
 				2A10E9D71DE436AB00E10A3E /* Info.plist */,
-				A405CB061F2BC0B000CCC81A /* FTConfiguration.swift */,
-				A405CB0A1F2BC14700CCC81A /* UIControl+Point.swift */,
 			);
 			path = FTPopOverMenu_Swift;
 			sourceTree = "<group>";
@@ -306,7 +306,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -327,7 +327,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
