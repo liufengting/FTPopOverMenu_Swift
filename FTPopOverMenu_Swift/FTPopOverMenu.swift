@@ -145,7 +145,6 @@ public class FTPopOverMenu : NSObject {
         self.configurePopMenuFrame()
         
         popOverMenu.showWithAnglePoint(point: menuArrowPoint, frame: popMenuFrame, menuNameArray: menuNameArray, menuImageArray: menuImageArray, cellConfigurationArray: cellConfigurationArray,  arrowDirection: arrowDirection, done: { (selectedIndex: NSInteger) in
-            self.isOnScreen = false
             self.doneActionWithSelectedIndex(selectedIndex: selectedIndex)
         })
         
@@ -255,11 +254,12 @@ public class FTPopOverMenu : NSObject {
     }
     
     fileprivate func dismiss() {
-        self.isOnScreen = false
         self.doneActionWithSelectedIndex(selectedIndex: -1)
     }
     
     fileprivate func doneActionWithSelectedIndex(selectedIndex: NSInteger) {
+        self.isOnScreen = false
+        
         UIView.animate(withDuration: FT.DefaultAnimationDuration,
                        animations: {
                         self.popOverMenu.alpha = 0
