@@ -18,5 +18,6 @@
 | 0.1.2 | 2018.08.13 | swift 4.1 | Success |
 | 0.1.3 | 2018.09.19 | swift 4.2 | Success |
 | 0.1.4 | 2019.02.25 | @mssjappjwt: Bug fix for sometimes menu won't appear | Success |
+| 0.1.5 | 2019.02.25 | make sure it's new | Success |
 
 
