@@ -1,4 +1,4 @@
-git# FTPopOverMenu_Swift
+# FTPopOverMenu_Swift
 
 ## CHANGELOG
 
@@ -17,5 +17,6 @@ git# FTPopOverMenu_Swift
 | 0.1.1 | 2018.03.03 | add cell configure, swift 4.1 | Success |
 | 0.1.2 | 2018.08.13 | swift 4.1 | Success |
 | 0.1.3 | 2018.09.19 | swift 4.2 | Success |
+| 0.1.4 | 2019.02.25 | @mssjappjwt: Bug fix for sometimes menu won't appear | Success |
 
 
