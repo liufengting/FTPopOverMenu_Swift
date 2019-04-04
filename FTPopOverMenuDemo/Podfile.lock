@@ -1,5 +1,5 @@
 PODS:
-  - FTPopOverMenu_Swift (0.1.1)
+  - FTPopOverMenu_Swift (0.1.5)
 
 DEPENDENCIES:
   - FTPopOverMenu_Swift (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FTPopOverMenu_Swift: 401deab047c0d1ae877b8e7dd9131dd5a1fdc1f9
+  FTPopOverMenu_Swift: 572317c2cecc70f1033307aaea0b47365bc29f4e
 
 PODFILE CHECKSUM: 1b7f202d9ac9c36abf8f7ddee5306bc45b248428
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.0.beta.2

@@ -7,245 +7,245 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		108AB58E78DF55300FEA62851DE02B20 /* FTPopOverMenu_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E99E291891FF26A448101F24E5C182A9 /* FTPopOverMenu_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12BB1C999B32780CF288AFEBD27AD915 /* FTPopOverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533A8B158149D7006BE29F01CB32AA80 /* FTPopOverMenu.swift */; };
-		1B3BFD2EB99A4822779B0A2A53C662A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		270085E381C701E3E3B5752485606557 /* UIControl+Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCE9253D3BAD8D4D8467305AC3F1FFB /* UIControl+Point.swift */; };
-		2FBABAC8924D129104EB2A128589C6DB /* FTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79283191418BBD938568C564CA972CB3 /* FTConstants.swift */; };
-		3048AD7671C84462B2DFFE74943A4D98 /* Pods-FTPopOverMenuDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DF77AE17B61D6DB653C8CB55C6D9B1 /* Pods-FTPopOverMenuDemo-dummy.m */; };
-		41F68B9023F89D2AA74D8F7D8BF76570 /* FTConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72EC8436C88A58FB04830A8BD15B0D9 /* FTConfiguration.swift */; };
-		45F27A1A005DDC6A26589481396AFDCF /* FTPopOverMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4276950FE5E6C0406B1DE24A3FC7C /* FTPopOverMenuCell.swift */; };
-		5094E9E5DB822DC99EDAF1BE8F4F736A /* FT+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803DAACA7BBEC7170B52C65493320A1F /* FT+Extension.swift */; };
-		61D202F3B31F747D02BE2128C8BD8B54 /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3012657CEEB23546B037F9AD99563EF3 /* UIScreen+Frame.swift */; };
-		9AD1A17EDD88C8425877A0FDCBDDB94E /* FTCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6609DF88C0F6B4B25FF9C845E7C6AB6D /* FTCellConfiguration.swift */; };
-		B3532F8CBD143AA835D37049714B546B /* Pods-FTPopOverMenuDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB18DF8F963EA9C0CE4DA9FEE6A57F62 /* Pods-FTPopOverMenuDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6A59143DBD87813CE9FD0195E9C0D19 /* FTPopOverMenu_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D94CB04D1B8E7A2DEE51E507B3A9A889 /* FTPopOverMenu_Swift-dummy.m */; };
-		CA272D82BBB47CDB4BA376FF15357EB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1EDDBC69FA0DDD3F3723A93AF26FDF12 /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD82C7F68F0F0B2E3DBC23258EAB5E0 /* UIScreen+Frame.swift */; };
+		2C629217E4F63CEC6107904502687D5B /* FTPopOverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5320EF0B6C418C0048A60AC4134FFAE4 /* FTPopOverMenu.swift */; };
+		3EA7A5DE86F11E5373D57CB4DE1E823D /* FTPopOverMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5106450D6BCF00FBE9A42B369A63CA70 /* FTPopOverMenuCell.swift */; };
+		536E8B1719A1053B33E69A1D5F653C9C /* FTCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF93566D9BBBCA5D668E4F99369F3CFE /* FTCellConfiguration.swift */; };
+		58EA1388D872A97DDB6801455A44EFAB /* FTPopOverMenu_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E10F80FB0B0BF91BBC3A43B5D21530 /* FTPopOverMenu_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2AFB208C3307CF94FEBA83735CCA160 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		B44F955B33447B447C902C00CDCBC971 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		BED23E5056425C5CC1330C723DD1BF76 /* FT+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8223C1A70B53B8F94200FA225B160E /* FT+Extension.swift */; };
+		BF98EA3B558DE33F4CFBEC710B2DD9D8 /* UIControl+Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015ADB17565C91D0BAF6E959E7F4201F /* UIControl+Point.swift */; };
+		C60FB865E78421611B3D1EC5DC5476F2 /* FTPopOverMenu_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C451FA8CECAA657EF582D08493D9689C /* FTPopOverMenu_Swift-dummy.m */; };
+		CCAA8FC722EAF7891FE9A12D214F22AE /* FTConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02D7E72D602D15EFE1E011FB26C03CF /* FTConfiguration.swift */; };
+		D5F529741F4256DA05537320EC3FEB3B /* Pods-FTPopOverMenuDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BDE5B843F9BE07490F92AE528BCCA /* Pods-FTPopOverMenuDemo-dummy.m */; };
+		E2ED75E3EC281A06B32C576C0FC076A0 /* FTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6248325C62E162ADF7D550605B870721 /* FTConstants.swift */; };
+		E777F4376AA019D74555B3B37AF3A21B /* Pods-FTPopOverMenuDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE21F9DEE8CB30B8293A51A49255E2FB /* Pods-FTPopOverMenuDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4ABA2324ED5743A11F6B07F19DCECEF8 /* PBXContainerItemProxy */ = {
+		F01C5F9EC3ED6DA3521994A2BEECD639 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 81533182AC46E85D807A4D28696F7BFC;
+			remoteGlobalIDString = 989619F863D399C5538843E81223983E;
 			remoteInfo = FTPopOverMenu_Swift;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13557C01741FEACDE39EA52C44ABD26B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		23C4276950FE5E6C0406B1DE24A3FC7C /* FTPopOverMenuCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenuCell.swift; path = FTPopOverMenu_Swift/FTPopOverMenuCell.swift; sourceTree = "<group>"; };
-		24A3B1B67EA7093E3FBD110CB95A1729 /* FTPopOverMenu_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTPopOverMenu_Swift.xcconfig; sourceTree = "<group>"; };
-		3012657CEEB23546B037F9AD99563EF3 /* UIScreen+Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreen+Frame.swift"; path = "FTPopOverMenu_Swift/UIScreen+Frame.swift"; sourceTree = "<group>"; };
-		436B9B074EF3B8B4736BB40AA1A50E48 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		463EA0D57B0B8F6F56DBB73927435283 /* Pods-FTPopOverMenuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTPopOverMenuDemo.release.xcconfig"; sourceTree = "<group>"; };
-		533A8B158149D7006BE29F01CB32AA80 /* FTPopOverMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenu.swift; path = FTPopOverMenu_Swift/FTPopOverMenu.swift; sourceTree = "<group>"; };
-		53DF77AE17B61D6DB653C8CB55C6D9B1 /* Pods-FTPopOverMenuDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FTPopOverMenuDemo-dummy.m"; sourceTree = "<group>"; };
-		5FFC4CDB983B048EF6C3DF9CAE3D7D7C /* FTPopOverMenu_Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = FTPopOverMenu_Swift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6609DF88C0F6B4B25FF9C845E7C6AB6D /* FTCellConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTCellConfiguration.swift; path = FTPopOverMenu_Swift/FTCellConfiguration.swift; sourceTree = "<group>"; };
-		6FCE9253D3BAD8D4D8467305AC3F1FFB /* UIControl+Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Point.swift"; path = "FTPopOverMenu_Swift/UIControl+Point.swift"; sourceTree = "<group>"; };
-		79283191418BBD938568C564CA972CB3 /* FTConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConstants.swift; path = FTPopOverMenu_Swift/FTConstants.swift; sourceTree = "<group>"; };
-		803DAACA7BBEC7170B52C65493320A1F /* FT+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FT+Extension.swift"; path = "FTPopOverMenu_Swift/FT+Extension.swift"; sourceTree = "<group>"; };
-		8F29363B475F32905A585B7F0FAD7F1B /* Pods-FTPopOverMenuDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTPopOverMenuDemo-frameworks.sh"; sourceTree = "<group>"; };
-		93682A1A0234B795074E7EB3A2B94DA8 /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9B56FC0BF20A5422D8A904B79FF64C2F /* Pods-FTPopOverMenuDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FTPopOverMenuDemo.modulemap"; sourceTree = "<group>"; };
-		AB62453C0873A89731016B5F50E10DE6 /* Pods-FTPopOverMenuDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FTPopOverMenuDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B0CDB5218E42BE6B9FB148FC517C4B4D /* Pods-FTPopOverMenuDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTPopOverMenuDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		BCDB4D7BA213D5222E865553FAE75DC5 /* FTPopOverMenu_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-prefix.pch"; sourceTree = "<group>"; };
-		C2A7D5F2F87C9B6C6277FDE4D8223F8D /* Pods-FTPopOverMenuDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTPopOverMenuDemo-resources.sh"; sourceTree = "<group>"; };
-		C72EC8436C88A58FB04830A8BD15B0D9 /* FTConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConfiguration.swift; path = FTPopOverMenu_Swift/FTConfiguration.swift; sourceTree = "<group>"; };
-		D2BF27C416B489519A7124BB588EB2C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D943085E13A4A3BAA2643BD9F59E377B /* Pods_FTPopOverMenuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTPopOverMenuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D94CB04D1B8E7A2DEE51E507B3A9A889 /* FTPopOverMenu_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTPopOverMenu_Swift-dummy.m"; sourceTree = "<group>"; };
-		DB18DF8F963EA9C0CE4DA9FEE6A57F62 /* Pods-FTPopOverMenuDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FTPopOverMenuDemo-umbrella.h"; sourceTree = "<group>"; };
-		E3FD76C4AE57DB64F91A3A6059C0109A /* Pods-FTPopOverMenuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTPopOverMenuDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		E99E291891FF26A448101F24E5C182A9 /* FTPopOverMenu_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-umbrella.h"; sourceTree = "<group>"; };
-		EACF0F587F8E71D90C95BB0319510912 /* FTPopOverMenu_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FTPopOverMenu_Swift.modulemap; sourceTree = "<group>"; };
-		F476DC585A88909A6006700CA2D2B9EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		015ADB17565C91D0BAF6E959E7F4201F /* UIControl+Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Point.swift"; path = "FTPopOverMenu_Swift/UIControl+Point.swift"; sourceTree = "<group>"; };
+		0C49A638E767675DAAE17EF2CB5272F8 /* FTPopOverMenu_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-prefix.pch"; sourceTree = "<group>"; };
+		2764D26C389F90B853DBB340927EA726 /* Pods-FTPopOverMenuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTPopOverMenuDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2FAEEA5B97BA3662E7B5683C97B6EE83 /* FTPopOverMenu_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FTPopOverMenu_Swift.modulemap; sourceTree = "<group>"; };
+		3BDA72479587785C1FB264D324064478 /* Pods-FTPopOverMenuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTPopOverMenuDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3D04A4117A410B13BB637452A0402D00 /* FTPopOverMenu_Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FTPopOverMenu_Swift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5106450D6BCF00FBE9A42B369A63CA70 /* FTPopOverMenuCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenuCell.swift; path = FTPopOverMenu_Swift/FTPopOverMenuCell.swift; sourceTree = "<group>"; };
+		5320EF0B6C418C0048A60AC4134FFAE4 /* FTPopOverMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenu.swift; path = FTPopOverMenu_Swift/FTPopOverMenu.swift; sourceTree = "<group>"; };
+		56D939DBA58163A94B20A4F5F810BD1A /* Pods-FTPopOverMenuDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FTPopOverMenuDemo.modulemap"; sourceTree = "<group>"; };
+		6248325C62E162ADF7D550605B870721 /* FTConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConstants.swift; path = FTPopOverMenu_Swift/FTConstants.swift; sourceTree = "<group>"; };
+		6B090CAFCC15F036BB23ED836B99F1B1 /* Pods-FTPopOverMenuDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTPopOverMenuDemo-frameworks.sh"; sourceTree = "<group>"; };
+		6B8223C1A70B53B8F94200FA225B160E /* FT+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FT+Extension.swift"; path = "FTPopOverMenu_Swift/FT+Extension.swift"; sourceTree = "<group>"; };
+		8554427BD2D3CC693BF41A9A3F2A7297 /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		868096B4F27C6A5757073522492BAECD /* FTPopOverMenu_Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FTPopOverMenu_Swift-Info.plist"; sourceTree = "<group>"; };
+		8DBC2A364E35446EF19DC6410B853313 /* Pods-FTPopOverMenuDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FTPopOverMenuDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8E4BDE5B843F9BE07490F92AE528BCCA /* Pods-FTPopOverMenuDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FTPopOverMenuDemo-dummy.m"; sourceTree = "<group>"; };
+		93DDC012F387EEF769491A7992E341D4 /* Pods_FTPopOverMenuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTPopOverMenuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ABE0DA227AF794F7A79EF67FFCB9517A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AE21F9DEE8CB30B8293A51A49255E2FB /* Pods-FTPopOverMenuDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FTPopOverMenuDemo-umbrella.h"; sourceTree = "<group>"; };
+		AF93566D9BBBCA5D668E4F99369F3CFE /* FTCellConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTCellConfiguration.swift; path = FTPopOverMenu_Swift/FTCellConfiguration.swift; sourceTree = "<group>"; };
+		BFEC1201203B76418D5A60A05752508D /* Pods-FTPopOverMenuDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTPopOverMenuDemo-Info.plist"; sourceTree = "<group>"; };
+		C24F7DDC63267489EE204CA65BC112CE /* Pods-FTPopOverMenuDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTPopOverMenuDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		C451FA8CECAA657EF582D08493D9689C /* FTPopOverMenu_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTPopOverMenu_Swift-dummy.m"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CBD82C7F68F0F0B2E3DBC23258EAB5E0 /* UIScreen+Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreen+Frame.swift"; path = "FTPopOverMenu_Swift/UIScreen+Frame.swift"; sourceTree = "<group>"; };
+		D02D7E72D602D15EFE1E011FB26C03CF /* FTConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConfiguration.swift; path = FTPopOverMenu_Swift/FTConfiguration.swift; sourceTree = "<group>"; };
+		E0E10F80FB0B0BF91BBC3A43B5D21530 /* FTPopOverMenu_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-umbrella.h"; sourceTree = "<group>"; };
+		F0C8786B437D43C3667F66A256E68725 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F92618CF527D29A69F18A6D06BA31920 /* FTPopOverMenu_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTPopOverMenu_Swift.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A274C0A13D46BBDBF248EEA760261C25 /* Frameworks */ = {
+		B4D731CC682593C0E5ECE25553CCE7E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B3BFD2EB99A4822779B0A2A53C662A3 /* Foundation.framework in Frameworks */,
+				B2AFB208C3307CF94FEBA83735CCA160 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDB15E32FE52D3A97A3A23173E1B8398 /* Frameworks */ = {
+		E4FDFAEC1D73012B6F075AB82D9750FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA272D82BBB47CDB4BA376FF15357EB1 /* Foundation.framework in Frameworks */,
+				B44F955B33447B447C902C00CDCBC971 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0680888527822938C9C8663A35EBA985 /* Pod */ = {
+		0734E6EAAB508D94EA2EF18A615D5E0F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5FFC4CDB983B048EF6C3DF9CAE3D7D7C /* FTPopOverMenu_Swift.podspec */,
-				13557C01741FEACDE39EA52C44ABD26B /* LICENSE */,
-				F476DC585A88909A6006700CA2D2B9EC /* README.md */,
+				7DA49785789ACDA8E5F24B92BE1B4688 /* FTPopOverMenu_Swift */,
 			);
-			name = Pod;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		538E896F156176DF454FFDD1C247C256 /* Targets Support Files */ = {
+		1AACB96224997424C6C79C6089CDD57C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E70D1700F9D585AAF7F132162BA9C49F /* Pods-FTPopOverMenuDemo */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				E55730BB7C2109DAC1D53C3BA3A01E39 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C93E83B6159845F6BCCBF2B960BE9A1B /* Products */,
-				538E896F156176DF454FFDD1C247C256 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		A3540BAFB701D42738181AA3B850A4BB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EACF0F587F8E71D90C95BB0319510912 /* FTPopOverMenu_Swift.modulemap */,
-				24A3B1B67EA7093E3FBD110CB95A1729 /* FTPopOverMenu_Swift.xcconfig */,
-				D94CB04D1B8E7A2DEE51E507B3A9A889 /* FTPopOverMenu_Swift-dummy.m */,
-				BCDB4D7BA213D5222E865553FAE75DC5 /* FTPopOverMenu_Swift-prefix.pch */,
-				E99E291891FF26A448101F24E5C182A9 /* FTPopOverMenu_Swift-umbrella.h */,
-				D2BF27C416B489519A7124BB588EB2C7 /* Info.plist */,
+				2FAEEA5B97BA3662E7B5683C97B6EE83 /* FTPopOverMenu_Swift.modulemap */,
+				F92618CF527D29A69F18A6D06BA31920 /* FTPopOverMenu_Swift.xcconfig */,
+				C451FA8CECAA657EF582D08493D9689C /* FTPopOverMenu_Swift-dummy.m */,
+				868096B4F27C6A5757073522492BAECD /* FTPopOverMenu_Swift-Info.plist */,
+				0C49A638E767675DAAE17EF2CB5272F8 /* FTPopOverMenu_Swift-prefix.pch */,
+				E0E10F80FB0B0BF91BBC3A43B5D21530 /* FTPopOverMenu_Swift-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "FTPopOverMenuDemo/Pods/Target Support Files/FTPopOverMenu_Swift";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		2FDCBB2BF0FCB8CF1CFEE030FD711CB7 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				3D04A4117A410B13BB637452A0402D00 /* FTPopOverMenu_Swift.podspec */,
+				ABE0DA227AF794F7A79EF67FFCB9517A /* LICENSE */,
+				F0C8786B437D43C3667F66A256E68725 /* README.md */,
 			);
-			name = Frameworks;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		C5F7706F770E9343FBB09865A380B28E /* FTPopOverMenu_Swift */ = {
+		350B0CB6DF58F134211DCAACBE9A331D /* Pods-FTPopOverMenuDemo */ = {
 			isa = PBXGroup;
 			children = (
-				803DAACA7BBEC7170B52C65493320A1F /* FT+Extension.swift */,
-				6609DF88C0F6B4B25FF9C845E7C6AB6D /* FTCellConfiguration.swift */,
-				C72EC8436C88A58FB04830A8BD15B0D9 /* FTConfiguration.swift */,
-				79283191418BBD938568C564CA972CB3 /* FTConstants.swift */,
-				533A8B158149D7006BE29F01CB32AA80 /* FTPopOverMenu.swift */,
-				23C4276950FE5E6C0406B1DE24A3FC7C /* FTPopOverMenuCell.swift */,
-				6FCE9253D3BAD8D4D8467305AC3F1FFB /* UIControl+Point.swift */,
-				3012657CEEB23546B037F9AD99563EF3 /* UIScreen+Frame.swift */,
-				0680888527822938C9C8663A35EBA985 /* Pod */,
-				A3540BAFB701D42738181AA3B850A4BB /* Support Files */,
-			);
-			name = FTPopOverMenu_Swift;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		C93E83B6159845F6BCCBF2B960BE9A1B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				93682A1A0234B795074E7EB3A2B94DA8 /* FTPopOverMenu_Swift.framework */,
-				D943085E13A4A3BAA2643BD9F59E377B /* Pods_FTPopOverMenuDemo.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		E55730BB7C2109DAC1D53C3BA3A01E39 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C5F7706F770E9343FBB09865A380B28E /* FTPopOverMenu_Swift */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		E70D1700F9D585AAF7F132162BA9C49F /* Pods-FTPopOverMenuDemo */ = {
-			isa = PBXGroup;
-			children = (
-				436B9B074EF3B8B4736BB40AA1A50E48 /* Info.plist */,
-				9B56FC0BF20A5422D8A904B79FF64C2F /* Pods-FTPopOverMenuDemo.modulemap */,
-				AB62453C0873A89731016B5F50E10DE6 /* Pods-FTPopOverMenuDemo-acknowledgements.markdown */,
-				B0CDB5218E42BE6B9FB148FC517C4B4D /* Pods-FTPopOverMenuDemo-acknowledgements.plist */,
-				53DF77AE17B61D6DB653C8CB55C6D9B1 /* Pods-FTPopOverMenuDemo-dummy.m */,
-				8F29363B475F32905A585B7F0FAD7F1B /* Pods-FTPopOverMenuDemo-frameworks.sh */,
-				C2A7D5F2F87C9B6C6277FDE4D8223F8D /* Pods-FTPopOverMenuDemo-resources.sh */,
-				DB18DF8F963EA9C0CE4DA9FEE6A57F62 /* Pods-FTPopOverMenuDemo-umbrella.h */,
-				E3FD76C4AE57DB64F91A3A6059C0109A /* Pods-FTPopOverMenuDemo.debug.xcconfig */,
-				463EA0D57B0B8F6F56DBB73927435283 /* Pods-FTPopOverMenuDemo.release.xcconfig */,
+				56D939DBA58163A94B20A4F5F810BD1A /* Pods-FTPopOverMenuDemo.modulemap */,
+				8DBC2A364E35446EF19DC6410B853313 /* Pods-FTPopOverMenuDemo-acknowledgements.markdown */,
+				C24F7DDC63267489EE204CA65BC112CE /* Pods-FTPopOverMenuDemo-acknowledgements.plist */,
+				8E4BDE5B843F9BE07490F92AE528BCCA /* Pods-FTPopOverMenuDemo-dummy.m */,
+				6B090CAFCC15F036BB23ED836B99F1B1 /* Pods-FTPopOverMenuDemo-frameworks.sh */,
+				BFEC1201203B76418D5A60A05752508D /* Pods-FTPopOverMenuDemo-Info.plist */,
+				AE21F9DEE8CB30B8293A51A49255E2FB /* Pods-FTPopOverMenuDemo-umbrella.h */,
+				3BDA72479587785C1FB264D324064478 /* Pods-FTPopOverMenuDemo.debug.xcconfig */,
+				2764D26C389F90B853DBB340927EA726 /* Pods-FTPopOverMenuDemo.release.xcconfig */,
 			);
 			name = "Pods-FTPopOverMenuDemo";
 			path = "Target Support Files/Pods-FTPopOverMenuDemo";
 			sourceTree = "<group>";
 		};
+		7DA49785789ACDA8E5F24B92BE1B4688 /* FTPopOverMenu_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				6B8223C1A70B53B8F94200FA225B160E /* FT+Extension.swift */,
+				AF93566D9BBBCA5D668E4F99369F3CFE /* FTCellConfiguration.swift */,
+				D02D7E72D602D15EFE1E011FB26C03CF /* FTConfiguration.swift */,
+				6248325C62E162ADF7D550605B870721 /* FTConstants.swift */,
+				5320EF0B6C418C0048A60AC4134FFAE4 /* FTPopOverMenu.swift */,
+				5106450D6BCF00FBE9A42B369A63CA70 /* FTPopOverMenuCell.swift */,
+				015ADB17565C91D0BAF6E959E7F4201F /* UIControl+Point.swift */,
+				CBD82C7F68F0F0B2E3DBC23258EAB5E0 /* UIScreen+Frame.swift */,
+				2FDCBB2BF0FCB8CF1CFEE030FD711CB7 /* Pod */,
+				1AACB96224997424C6C79C6089CDD57C /* Support Files */,
+			);
+			name = FTPopOverMenu_Swift;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				0734E6EAAB508D94EA2EF18A615D5E0F /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E0EE2174B72D3DEF4B2249FD462BECCC /* Products */,
+				EFC8FC08FDB5D4535E26F9C883229A82 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0EE2174B72D3DEF4B2249FD462BECCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8554427BD2D3CC693BF41A9A3F2A7297 /* FTPopOverMenu_Swift.framework */,
+				93DDC012F387EEF769491A7992E341D4 /* Pods_FTPopOverMenuDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFC8FC08FDB5D4535E26F9C883229A82 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				350B0CB6DF58F134211DCAACBE9A331D /* Pods-FTPopOverMenuDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1BCD1D330B746F2283BDA1F2A9F38FA7 /* Headers */ = {
+		16032509ADFD223868BB1D61E6C1F874 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				108AB58E78DF55300FEA62851DE02B20 /* FTPopOverMenu_Swift-umbrella.h in Headers */,
+				E777F4376AA019D74555B3B37AF3A21B /* Pods-FTPopOverMenuDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7AB0DDE851AB3AC31F2B809803F1F60 /* Headers */ = {
+		3BCBE27DD94688479C24312C616C4E8D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3532F8CBD143AA835D37049714B546B /* Pods-FTPopOverMenuDemo-umbrella.h in Headers */,
+				58EA1388D872A97DDB6801455A44EFAB /* FTPopOverMenu_Swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5BE2F49DA12F1961399920B232FA3DA2 /* Pods-FTPopOverMenuDemo */ = {
+		051F964ED4B73C0194EE9BFE4551AC53 /* Pods-FTPopOverMenuDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 767209E61C600D9EB11C54926FBF980D /* Build configuration list for PBXNativeTarget "Pods-FTPopOverMenuDemo" */;
+			buildConfigurationList = 16D737180B54ED423CDE50B7DA0C0EA0 /* Build configuration list for PBXNativeTarget "Pods-FTPopOverMenuDemo" */;
 			buildPhases = (
-				C8B0527A8139CCE10405015BF119C970 /* Sources */,
-				A274C0A13D46BBDBF248EEA760261C25 /* Frameworks */,
-				F7AB0DDE851AB3AC31F2B809803F1F60 /* Headers */,
+				16032509ADFD223868BB1D61E6C1F874 /* Headers */,
+				5A6FE2ED1E4F3E547C1B8F81DCDD0DD3 /* Sources */,
+				B4D731CC682593C0E5ECE25553CCE7E0 /* Frameworks */,
+				9590B3D27BF99B61CF6E5F7A0F39CDB2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6DBF5843FDA753E91C839863357E7264 /* PBXTargetDependency */,
+				6DA17AA22DC434A671AB6612BFBC17C3 /* PBXTargetDependency */,
 			);
 			name = "Pods-FTPopOverMenuDemo";
 			productName = "Pods-FTPopOverMenuDemo";
-			productReference = D943085E13A4A3BAA2643BD9F59E377B /* Pods_FTPopOverMenuDemo.framework */;
+			productReference = 93DDC012F387EEF769491A7992E341D4 /* Pods_FTPopOverMenuDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		81533182AC46E85D807A4D28696F7BFC /* FTPopOverMenu_Swift */ = {
+		989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B22CCB49C3569D7D96800D33A75E536 /* Build configuration list for PBXNativeTarget "FTPopOverMenu_Swift" */;
+			buildConfigurationList = 44473964752EFC18B731906E20DEBC77 /* Build configuration list for PBXNativeTarget "FTPopOverMenu_Swift" */;
 			buildPhases = (
-				EBD0A8C55A15E0668550CEE8D5F6C5F3 /* Sources */,
-				DDB15E32FE52D3A97A3A23173E1B8398 /* Frameworks */,
-				1BCD1D330B746F2283BDA1F2A9F38FA7 /* Headers */,
+				3BCBE27DD94688479C24312C616C4E8D /* Headers */,
+				532194EF0809556D1F308E82B5E707FB /* Sources */,
+				E4FDFAEC1D73012B6F075AB82D9750FD /* Frameworks */,
+				E4A63C58339A516E3CEA4B65A33D6ADC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -253,117 +253,96 @@
 			);
 			name = FTPopOverMenu_Swift;
 			productName = FTPopOverMenu_Swift;
-			productReference = 93682A1A0234B795074E7EB3A2B94DA8 /* FTPopOverMenu_Swift.framework */;
+			productReference = 8554427BD2D3CC693BF41A9A3F2A7297 /* FTPopOverMenu_Swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
-				TargetAttributes = {
-					81533182AC46E85D807A4D28696F7BFC = {
-						LastSwiftMigration = 1000;
-					};
-				};
+				LastUpgradeCheck = 1020;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C93E83B6159845F6BCCBF2B960BE9A1B /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E0EE2174B72D3DEF4B2249FD462BECCC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				81533182AC46E85D807A4D28696F7BFC /* FTPopOverMenu_Swift */,
-				5BE2F49DA12F1961399920B232FA3DA2 /* Pods-FTPopOverMenuDemo */,
+				989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */,
+				051F964ED4B73C0194EE9BFE4551AC53 /* Pods-FTPopOverMenuDemo */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		C8B0527A8139CCE10405015BF119C970 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		9590B3D27BF99B61CF6E5F7A0F39CDB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3048AD7671C84462B2DFFE74943A4D98 /* Pods-FTPopOverMenuDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBD0A8C55A15E0668550CEE8D5F6C5F3 /* Sources */ = {
+		E4A63C58339A516E3CEA4B65A33D6ADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		532194EF0809556D1F308E82B5E707FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5094E9E5DB822DC99EDAF1BE8F4F736A /* FT+Extension.swift in Sources */,
-				9AD1A17EDD88C8425877A0FDCBDDB94E /* FTCellConfiguration.swift in Sources */,
-				41F68B9023F89D2AA74D8F7D8BF76570 /* FTConfiguration.swift in Sources */,
-				2FBABAC8924D129104EB2A128589C6DB /* FTConstants.swift in Sources */,
-				12BB1C999B32780CF288AFEBD27AD915 /* FTPopOverMenu.swift in Sources */,
-				B6A59143DBD87813CE9FD0195E9C0D19 /* FTPopOverMenu_Swift-dummy.m in Sources */,
-				45F27A1A005DDC6A26589481396AFDCF /* FTPopOverMenuCell.swift in Sources */,
-				270085E381C701E3E3B5752485606557 /* UIControl+Point.swift in Sources */,
-				61D202F3B31F747D02BE2128C8BD8B54 /* UIScreen+Frame.swift in Sources */,
+				BED23E5056425C5CC1330C723DD1BF76 /* FT+Extension.swift in Sources */,
+				536E8B1719A1053B33E69A1D5F653C9C /* FTCellConfiguration.swift in Sources */,
+				CCAA8FC722EAF7891FE9A12D214F22AE /* FTConfiguration.swift in Sources */,
+				E2ED75E3EC281A06B32C576C0FC076A0 /* FTConstants.swift in Sources */,
+				2C629217E4F63CEC6107904502687D5B /* FTPopOverMenu.swift in Sources */,
+				C60FB865E78421611B3D1EC5DC5476F2 /* FTPopOverMenu_Swift-dummy.m in Sources */,
+				3EA7A5DE86F11E5373D57CB4DE1E823D /* FTPopOverMenuCell.swift in Sources */,
+				BF98EA3B558DE33F4CFBEC710B2DD9D8 /* UIControl+Point.swift in Sources */,
+				1EDDBC69FA0DDD3F3723A93AF26FDF12 /* UIScreen+Frame.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A6FE2ED1E4F3E547C1B8F81DCDD0DD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F529741F4256DA05537320EC3FEB3B /* Pods-FTPopOverMenuDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6DBF5843FDA753E91C839863357E7264 /* PBXTargetDependency */ = {
+		6DA17AA22DC434A671AB6612BFBC17C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FTPopOverMenu_Swift;
-			target = 81533182AC46E85D807A4D28696F7BFC /* FTPopOverMenu_Swift */;
-			targetProxy = 4ABA2324ED5743A11F6B07F19DCECEF8 /* PBXContainerItemProxy */;
+			target = 989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */;
+			targetProxy = F01C5F9EC3ED6DA3521994A2BEECD639 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05EC3E5119E7194F1416FEAAE12184AD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3FD76C4AE57DB64F91A3A6059C0109A /* Pods-FTPopOverMenuDemo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FTPopOverMenuDemo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FTPopOverMenuDemo/Pods-FTPopOverMenuDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+		07488D4657FB0A78086563621D425F8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -392,8 +371,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -414,18 +391,21 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		8574BF8501415EE8D9AF68A307A02D18 /* Debug */ = {
+		2F8D2796EBA548E48B282B5D6A1D2CAA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24A3B1B67EA7093E3FBD110CB95A1729 /* FTPopOverMenu_Swift.xcconfig */;
+			baseConfigurationReference = F92618CF527D29A69F18A6D06BA31920 /* FTPopOverMenu_Swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -437,7 +417,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FTPopOverMenu_Swift/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -447,17 +427,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		A0E07FB193416B37EF4836A471A9566B /* Release */ = {
+		5937FACF2BEAAC6A98E6E6EDF0197B67 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 463EA0D57B0B8F6F56DBB73927435283 /* Pods-FTPopOverMenuDemo.release.xcconfig */;
+			baseConfigurationReference = 2764D26C389F90B853DBB340927EA726 /* Pods-FTPopOverMenuDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -469,7 +448,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FTPopOverMenuDemo/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FTPopOverMenuDemo/Pods-FTPopOverMenuDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -482,7 +461,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -490,9 +468,9 @@
 			};
 			name = Release;
 		};
-		AAABCBDA04BA822F8BE5FC9BFF298A21 /* Release */ = {
+		68A8B27A33B288676E0C46283C4FA8E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24A3B1B67EA7093E3FBD110CB95A1729 /* FTPopOverMenu_Swift.xcconfig */;
+			baseConfigurationReference = F92618CF527D29A69F18A6D06BA31920 /* FTPopOverMenu_Swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -504,7 +482,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FTPopOverMenu_Swift/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -514,19 +492,50 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+		88297E625696928AC5A18491A5A98D25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BDA72479587785C1FB264D324064478 /* Pods-FTPopOverMenuDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FTPopOverMenuDemo/Pods-FTPopOverMenuDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FTPopOverMenuDemo/Pods-FTPopOverMenuDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -555,8 +564,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -575,8 +582,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -584,34 +594,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		16D737180B54ED423CDE50B7DA0C0EA0 /* Build configuration list for PBXNativeTarget "Pods-FTPopOverMenuDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
-				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+				88297E625696928AC5A18491A5A98D25 /* Debug */,
+				5937FACF2BEAAC6A98E6E6EDF0197B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B22CCB49C3569D7D96800D33A75E536 /* Build configuration list for PBXNativeTarget "FTPopOverMenu_Swift" */ = {
+		44473964752EFC18B731906E20DEBC77 /* Build configuration list for PBXNativeTarget "FTPopOverMenu_Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8574BF8501415EE8D9AF68A307A02D18 /* Debug */,
-				AAABCBDA04BA822F8BE5FC9BFF298A21 /* Release */,
+				68A8B27A33B288676E0C46283C4FA8E2 /* Debug */,
+				2F8D2796EBA548E48B282B5D6A1D2CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		767209E61C600D9EB11C54926FBF980D /* Build configuration list for PBXNativeTarget "Pods-FTPopOverMenuDemo" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				05EC3E5119E7194F1416FEAAE12184AD /* Debug */,
-				A0E07FB193416B37EF4836A471A9566B /* Release */,
+				07488D4657FB0A78086563621D425F8A /* Debug */,
+				A1962E6FF39BBAC201A2E5DDF99557DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

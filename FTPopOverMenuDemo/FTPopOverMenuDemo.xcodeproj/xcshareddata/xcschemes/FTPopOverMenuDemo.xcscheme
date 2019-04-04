@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A10E9D21DE436AB00E10A3E"
-               BuildableName = "FTPopOverMenu_Swift.framework"
-               BlueprintName = "FTPopOverMenu_Swift"
-               ReferencedContainer = "container:FTPopOverMenu_Swift.xcodeproj">
+               BlueprintIdentifier = "2ACAB66E1DDC5ECE00FDCEAF"
+               BuildableName = "FTPopOverMenuDemo.app"
+               BlueprintName = "FTPopOverMenuDemo"
+               ReferencedContainer = "container:FTPopOverMenuDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2ACAB66E1DDC5ECE00FDCEAF"
+            BuildableName = "FTPopOverMenuDemo.app"
+            BlueprintName = "FTPopOverMenuDemo"
+            ReferencedContainer = "container:FTPopOverMenuDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2A10E9D21DE436AB00E10A3E"
-            BuildableName = "FTPopOverMenu_Swift.framework"
-            BlueprintName = "FTPopOverMenu_Swift"
-            ReferencedContainer = "container:FTPopOverMenu_Swift.xcodeproj">
+            BlueprintIdentifier = "2ACAB66E1DDC5ECE00FDCEAF"
+            BuildableName = "FTPopOverMenuDemo.app"
+            BlueprintName = "FTPopOverMenuDemo"
+            ReferencedContainer = "container:FTPopOverMenuDemo.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,15 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2A10E9D21DE436AB00E10A3E"
-            BuildableName = "FTPopOverMenu_Swift.framework"
-            BlueprintName = "FTPopOverMenu_Swift"
-            ReferencedContainer = "container:FTPopOverMenu_Swift.xcodeproj">
+            BlueprintIdentifier = "2ACAB66E1DDC5ECE00FDCEAF"
+            BuildableName = "FTPopOverMenuDemo.app"
+            BlueprintName = "FTPopOverMenuDemo"
+            ReferencedContainer = "container:FTPopOverMenuDemo.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

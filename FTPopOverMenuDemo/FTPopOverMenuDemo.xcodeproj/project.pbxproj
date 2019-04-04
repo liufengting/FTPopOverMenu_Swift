@@ -14,7 +14,6 @@
 		2ACAB6781DDC5ECE00FDCEAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB6761DDC5ECE00FDCEAF /* Main.storyboard */; };
 		2ACAB67A1DDC5ECE00FDCEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB6791DDC5ECE00FDCEAF /* Assets.xcassets */; };
 		2ACAB67D1DDC5ECE00FDCEAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB67B1DDC5ECE00FDCEAF /* LaunchScreen.storyboard */; };
-		B71D337F72A269341497E480 /* Pods_FTPopOverMenuDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714A506934EE717EB4D01259 /* Pods_FTPopOverMenuDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B71D337F72A269341497E480 /* Pods_FTPopOverMenuDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,13 +121,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = LiuFengting;
 				TargetAttributes = {
 					2ACAB66E1DDC5ECE00FDCEAF = {
 						CreatedOnToolsVersion = 8.1;
-						LastSwiftMigration = 1000;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = E83AC9WR2F;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -138,6 +137,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -171,7 +171,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FTPopOverMenuDemo/Pods-FTPopOverMenuDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-FTPopOverMenuDemo/Pods-FTPopOverMenuDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FTPopOverMenu_Swift/FTPopOverMenu_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -180,7 +180,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FTPopOverMenuDemo/Pods-FTPopOverMenuDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FTPopOverMenuDemo/Pods-FTPopOverMenuDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BEC2CDB3A5AF2A34F08D0CAB /* [CP] Check Pods Manifest.lock */ = {
@@ -241,6 +241,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -299,6 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -352,17 +354,20 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E83AC9WR2F;
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPopOverMenuDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPopOverMenuDemo.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -372,17 +377,20 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E83AC9WR2F;
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPopOverMenuDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPopOverMenuDemo.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
