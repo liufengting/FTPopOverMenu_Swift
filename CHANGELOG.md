@@ -20,5 +20,6 @@
 | 0.1.4 | 2019.02.25 | @mssjappjwt: Bug fix for sometimes menu won't appear | Success |
 | 0.1.5 | 2019.02.25 | make sure it's new | Success |
 | 0.2.0 | 2019.02.25 | Swift 5 | Success |
+| 0.2.1 | 2019.09.06 | @svyatogor: Added Package.swift for swift package manager | Success |
 
 
