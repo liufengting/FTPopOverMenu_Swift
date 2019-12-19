@@ -20,33 +20,51 @@ class ViewController: UIViewController {
     
     var menuStyle : MenuStyle = .normal
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
     var menuOptionNameArray = ["Share", "Delete", "Upload", "Download"]
-    
     var menuOptionImageNameArray = ["Pokemon_Go_01", "Pokemon_Go_02", "Pokemon_Go_03", "Pokemon_Go_04"]
     var menuOptionImageImageArray = [#imageLiteral(resourceName: "Pokemon_Go_01"), #imageLiteral(resourceName: "Pokemon_Go_02"), #imageLiteral(resourceName: "Pokemon_Go_03"), #imageLiteral(resourceName: "Pokemon_Go_04")]
+    
+    func configWithMenuStyle() -> FTConfiguration {
+        let config = FTConfiguration()
+        switch self.menuStyle {
+        case .normal: break
+        case .wechat:
+            config.backgoundTintColor = UIColor.white
+            config.borderColor = UIColor.lightGray
+            config.menuWidth = 80
+            config.menuSeparatorColor = UIColor.lightGray
+            config.menuRowHeight = 40
+            config.cornerRadius = 6
+            config.textColor = UIColor.black
+            config.textAlignment = NSTextAlignment.center
+        case .qq:
+            config.backgoundTintColor = UIColor(white: 0.80, alpha: 1)
+            config.borderColor = UIColor.white
+            config.menuWidth = 150
+            config.menuSeparatorColor = UIColor.lightGray
+            config.menuRowHeight = 50
+            config.cornerRadius = 20
+        case .more:
+            config.backgoundTintColor = UIColor.red
+            config.borderColor = UIColor.red
+            config.menuWidth = 120
+            config.menuSeparatorColor = UIColor.white
+            config.menuRowHeight = 40
+            config.cornerRadius = 10
+        }
+        return config
+    }
     
     
     // MARK: -  handle nornal button
     @IBAction func handleButtonTap(_ sender: UIButton) {
         
-        let cellConfi = FTCellConfiguration()
-        cellConfi.textColor = UIColor.white
-        cellConfi.textFont = UIFont.systemFont(ofSize: 14)
-        cellConfi.textAlignment = self.menuStyle == .wechat ? .center : .left
-
-        var cellConfis = Array(repeating: cellConfi, count: 4)
-        
-        let cellConfi1 = FTCellConfiguration()
-        cellConfi1.textColor = UIColor.red
-        cellConfis[1] = cellConfi1
-        
-        FTPopOverMenu.showForSender(sender: sender, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray, cellConfigurationArray: cellConfis, done: { (selectedIndex) in
+        FTPopOverMenu.showForSender(sender: sender, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray, config: self.configWithMenuStyle(), done: { (selectedIndex) in
             print(selectedIndex)
         }) {
             print("cancel")
@@ -56,7 +74,7 @@ class ViewController: UIViewController {
     // MARK: -  handle NavgationBarButtonItem
     @IBAction func handleNavgationBarButtonTap(_ sender: UIBarButtonItem, event: UIEvent) {
         
-        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: menuOptionImageImageArray, done: { (selectedIndex) in
+        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: menuOptionImageImageArray, config: self.configWithMenuStyle(), done: { (selectedIndex) in
             print(selectedIndex)
         }, cancel: {
             
@@ -66,13 +84,7 @@ class ViewController: UIViewController {
     // MARK: -  handle normal UIBarButtonItem
     @IBAction func handleBarButtonItemTap(_ sender: UIBarButtonItem, event: UIEvent) {
         
-        let cellConfi = FTCellConfiguration()
-        cellConfi.textColor = UIColor.blue
-        cellConfi.textAlignment = .left
-        cellConfi.textFont = UIFont.systemFont(ofSize: 14)
-        let cellConfis = Array(repeating: cellConfi, count: 4)
-        
-        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: nil, cellConfigurationArray: cellConfis, done: { (selectedIndex) in
+        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: nil, config: self.configWithMenuStyle(), done: { (selectedIndex) in
             print(selectedIndex)
         })
         
@@ -105,13 +117,6 @@ extension ViewController {
         
         menuOptionImageNameArray = ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04"]
         
-        let config = FTConfiguration.shared
-        config.backgoundTintColor = UIColor(red: 80/255, green: 80/255, blue: 80/255, alpha: 1)
-        config.borderColor = UIColor(red: 80/255, green: 80/255, blue: 80/255, alpha: 1)
-        config.menuWidth = 120
-        config.menuSeparatorColor = UIColor.lightGray
-        config.menuRowHeight = 40
-        config.cornerRadius = 6
     }
     
     func changeToWeChatStyle() {
@@ -119,13 +124,8 @@ extension ViewController {
         
         self.menuOptionImageNameArray = []
         
-        let config = FTConfiguration.shared
-        config.backgoundTintColor = UIColor.white
-        config.borderColor = UIColor.lightGray
-        config.menuWidth = 80
-        config.menuSeparatorColor = UIColor.lightGray
-        config.menuRowHeight = 40
-        config.cornerRadius = 6
+
+
         
     }
     
@@ -134,13 +134,7 @@ extension ViewController {
 
         menuOptionImageNameArray = ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04"]
         
-        let config = FTConfiguration.shared
-        config.backgoundTintColor = UIColor(white: 0.97, alpha: 1)
-        config.borderColor = UIColor.white
-        config.menuWidth = 150
-        config.menuSeparatorColor = UIColor.lightGray
-        config.menuRowHeight = 50
-        config.cornerRadius = 20
+
         
         
     }
@@ -150,13 +144,7 @@ extension ViewController {
 
         menuOptionImageNameArray = ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04"]
         
-        let config = FTConfiguration.shared
-        config.backgoundTintColor = UIColor.red
-        config.borderColor = UIColor.red
-        config.menuWidth = 120
-        config.menuSeparatorColor = UIColor.white
-        config.menuRowHeight = 40
-        config.cornerRadius = 10
+
     }
     
 }

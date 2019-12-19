@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A134F7623AB797800B45E6F /* FTPopOverMenu_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A134F7523AB797800B45E6F /* FTPopOverMenu_Swift.framework */; };
 		2AB5A3201DDEF2DF00EC6555 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A31F1DDEF2DF00EC6555 /* MoreTableViewController.swift */; };
 		2AB5A3221DDEFC1C00EC6555 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A3211DDEFC1C00EC6555 /* MoreTableViewCell.swift */; };
 		2ACAB6731DDC5ECE00FDCEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACAB6721DDC5ECE00FDCEAF /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A134F7523AB797800B45E6F /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB5A31F1DDEF2DF00EC6555 /* MoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
 		2AB5A3211DDEFC1C00EC6555 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
 		2ACAB66F1DDC5ECE00FDCEAF /* FTPopOverMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTPopOverMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A134F7623AB797800B45E6F /* FTPopOverMenu_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +90,7 @@
 		AEF91AA4D0C9830A55CB35BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A134F7523AB797800B45E6F /* FTPopOverMenu_Swift.framework */,
 				714A506934EE717EB4D01259 /* Pods_FTPopOverMenuDemo.framework */,
 			);
 			name = Frameworks;
@@ -134,10 +138,9 @@
 			};
 			buildConfigurationList = 2ACAB66A1DDC5ECE00FDCEAF /* Build configuration list for PBXProject "FTPopOverMenuDemo" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -359,12 +362,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E83AC9WR2F;
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPopOverMenuDemo.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -382,12 +385,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E83AC9WR2F;
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTPopOverMenuDemo.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
