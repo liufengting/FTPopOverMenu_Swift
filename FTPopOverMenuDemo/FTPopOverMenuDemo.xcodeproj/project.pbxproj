@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A134F7623AB797800B45E6F /* FTPopOverMenu_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A134F7523AB797800B45E6F /* FTPopOverMenu_Swift.framework */; };
+		2A7CCAD923AC60EC004263C9 /* FTPopOverMenu_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7CCAD823AC60EC004263C9 /* FTPopOverMenu_Swift.framework */; };
+		2A7CCADA23AC60EC004263C9 /* FTPopOverMenu_Swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7CCAD823AC60EC004263C9 /* FTPopOverMenu_Swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2AB5A3201DDEF2DF00EC6555 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A31F1DDEF2DF00EC6555 /* MoreTableViewController.swift */; };
 		2AB5A3221DDEFC1C00EC6555 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A3211DDEFC1C00EC6555 /* MoreTableViewCell.swift */; };
 		2ACAB6731DDC5ECE00FDCEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACAB6721DDC5ECE00FDCEAF /* AppDelegate.swift */; };
@@ -17,8 +18,22 @@
 		2ACAB67D1DDC5ECE00FDCEAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB67B1DDC5ECE00FDCEAF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2A7CCADB23AC60EC004263C9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2A7CCADA23AC60EC004263C9 /* FTPopOverMenu_Swift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		2A134F7523AB797800B45E6F /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A7CCAD823AC60EC004263C9 /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB5A31F1DDEF2DF00EC6555 /* MoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
 		2AB5A3211DDEFC1C00EC6555 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
 		2ACAB66F1DDC5ECE00FDCEAF /* FTPopOverMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTPopOverMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,9 +43,6 @@
 		2ACAB6791DDC5ECE00FDCEAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ACAB67C1DDC5ECE00FDCEAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ACAB67E1DDC5ECE00FDCEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60C9821E28AE11A455154269 /* Pods-FTPopOverMenuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTPopOverMenuDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FTPopOverMenuDemo/Pods-FTPopOverMenuDemo.release.xcconfig"; sourceTree = "<group>"; };
-		714A506934EE717EB4D01259 /* Pods_FTPopOverMenuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FTPopOverMenuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		83F4C4BA4DB5458D71C60EFC /* Pods-FTPopOverMenuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTPopOverMenuDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FTPopOverMenuDemo/Pods-FTPopOverMenuDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A134F7623AB797800B45E6F /* FTPopOverMenu_Swift.framework in Frameworks */,
+				2A7CCAD923AC60EC004263C9 /* FTPopOverMenu_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,9 +60,9 @@
 		2ACAB6661DDC5ECE00FDCEAF = {
 			isa = PBXGroup;
 			children = (
+				2A7CCAD823AC60EC004263C9 /* FTPopOverMenu_Swift.framework */,
 				2ACAB6711DDC5ECE00FDCEAF /* FTPopOverMenuDemo */,
 				2ACAB6701DDC5ECE00FDCEAF /* Products */,
-				8C4CDC47210FDB8ADCBB0C6B /* Pods */,
 				AEF91AA4D0C9830A55CB35BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -78,20 +90,9 @@
 			path = FTPopOverMenuDemo;
 			sourceTree = "<group>";
 		};
-		8C4CDC47210FDB8ADCBB0C6B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				83F4C4BA4DB5458D71C60EFC /* Pods-FTPopOverMenuDemo.debug.xcconfig */,
-				60C9821E28AE11A455154269 /* Pods-FTPopOverMenuDemo.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		AEF91AA4D0C9830A55CB35BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2A134F7523AB797800B45E6F /* FTPopOverMenu_Swift.framework */,
-				714A506934EE717EB4D01259 /* Pods_FTPopOverMenuDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,11 +104,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2ACAB6811DDC5ECE00FDCEAF /* Build configuration list for PBXNativeTarget "FTPopOverMenuDemo" */;
 			buildPhases = (
-				BEC2CDB3A5AF2A34F08D0CAB /* [CP] Check Pods Manifest.lock */,
 				2ACAB66B1DDC5ECE00FDCEAF /* Sources */,
 				2ACAB66C1DDC5ECE00FDCEAF /* Frameworks */,
 				2ACAB66D1DDC5ECE00FDCEAF /* Resources */,
-				491A38C3FDF2B2784F122C42 /* [CP] Embed Pods Frameworks */,
+				2A7CCADB23AC60EC004263C9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,45 +166,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		491A38C3FDF2B2784F122C42 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FTPopOverMenuDemo/Pods-FTPopOverMenuDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FTPopOverMenu_Swift/FTPopOverMenu_Swift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FTPopOverMenu_Swift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FTPopOverMenuDemo/Pods-FTPopOverMenuDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BEC2CDB3A5AF2A34F08D0CAB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FTPopOverMenuDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2ACAB66B1DDC5ECE00FDCEAF /* Sources */ = {
@@ -353,9 +314,7 @@
 		};
 		2ACAB6821DDC5ECE00FDCEAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83F4C4BA4DB5458D71C60EFC /* Pods-FTPopOverMenuDemo.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -376,9 +335,7 @@
 		};
 		2ACAB6831DDC5ECE00FDCEAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60C9821E28AE11A455154269 /* Pods-FTPopOverMenuDemo.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

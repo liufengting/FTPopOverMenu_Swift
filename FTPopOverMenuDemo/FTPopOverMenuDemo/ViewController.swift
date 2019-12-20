@@ -26,8 +26,6 @@ class ViewController: UIViewController {
     }
     
     var menuOptionNameArray = ["Share", "Delete", "Upload", "Download"]
-    var menuOptionImageNameArray = ["Pokemon_Go_01", "Pokemon_Go_02", "Pokemon_Go_03", "Pokemon_Go_04"]
-    var menuOptionImageImageArray = [#imageLiteral(resourceName: "Pokemon_Go_01"), #imageLiteral(resourceName: "Pokemon_Go_02"), #imageLiteral(resourceName: "Pokemon_Go_03"), #imageLiteral(resourceName: "Pokemon_Go_04")]
     
     func configWithMenuStyle() -> FTConfiguration {
         let config = FTConfiguration()
@@ -43,12 +41,13 @@ class ViewController: UIViewController {
             config.textColor = UIColor.black
             config.textAlignment = NSTextAlignment.center
         case .qq:
-            config.backgoundTintColor = UIColor(white: 0.80, alpha: 1)
+            config.backgoundTintColor = UIColor(white: 0.90, alpha: 1)
             config.borderColor = UIColor.white
             config.menuWidth = 150
             config.menuSeparatorColor = UIColor.lightGray
             config.menuRowHeight = 50
             config.cornerRadius = 20
+            config.textColor = UIColor.black
         case .more:
             config.backgoundTintColor = UIColor.red
             config.borderColor = UIColor.red
@@ -60,32 +59,56 @@ class ViewController: UIViewController {
         return config
     }
     
+    func menuOptionImageNameArrayWithMenuArray() -> [UIImage] {
+        if self.menuStyle == .wechat {
+            return []
+        }
+        return [#imageLiteral(resourceName: "Pokemon_Go_01"), #imageLiteral(resourceName: "Pokemon_Go_02"), #imageLiteral(resourceName: "Pokemon_Go_03"), #imageLiteral(resourceName: "Pokemon_Go_04")]
+    }
     
     // MARK: -  handle nornal button
     @IBAction func handleButtonTap(_ sender: UIButton) {
         
-        FTPopOverMenu.showForSender(sender: sender, with: menuOptionNameArray, menuImageArray: menuOptionImageNameArray, config: self.configWithMenuStyle(), done: { (selectedIndex) in
-            print(selectedIndex)
-        }) {
-            print("cancel")
-        }
+//        FTPopOverMenu.showForSender(sender: sender, with: menuOptionNameArray) { (selectedIndex) in }
+        
+        FTPopOverMenu.showForSender(sender: sender,
+                                    with: menuOptionNameArray as [AnyObject],
+                                    menuImageArray: self.menuOptionImageNameArrayWithMenuArray(),
+                                    config: self.configWithMenuStyle(),
+                                    done: { (selectedIndex) in
+                                        print(selectedIndex)
+        },
+                                    cancel: {
+                                        print("cancel")
+        })
+        
     }
     
     // MARK: -  handle NavgationBarButtonItem
     @IBAction func handleNavgationBarButtonTap(_ sender: UIBarButtonItem, event: UIEvent) {
         
-        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: menuOptionImageImageArray, config: self.configWithMenuStyle(), done: { (selectedIndex) in
-            print(selectedIndex)
-        }, cancel: {
-            
+        FTPopOverMenu.showForEvent(event: event,
+                                   with: menuOptionNameArray as [AnyObject],
+                                   menuImageArray: self.menuOptionImageNameArrayWithMenuArray(),
+                                   config: self.configWithMenuStyle(),
+                                   done: { (selectedIndex) in
+                                    print(selectedIndex)
+        },
+                                   cancel: {
+                                    
         })
+        
     }
     
     // MARK: -  handle normal UIBarButtonItem
     @IBAction func handleBarButtonItemTap(_ sender: UIBarButtonItem, event: UIEvent) {
         
-        FTPopOverMenu.showForEvent(event: event, with: menuOptionNameArray, menuImageArray: nil, config: self.configWithMenuStyle(), done: { (selectedIndex) in
-            print(selectedIndex)
+        FTPopOverMenu.showForEvent(event: event,
+                                   with: menuOptionNameArray as [AnyObject],
+                                   menuImageArray: self.menuOptionImageNameArrayWithMenuArray(),
+                                   config: self.configWithMenuStyle(),
+                                   done: { (selectedIndex) in
+                                    print(selectedIndex)
         })
         
     }
@@ -94,57 +117,16 @@ class ViewController: UIViewController {
     @IBAction func handleStyleChange(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
-            self.changeToNormalStyle()
+            self.menuStyle = .normal
         case 1:
-            self.changeToWeChatStyle()
+            self.menuStyle = .wechat
         case 2:
-            self.changeToQQStyle()
+            self.menuStyle = .qq
         case 3:
-            self.changeToMoreStyle()
+            self.menuStyle = .more
         default:
             break
         }
-        
-    }
-}
-
-extension ViewController {
-    
-    
-    
-    func changeToNormalStyle() {
-        self.menuStyle = .normal
-        
-        menuOptionImageNameArray = ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04"]
-        
-    }
-    
-    func changeToWeChatStyle() {
-        self.menuStyle = .wechat
-        
-        self.menuOptionImageNameArray = []
-        
-
-
-        
-    }
-    
-    func changeToQQStyle() {
-        self.menuStyle = .qq
-
-        menuOptionImageNameArray = ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04"]
-        
-
-        
-        
-    }
-    
-    func changeToMoreStyle() {
-        self.menuStyle = .more
-
-        menuOptionImageNameArray = ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04"]
-        
-
     }
     
 }

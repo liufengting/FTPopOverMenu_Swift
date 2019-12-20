@@ -21,5 +21,8 @@
 | 0.1.5 | 2019.02.25 | make sure it's new | Success |
 | 0.2.0 | 2019.02.25 | Swift 5 | Success |
 | 0.2.1 | 2019.09.06 | @svyatogor: Added Package.swift for swift package manager | Success |
+| 0.3.0 | 2019.12.20 | 1. Big API change
+2. Remove singleton 
+3. Add selection support | Success |
 
 

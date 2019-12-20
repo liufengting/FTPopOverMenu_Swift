@@ -17,7 +17,7 @@ public class FTConfiguration: NSObject {
     public var backgoundTintColor = FT.DefaultTintColor
     public var cornerRadius = FT.DefaultCornerRadius
     public var menuSeparatorColor = UIColor.lightGray
-    public var menuSeparatorInset = UIEdgeInsets.init(top: 0, left: FT.DefaultCellMargin, bottom: 0, right: FT.DefaultCellMargin)
+    public var menuSeparatorInset = UIEdgeInsets(top: 0, left: FT.DefaultCellMargin, bottom: 0, right: FT.DefaultCellMargin)
     public var cellSelectionStyle = UITableViewCell.SelectionStyle.none
     public var globalShadow = false
     public var shadowAlpha: CGFloat = 0.6
@@ -29,6 +29,9 @@ public class FTConfiguration: NSObject {
     public var textAlignment : NSTextAlignment = NSTextAlignment.left
     public var ignoreImageOriginalColor = false
     public var menuIconSize : CGFloat = FT.DefaultMenuIconSize
+    
+    public var selectedTextColor : UIColor = UIColor.darkText
+    public var selectedCellBackgroundColor : UIColor = UIColor.red
     
 }
 

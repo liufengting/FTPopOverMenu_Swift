@@ -23,5 +23,3 @@ extension UIImage: Imageable {
         return self
     }
 }
-
-
