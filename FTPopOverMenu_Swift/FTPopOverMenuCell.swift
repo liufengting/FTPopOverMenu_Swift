@@ -25,7 +25,7 @@ class FTPopOverMenuCell: UITableViewCell {
         return label
     }()
 
-    func setupCellWith(menuName: AnyObject, menuImage: Imageable?, configuration: FTConfiguration) {
+    func setupCellWith(menuName: FTMenuObject, menuImage: Imageable?, configuration: FTConfiguration) {
         self.backgroundColor = UIColor.clear
         
         // Configure cell text

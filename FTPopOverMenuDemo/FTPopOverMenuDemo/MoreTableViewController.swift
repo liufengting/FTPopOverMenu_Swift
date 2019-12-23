@@ -91,7 +91,7 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
 //        }
 
         FTPopOverMenu.showForSender(sender: sender,
-                                    with: menuOptionNameArray as [AnyObject],
+                                    with: menuOptionNameArray,
                                     menuImageArray: ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01"],
                                     done: { (selectedIndex) -> () in
                               

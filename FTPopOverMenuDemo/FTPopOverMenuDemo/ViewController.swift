@@ -72,7 +72,7 @@ class ViewController: UIViewController {
 //        FTPopOverMenu.showForSender(sender: sender, with: menuOptionNameArray) { (selectedIndex) in }
         
         FTPopOverMenu.showForSender(sender: sender,
-                                    with: menuOptionNameArray as [AnyObject],
+                                    with: menuOptionNameArray,
                                     menuImageArray: self.menuOptionImageNameArrayWithMenuArray(),
                                     config: self.configWithMenuStyle(),
                                     done: { (selectedIndex) in
@@ -88,7 +88,7 @@ class ViewController: UIViewController {
     @IBAction func handleNavgationBarButtonTap(_ sender: UIBarButtonItem, event: UIEvent) {
         
         FTPopOverMenu.showForEvent(event: event,
-                                   with: menuOptionNameArray as [AnyObject],
+                                   with: menuOptionNameArray,
                                    menuImageArray: self.menuOptionImageNameArrayWithMenuArray(),
                                    config: self.configWithMenuStyle(),
                                    done: { (selectedIndex) in
@@ -104,7 +104,7 @@ class ViewController: UIViewController {
     @IBAction func handleBarButtonItemTap(_ sender: UIBarButtonItem, event: UIEvent) {
         
         FTPopOverMenu.showForEvent(event: event,
-                                   with: menuOptionNameArray as [AnyObject],
+                                   with: menuOptionNameArray,
                                    menuImageArray: self.menuOptionImageNameArrayWithMenuArray(),
                                    config: self.configWithMenuStyle(),
                                    done: { (selectedIndex) in

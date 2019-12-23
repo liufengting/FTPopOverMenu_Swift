@@ -10,15 +10,15 @@ import UIKit
 
 extension FTPopOverMenu {
     
-    public static func showForSender(sender : UIView, with menuArray: [AnyObject], menuImageArray: [Imageable]? = nil, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
+    public static func showForSender(sender : UIView, with menuArray: [FTMenuObject], menuImageArray: [Imageable]? = nil, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
         FTPopOverMenu().showForSender(sender: sender, or: nil, with: menuArray, menuImageArray: menuImageArray, config: config, done: done, cancel: cancel)
     }
 
-    public static func showForEvent(event : UIEvent, with menuArray: [AnyObject], menuImageArray: [Imageable]? = nil, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
+    public static func showForEvent(event : UIEvent, with menuArray: [FTMenuObject], menuImageArray: [Imageable]? = nil, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
         FTPopOverMenu().showForSender(sender: event.allTouches?.first?.view!, or: nil, with: menuArray, menuImageArray: menuImageArray, config: config, done: done, cancel: cancel)
     }
 
-    public static func showFromSenderFrame(senderFrame : CGRect, with menuArray: [AnyObject], menuImageArray: [Imageable]? = nil, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
+    public static func showFromSenderFrame(senderFrame : CGRect, with menuArray: [FTMenuObject], menuImageArray: [Imageable]? = nil, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
         FTPopOverMenu().showForSender(sender: nil, or: senderFrame, with: menuArray, menuImageArray: menuImageArray, config: config, done: done, cancel: cancel)
     }
     
@@ -33,7 +33,7 @@ public class FTPopOverMenu : NSObject {
     
     var sender : UIView?
     var senderFrame : CGRect?
-    var menuNameArray : [AnyObject]!
+    var menuNameArray : [FTMenuObject]!
     var menuImageArray : [Imageable]!
     var done : ((_ selectedIndex : NSInteger) -> Void)!
     var cancel : (() -> Void)!
@@ -71,7 +71,7 @@ public class FTPopOverMenu : NSObject {
         return gesture
     }()
     
-    public func showForSender(sender: UIView?, or senderFrame: CGRect?, with menuNameArray: [AnyObject]!, menuImageArray: [Imageable]? = nil, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
+    public func showForSender(sender: UIView?, or senderFrame: CGRect?, with menuNameArray: [FTMenuObject]!, menuImageArray: [Imageable]? = nil, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
         if sender == nil && senderFrame == nil {
             return
         }
@@ -283,7 +283,7 @@ extension FTPopOverMenu: UIGestureRecognizerDelegate {
 
 private class FTPopOverMenuView: UIControl {
     
-    fileprivate var menuNameArray : [AnyObject]!
+    fileprivate var menuNameArray : [FTMenuObject]!
     fileprivate var menuImageArray : [Imageable]?
     fileprivate var arrowDirection : FTPopOverMenuArrowDirection = .up
     fileprivate var done : ((NSInteger) -> Void)!
@@ -300,7 +300,7 @@ private class FTPopOverMenuView: UIControl {
         return tableView
     }()
     
-    fileprivate func showWithAnglePoint(point: CGPoint, frame: CGRect, menuNameArray: [AnyObject]!, menuImageArray: [Imageable]?, config: FTConfiguration? = nil, arrowDirection: FTPopOverMenuArrowDirection, done: @escaping ((NSInteger) -> Void)) {
+    fileprivate func showWithAnglePoint(point: CGPoint, frame: CGRect, menuNameArray: [FTMenuObject]!, menuImageArray: [Imageable]?, config: FTConfiguration? = nil, arrowDirection: FTPopOverMenuArrowDirection, done: @escaping ((NSInteger) -> Void)) {
         
         self.frame = frame
         
