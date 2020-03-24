@@ -23,5 +23,6 @@
 | 0.2.1 | 2019.09.06 | @svyatogor: Added Package.swift for swift package manager | Success |
 | 0.3.0 | 2019.12.20 | 1. Big API change 2. Remove singleton 3. Add selection support | Success |
 | 0.3.1 | 2019.12.23 | add `FTMenuObject` | Success |
+| 0.3.2 | 2020.03.24 | Fix: height wrong when too long. Fix: SafeArea height issue. |
 
 

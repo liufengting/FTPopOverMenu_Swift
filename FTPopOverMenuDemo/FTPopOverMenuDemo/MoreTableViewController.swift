@@ -17,11 +17,11 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
     }
     
     var menuOptionNameArray : [String] {
-        return ["Share","Delete","Upload","Download","Share"]
+        return ["Share","Delete","Upload","Download","Share", "Share","Delete","Upload","Download","Share", "Share","Delete","Upload","Download","Share", "Share","Delete","Upload","Download","Share"]
     }
     
     var menuImageNameArray : [String] {
-        return ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01"]
+        return ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01", "Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01", "Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01","Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01"]
     }
     
     var selectedIndex : NSInteger = 0
@@ -92,7 +92,7 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
 
         FTPopOverMenu.showForSender(sender: sender,
                                     with: menuOptionNameArray,
-                                    menuImageArray: ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01"],
+                                    menuImageArray: menuImageNameArray,
                                     done: { (selectedIndex) -> () in
                               
                                         print(selectedIndex)

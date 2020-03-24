@@ -108,7 +108,13 @@ public class FTPopOverMenu : NSObject {
         
         self.configurePopMenuFrame()
         
-        popOverMenu.showWithAnglePoint(point: menuArrowPoint, frame: popMenuFrame, menuNameArray: menuNameArray, menuImageArray: menuImageArray, config: configuration,  arrowDirection: arrowDirection, done: { (selectedIndex: NSInteger) in
+        popOverMenu.showWithAnglePoint(point: menuArrowPoint,
+                                       frame: popMenuFrame,
+                                       menuNameArray: menuNameArray,
+                                       menuImageArray: menuImageArray,
+                                       config: configuration,
+                                       arrowDirection: arrowDirection,
+                                       done: { (selectedIndex: NSInteger) in
             self.doneActionWithSelectedIndex(selectedIndex: selectedIndex)
         })
         
@@ -170,16 +176,21 @@ public class FTPopOverMenu : NSObject {
         self.configureSenderRect()
         self.configureMenuArrowPoint()
         self.configurePopMenuOriginX()
+
+        var safeAreaInset = UIEdgeInsets.zero
+        if #available(iOS 11.0, *) {
+            safeAreaInset = UIApplication.shared.keyWindow?.safeAreaInsets ?? UIEdgeInsets.zero
+        }
         
         if arrowDirection == .up {
             popMenuFrame = CGRect(x: popMenuOriginX, y: (senderRect.origin.y + senderRect.size.height), width: configuration.menuWidth, height: popMenuHeight)
-            if (popMenuFrame.origin.y + popMenuFrame.size.height > UIScreen.ft_height()) {
-                popMenuFrame = CGRect(x: popMenuOriginX, y: (senderRect.origin.y + senderRect.size.height), width: configuration.menuWidth, height: UIScreen.ft_height() - popMenuFrame.origin.y - FT.DefaultMargin)
+            if (popMenuFrame.origin.y + popMenuFrame.size.height > UIScreen.ft_height() - safeAreaInset.bottom) {
+                popMenuFrame = CGRect(x: popMenuOriginX, y: (senderRect.origin.y + senderRect.size.height), width: configuration.menuWidth, height: UIScreen.ft_height() - popMenuFrame.origin.y - FT.DefaultMargin - safeAreaInset.bottom)
             }
         } else {
             popMenuFrame = CGRect(x: popMenuOriginX, y: (senderRect.origin.y - popMenuHeight), width: configuration.menuWidth, height: popMenuHeight)
-            if popMenuFrame.origin.y  < 0 {
-                popMenuFrame = CGRect(x: popMenuOriginX, y: FT.DefaultMargin, width: configuration.menuWidth, height: senderRect.origin.y - FT.DefaultMargin)
+            if popMenuFrame.origin.y  < safeAreaInset.top {
+                popMenuFrame = CGRect(x: popMenuOriginX, y: FT.DefaultMargin + safeAreaInset.top, width: configuration.menuWidth, height: senderRect.origin.y - FT.DefaultMargin - safeAreaInset.top)
             }
         }
     }
@@ -297,6 +308,9 @@ private class FTPopOverMenuView: UIControl {
         tableView.separatorColor = self.configuration.menuSeparatorColor
         tableView.layer.cornerRadius = self.configuration.cornerRadius
         tableView.clipsToBounds = true
+        if #available(iOS 11.0, *) {
+            tableView.contentInsetAdjustmentBehavior = .never
+        }
         return tableView
     }()
     
