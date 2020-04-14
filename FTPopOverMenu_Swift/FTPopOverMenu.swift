@@ -10,16 +10,16 @@ import UIKit
 
 extension FTPopOverMenu {
     
-    public static func showForSender(sender : UIView, with menuArray: [FTMenuObject], menuImageArray: [Imageable]? = nil, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
-        FTPopOverMenu().showForSender(sender: sender, or: nil, with: menuArray, menuImageArray: menuImageArray, config: config, done: done, cancel: cancel)
+    public static func showForSender(sender : UIView, with menuArray: [FTMenuObject], menuImageArray: [Imageable]? = nil, popOverPosition: FTPopOverPosition = .automatic, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
+        FTPopOverMenu().showForSender(sender: sender, or: nil, with: menuArray, menuImageArray: menuImageArray, popOverPosition: popOverPosition, config: config, done: done, cancel: cancel)
     }
 
-    public static func showForEvent(event : UIEvent, with menuArray: [FTMenuObject], menuImageArray: [Imageable]? = nil, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
-        FTPopOverMenu().showForSender(sender: event.allTouches?.first?.view!, or: nil, with: menuArray, menuImageArray: menuImageArray, config: config, done: done, cancel: cancel)
+    public static func showForEvent(event : UIEvent, with menuArray: [FTMenuObject], menuImageArray: [Imageable]? = nil, popOverPosition: FTPopOverPosition = .automatic, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
+        FTPopOverMenu().showForSender(sender: event.allTouches?.first?.view!, or: nil, with: menuArray, menuImageArray: menuImageArray, popOverPosition: popOverPosition, config: config, done: done, cancel: cancel)
     }
 
-    public static func showFromSenderFrame(senderFrame : CGRect, with menuArray: [FTMenuObject], menuImageArray: [Imageable]? = nil, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
-        FTPopOverMenu().showForSender(sender: nil, or: senderFrame, with: menuArray, menuImageArray: menuImageArray, config: config, done: done, cancel: cancel)
+    public static func showFromSenderFrame(senderFrame : CGRect, with menuArray: [FTMenuObject], menuImageArray: [Imageable]? = nil,popOverPosition: FTPopOverPosition = .automatic, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
+        FTPopOverMenu().showForSender(sender: nil, or: senderFrame, with: menuArray, menuImageArray: menuImageArray, popOverPosition: popOverPosition, config: config, done: done, cancel: cancel)
     }
     
 }
@@ -27,6 +27,12 @@ extension FTPopOverMenu {
 fileprivate enum FTPopOverMenuArrowDirection {
     case up
     case down
+}
+
+public enum FTPopOverPosition{
+    case automatic
+    case alwaysAboveSender
+    case alwaysUnderSender
 }
 
 public class FTPopOverMenu : NSObject {
@@ -38,6 +44,7 @@ public class FTPopOverMenu : NSObject {
     var done : ((_ selectedIndex : NSInteger) -> Void)!
     var cancel : (() -> Void)!
     var configuration = FTConfiguration()
+    var popOverPosition : FTPopOverPosition = .automatic
     
     fileprivate lazy var backgroundView : UIView = {
         let view = UIView(frame: UIScreen.main.bounds)
@@ -71,7 +78,7 @@ public class FTPopOverMenu : NSObject {
         return gesture
     }()
     
-    public func showForSender(sender: UIView?, or senderFrame: CGRect?, with menuNameArray: [FTMenuObject]!, menuImageArray: [Imageable]? = nil, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
+    public func showForSender(sender: UIView?, or senderFrame: CGRect?, with menuNameArray: [FTMenuObject]!, menuImageArray: [Imageable]? = nil, popOverPosition: FTPopOverPosition = .automatic, config: FTConfiguration? = nil, done: @escaping (NSInteger) -> Void, cancel: (() -> Void)? = nil) {
         if sender == nil && senderFrame == nil {
             return
         }
@@ -83,6 +90,7 @@ public class FTPopOverMenu : NSObject {
         self.senderFrame = senderFrame
         self.menuNameArray = menuNameArray
         self.menuImageArray = menuImageArray
+        self.popOverPosition = popOverPosition
         self.configuration = config ?? FTConfiguration()
         self.done = done
         self.cancel = cancel
@@ -148,10 +156,16 @@ public class FTPopOverMenu : NSObject {
         }
         senderRect.origin.y = min(UIScreen.ft_height(), senderRect.origin.y)
         
-        if senderRect.origin.y + senderRect.size.height/2 < UIScreen.ft_height()/2 {
+        if popOverPosition == .alwaysAboveSender {
+            arrowDirection = .down
+        } else if popOverPosition == .alwaysUnderSender {
             arrowDirection = .up
         } else {
-            arrowDirection = .down
+            if senderRect.origin.y + senderRect.size.height/2 < UIScreen.ft_height()/2 {
+                arrowDirection = .up
+            } else {
+                arrowDirection = .down
+            }
         }
     }
     
