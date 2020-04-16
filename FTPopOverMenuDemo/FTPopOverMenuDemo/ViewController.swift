@@ -74,6 +74,7 @@ class ViewController: UIViewController {
         FTPopOverMenu.showForSender(sender: sender,
                                     with: menuOptionNameArray,
                                     menuImageArray: self.menuOptionImageNameArrayWithMenuArray(),
+                                    popOverPosition: .automatic,
                                     config: self.configWithMenuStyle(),
                                     done: { (selectedIndex) in
                                         print(selectedIndex)
@@ -90,6 +91,7 @@ class ViewController: UIViewController {
         FTPopOverMenu.showForEvent(event: event,
                                    with: menuOptionNameArray,
                                    menuImageArray: self.menuOptionImageNameArrayWithMenuArray(),
+                                   popOverPosition: .automatic,
                                    config: self.configWithMenuStyle(),
                                    done: { (selectedIndex) in
                                     print(selectedIndex)
@@ -106,6 +108,7 @@ class ViewController: UIViewController {
         FTPopOverMenu.showForEvent(event: event,
                                    with: menuOptionNameArray,
                                    menuImageArray: self.menuOptionImageNameArrayWithMenuArray(),
+                                   popOverPosition: .automatic,
                                    config: self.configWithMenuStyle(),
                                    done: { (selectedIndex) in
                                     print(selectedIndex)
