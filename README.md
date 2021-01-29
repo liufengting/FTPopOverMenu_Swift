@@ -34,7 +34,8 @@ somtimes I want to customer every cell, so I seperate the global setting, and ce
 
 * For Swift 4, please use version <= 0.1.4
 * For Swift 5, please use version >= 0.2.0
-* Big API change at 0.3.0, update at your own risk. [![Version](https://img.shields.io/cocoapods/v/FTPopOverMenu_Swift.svg?style=flat)](http://cocoapods.org/pods/FTPopOverMenu_Swift)
+* Big API change at 0.3.0, update at your own risk. 
+* version >= 0.4.1 [![Version](https://img.shields.io/cocoapods/v/FTPopOverMenu_Swift.svg?style=flat)](http://cocoapods.org/pods/FTPopOverMenu_Swift), changed the name of framework, from `FTPopOverMenu_Swift` to `FTPopOverMenu`
 
 
 ```ruby
