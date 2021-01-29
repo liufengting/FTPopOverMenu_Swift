@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FTPopOverMenu_Swift
+import FTPopOverMenu
 
 enum MenuStyle {
     case normal

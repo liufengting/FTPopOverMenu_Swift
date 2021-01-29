@@ -14,20 +14,20 @@
 		2ACAB6781DDC5ECE00FDCEAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB6761DDC5ECE00FDCEAF /* Main.storyboard */; };
 		2ACAB67A1DDC5ECE00FDCEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB6791DDC5ECE00FDCEAF /* Assets.xcassets */; };
 		2ACAB67D1DDC5ECE00FDCEAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB67B1DDC5ECE00FDCEAF /* LaunchScreen.storyboard */; };
-		433A548425C3D59F0085462B /* FTPopOverMenu_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7CCAD823AC60EC004263C9 /* FTPopOverMenu_Swift.framework */; };
-		433A548525C3D59F0085462B /* FTPopOverMenu_Swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7CCAD823AC60EC004263C9 /* FTPopOverMenu_Swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43505CA225BA99ED001F2940 /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43505CA025BA99ED001F2940 /* AnotherViewController.swift */; };
 		43505CA325BA99ED001F2940 /* AnotherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43505CA125BA99ED001F2940 /* AnotherViewController.xib */; };
+		43C8FF9125C3DCF600280086 /* FTPopOverMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C8FF9025C3DCF600280086 /* FTPopOverMenu.framework */; };
+		43C8FF9225C3DCF600280086 /* FTPopOverMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43C8FF9025C3DCF600280086 /* FTPopOverMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		433A548625C3D59F0085462B /* Embed Frameworks */ = {
+		43C8FF9325C3DCF600280086 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				433A548525C3D59F0085462B /* FTPopOverMenu_Swift.framework in Embed Frameworks */,
+				43C8FF9225C3DCF600280086 /* FTPopOverMenu.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,7 +35,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2A7CCAD823AC60EC004263C9 /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB5A31F1DDEF2DF00EC6555 /* MoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
 		2AB5A3211DDEFC1C00EC6555 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
 		2ACAB66F1DDC5ECE00FDCEAF /* FTPopOverMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTPopOverMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		2ACAB67E1DDC5ECE00FDCEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43505CA025BA99ED001F2940 /* AnotherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
 		43505CA125BA99ED001F2940 /* AnotherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnotherViewController.xib; sourceTree = "<group>"; };
+		43C8FF9025C3DCF600280086 /* FTPopOverMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FTPopOverMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				433A548425C3D59F0085462B /* FTPopOverMenu_Swift.framework in Frameworks */,
+				43C8FF9125C3DCF600280086 /* FTPopOverMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,6 @@
 		2ACAB6661DDC5ECE00FDCEAF = {
 			isa = PBXGroup;
 			children = (
-				2A7CCAD823AC60EC004263C9 /* FTPopOverMenu_Swift.framework */,
 				2ACAB6711DDC5ECE00FDCEAF /* FTPopOverMenuDemo */,
 				2ACAB6701DDC5ECE00FDCEAF /* Products */,
 				AEF91AA4D0C9830A55CB35BB /* Frameworks */,
@@ -99,6 +98,7 @@
 		AEF91AA4D0C9830A55CB35BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43C8FF9025C3DCF600280086 /* FTPopOverMenu.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,7 +113,7 @@
 				2ACAB66B1DDC5ECE00FDCEAF /* Sources */,
 				2ACAB66C1DDC5ECE00FDCEAF /* Frameworks */,
 				2ACAB66D1DDC5ECE00FDCEAF /* Resources */,
-				433A548625C3D59F0085462B /* Embed Frameworks */,
+				43C8FF9325C3DCF600280086 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,7 +131,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = LiuFengting;
 				TargetAttributes = {
 					2ACAB66E1DDC5ECE00FDCEAF = {
@@ -234,6 +234,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -259,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -293,6 +294,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -312,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -332,7 +334,7 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,7 +355,7 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
