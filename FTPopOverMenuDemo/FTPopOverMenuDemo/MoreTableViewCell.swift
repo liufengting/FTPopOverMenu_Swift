@@ -17,7 +17,7 @@ class MoreTableViewCell: UITableViewCell {
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
     
-    var delegate : MoreTableViewCellDelegate?
+    var delegate: MoreTableViewCellDelegate?
     
     
     @IBAction func buttonTapped(_ sender: UIButton) {

@@ -25,5 +25,5 @@
 | 0.3.1 | 2019.12.23 | add `FTMenuObject` | Success |
 | 0.3.2 | 2020.03.24 | Fix: height wrong when too long. Fix: SafeArea height issue. |
 | 0.3.3 | 2020.04.16 | @ethi1989: control popover position above the sender or under the sender or automatic |
-
+| 0.4.0 | 2021.01.29 | fix some issue |
 

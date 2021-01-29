@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A7CCAD923AC60EC004263C9 /* FTPopOverMenu_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7CCAD823AC60EC004263C9 /* FTPopOverMenu_Swift.framework */; };
-		2A7CCADA23AC60EC004263C9 /* FTPopOverMenu_Swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7CCAD823AC60EC004263C9 /* FTPopOverMenu_Swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2AB5A3201DDEF2DF00EC6555 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A31F1DDEF2DF00EC6555 /* MoreTableViewController.swift */; };
 		2AB5A3221DDEFC1C00EC6555 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5A3211DDEFC1C00EC6555 /* MoreTableViewCell.swift */; };
 		2ACAB6731DDC5ECE00FDCEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACAB6721DDC5ECE00FDCEAF /* AppDelegate.swift */; };
@@ -16,16 +14,20 @@
 		2ACAB6781DDC5ECE00FDCEAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB6761DDC5ECE00FDCEAF /* Main.storyboard */; };
 		2ACAB67A1DDC5ECE00FDCEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB6791DDC5ECE00FDCEAF /* Assets.xcassets */; };
 		2ACAB67D1DDC5ECE00FDCEAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACAB67B1DDC5ECE00FDCEAF /* LaunchScreen.storyboard */; };
+		433A548425C3D59F0085462B /* FTPopOverMenu_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7CCAD823AC60EC004263C9 /* FTPopOverMenu_Swift.framework */; };
+		433A548525C3D59F0085462B /* FTPopOverMenu_Swift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7CCAD823AC60EC004263C9 /* FTPopOverMenu_Swift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		43505CA225BA99ED001F2940 /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43505CA025BA99ED001F2940 /* AnotherViewController.swift */; };
+		43505CA325BA99ED001F2940 /* AnotherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43505CA125BA99ED001F2940 /* AnotherViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2A7CCADB23AC60EC004263C9 /* Embed Frameworks */ = {
+		433A548625C3D59F0085462B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2A7CCADA23AC60EC004263C9 /* FTPopOverMenu_Swift.framework in Embed Frameworks */,
+				433A548525C3D59F0085462B /* FTPopOverMenu_Swift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +45,8 @@
 		2ACAB6791DDC5ECE00FDCEAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ACAB67C1DDC5ECE00FDCEAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ACAB67E1DDC5ECE00FDCEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43505CA025BA99ED001F2940 /* AnotherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
+		43505CA125BA99ED001F2940 /* AnotherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnotherViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7CCAD923AC60EC004263C9 /* FTPopOverMenu_Swift.framework in Frameworks */,
+				433A548425C3D59F0085462B /* FTPopOverMenu_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +84,8 @@
 			children = (
 				2ACAB6721DDC5ECE00FDCEAF /* AppDelegate.swift */,
 				2ACAB6741DDC5ECE00FDCEAF /* ViewController.swift */,
+				43505CA025BA99ED001F2940 /* AnotherViewController.swift */,
+				43505CA125BA99ED001F2940 /* AnotherViewController.xib */,
 				2AB5A31F1DDEF2DF00EC6555 /* MoreTableViewController.swift */,
 				2AB5A3211DDEFC1C00EC6555 /* MoreTableViewCell.swift */,
 				2ACAB6761DDC5ECE00FDCEAF /* Main.storyboard */,
@@ -107,7 +113,7 @@
 				2ACAB66B1DDC5ECE00FDCEAF /* Sources */,
 				2ACAB66C1DDC5ECE00FDCEAF /* Frameworks */,
 				2ACAB66D1DDC5ECE00FDCEAF /* Resources */,
-				2A7CCADB23AC60EC004263C9 /* Embed Frameworks */,
+				433A548625C3D59F0085462B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +167,7 @@
 			files = (
 				2ACAB67D1DDC5ECE00FDCEAF /* LaunchScreen.storyboard in Resources */,
 				2ACAB67A1DDC5ECE00FDCEAF /* Assets.xcassets in Resources */,
+				43505CA325BA99ED001F2940 /* AnotherViewController.xib in Resources */,
 				2ACAB6781DDC5ECE00FDCEAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ACAB6751DDC5ECE00FDCEAF /* ViewController.swift in Sources */,
+				43505CA225BA99ED001F2940 /* AnotherViewController.swift in Sources */,
 				2AB5A3221DDEFC1C00EC6555 /* MoreTableViewCell.swift in Sources */,
 				2AB5A3201DDEF2DF00EC6555 /* MoreTableViewController.swift in Sources */,
 				2ACAB6731DDC5ECE00FDCEAF /* AppDelegate.swift in Sources */,
@@ -251,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -304,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -324,7 +332,7 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -345,7 +353,7 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FTPopOverMenuDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liufengting.FTDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

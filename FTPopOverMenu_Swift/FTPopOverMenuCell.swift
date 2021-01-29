@@ -10,7 +10,7 @@ import UIKit
 
 class FTPopOverMenuCell: UITableViewCell {
 
-    fileprivate lazy var iconImageView : UIImageView = {
+    fileprivate lazy var iconImageView: UIImageView = {
         let imageView = UIImageView(frame: CGRect.zero)
         imageView.backgroundColor = UIColor.clear
         imageView.contentMode = UIView.ContentMode.scaleAspectFit
@@ -18,7 +18,7 @@ class FTPopOverMenuCell: UITableViewCell {
         return imageView
     }()
 
-    fileprivate lazy var nameLabel : UILabel = {
+    fileprivate lazy var nameLabel: UILabel = {
         let label = UILabel(frame: CGRect.zero)
         label.backgroundColor = UIColor.clear
         self.contentView.addSubview(label)
@@ -34,7 +34,7 @@ class FTPopOverMenuCell: UITableViewCell {
         nameLabel.textAlignment = configuration.textAlignment
         nameLabel.frame = CGRect(x: FT.DefaultCellMargin, y: 0, width: configuration.menuWidth - FT.DefaultCellMargin*2, height: configuration.menuRowHeight)
         
-        var iconImage : UIImage? = nil
+        var iconImage: UIImage? = nil
         if menuName is String {
             nameLabel.text = menuName as? String
             iconImage = menuImage?.getImage()

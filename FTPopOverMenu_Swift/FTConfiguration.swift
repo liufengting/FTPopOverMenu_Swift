@@ -24,14 +24,14 @@ public class FTConfiguration: NSObject {
     public var localShadow = false
     
     // cell configs
-    public var textColor : UIColor = UIColor.white
-    public var textFont : UIFont = UIFont.systemFont(ofSize: 14)
-    public var textAlignment : NSTextAlignment = NSTextAlignment.left
+    public var textColor: UIColor = UIColor.white
+    public var textFont: UIFont = UIFont.systemFont(ofSize: 14)
+    public var textAlignment: NSTextAlignment = NSTextAlignment.left
     public var ignoreImageOriginalColor = false
-    public var menuIconSize : CGFloat = FT.DefaultMenuIconSize
+    public var menuIconSize: CGFloat = FT.DefaultMenuIconSize
     
-    public var selectedTextColor : UIColor = UIColor.darkText
-    public var selectedCellBackgroundColor : UIColor = UIColor.red
+    public var selectedTextColor: UIColor = UIColor.darkText
+    public var selectedCellBackgroundColor: UIColor = UIColor.red
     
 }
 

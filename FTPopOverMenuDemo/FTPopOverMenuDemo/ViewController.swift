@@ -18,7 +18,7 @@ enum MenuStyle {
 
 class ViewController: UIViewController {
     
-    var menuStyle : MenuStyle = .normal
+    var menuStyle: MenuStyle = .normal
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,6 +66,12 @@ class ViewController: UIViewController {
         return [#imageLiteral(resourceName: "Pokemon_Go_01"), #imageLiteral(resourceName: "Pokemon_Go_02"), #imageLiteral(resourceName: "Pokemon_Go_03"), #imageLiteral(resourceName: "Pokemon_Go_04")]
     }
     
+    
+    @IBAction func searchBarButtonItemTapped(_ sender: UIBarButtonItem) {
+        let another = AnotherViewController()
+        self.navigationController?.pushViewController(another, animated: true)
+    }
+    
     // MARK: -  handle nornal button
     @IBAction func handleButtonTap(_ sender: UIButton) {
         
@@ -82,6 +88,8 @@ class ViewController: UIViewController {
                                     cancel: {
                                         print("cancel")
         })
+        
+
         
     }
     

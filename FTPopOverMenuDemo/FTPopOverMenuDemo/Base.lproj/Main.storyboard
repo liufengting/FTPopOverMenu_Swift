@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C48b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MlA-XN-3E7">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MlA-XN-3E7">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,46 +16,46 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vza-Cv-LCe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vza-Cv-LCe">
                                 <rect key="frame" x="16" y="8" width="30" height="30"/>
                                 <state key="normal" title="One"/>
                                 <connections>
                                     <action selector="handleButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MDd-s3-DUH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kD6-43-2c4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kD6-43-2c4">
                                 <rect key="frame" x="172.5" y="8" width="30" height="30"/>
                                 <state key="normal" title="Two"/>
                                 <connections>
                                     <action selector="handleButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="59v-JG-YdY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIM-bl-sGS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIM-bl-sGS">
                                 <rect key="frame" x="319" y="8" width="40" height="30"/>
                                 <state key="normal" title="Three"/>
                                 <connections>
                                     <action selector="handleButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XKE-aH-cAL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jj-rD-LEC">
-                                <rect key="frame" x="16" y="521" width="31" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jj-rD-LEC">
+                                <rect key="frame" x="16" y="541" width="31" height="30"/>
                                 <state key="normal" title="Four"/>
                                 <connections>
                                     <action selector="handleButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yak-wy-lRP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P83-xK-0Te">
-                                <rect key="frame" x="172.5" y="521" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P83-xK-0Te">
+                                <rect key="frame" x="172.5" y="541" width="30" height="30"/>
                                 <state key="normal" title="Five"/>
                                 <connections>
                                     <action selector="handleButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VrS-7F-hHO"/>
                                 </connections>
                             </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bov-Ok-pdl">
-                                <rect key="frame" x="0.0" y="559" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="579" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="CYM-4j-GNW"/>
                                 </constraints>
@@ -83,15 +81,15 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="barTintColor" red="0.2156862745" green="0.72549019609999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyU-1J-Q0W">
-                                <rect key="frame" x="329" y="521" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyU-1J-Q0W">
+                                <rect key="frame" x="329" y="541" width="30" height="30"/>
                                 <state key="normal" title="Six"/>
                                 <connections>
                                     <action selector="handleButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TgK-HA-7Sz"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Xxj-mK-OVk">
-                                <rect key="frame" x="16" y="287" width="343" height="29"/>
+                                <rect key="frame" x="16" y="296" width="343" height="32"/>
                                 <segments>
                                     <segment title="Default"/>
                                     <segment title="WeChat"/>
@@ -131,11 +129,18 @@
                                 <action selector="handleNavgationBarButtonTap:event:" destination="BYZ-38-t0r" id="yjL-fJ-efn"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wl1-Kq-dMr">
-                            <connections>
-                                <segue destination="Hih-eR-aOV" kind="show" id="bcd-Wj-BRB"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="Wl1-Kq-dMr">
+                                <connections>
+                                    <segue destination="Hih-eR-aOV" kind="show" id="bcd-Wj-BRB"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="search" id="IpA-uk-tZe">
+                                <connections>
+                                    <action selector="searchBarButtonItemTapped:" destination="BYZ-38-t0r" id="hX3-el-UlQ"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -147,26 +152,26 @@
             <objects>
                 <tableViewController storyboardIdentifier="MoreTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hih-eR-aOV" customClass="MoreTableViewController" customModule="FTPopOverMenuDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="105" sectionHeaderHeight="18" sectionFooterHeight="18" id="fDa-v0-nNb">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoreCellIdentifier" rowHeight="105" id="fct-D5-LMS" customClass="MoreTableViewCell" customModule="FTPopOverMenuDemo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="56" width="375" height="105"/>
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="105"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fct-D5-LMS" id="rr0-j6-tc6">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho7-be-ibN">
-                                            <rect key="frame" x="8" y="37" width="30" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho7-be-ibN">
+                                            <rect key="frame" x="8" y="37.5" width="30" height="30"/>
                                             <state key="normal" title="Left"/>
                                             <connections>
                                                 <action selector="buttonTapped:" destination="fct-D5-LMS" eventType="touchUpInside" id="34b-5V-yss"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8F-q1-VK1">
-                                            <rect key="frame" x="331" y="37" width="36" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8F-q1-VK1">
+                                            <rect key="frame" x="331" y="37.5" width="36" height="30"/>
                                             <state key="normal" title="Right"/>
                                             <connections>
                                                 <action selector="buttonTapped:" destination="fct-D5-LMS" eventType="touchUpInside" id="b1I-hK-yw4"/>
@@ -187,10 +192,6 @@
                             </tableViewCell>
                         </prototypes>
                         <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="Hih-eR-aOV" id="D9L-8f-Gql"/>
-                            <outlet property="delegate" destination="Hih-eR-aOV" id="jXo-qJ-Lkq"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="More" id="P1L-n1-PtP">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zuc-zV-v10">
@@ -230,4 +231,9 @@
             <point key="canvasLocation" x="-511" y="-600"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

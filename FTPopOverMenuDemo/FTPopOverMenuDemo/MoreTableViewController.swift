@@ -9,28 +9,22 @@
 import UIKit
 import FTPopOverMenu_Swift
 
-class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
+class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate {
+    
+    var popOverMenu = FTPopOverMenu()
 
+    var selectedIndex: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+
+    // MARK: - handle UIBarButtonItem tapped -
     
-    var menuOptionNameArray : [String] {
-        return ["Share","Delete","Upload","Download","Share", "Share","Delete","Upload","Download","Share", "Share","Delete","Upload","Download","Share", "Share","Delete","Upload","Download","Share"]
-    }
-    
-    var menuImageNameArray : [String] {
-        return ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01", "Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01", "Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01","Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01"]
-    }
-    
-    var selectedIndex : NSInteger = 0
-    
-    
-    // MARK: - handle UIBarButtonItem tapped
     @IBAction func handleAddBarButtonItem(_ sender: UIBarButtonItem, event: UIEvent) {
         
-        let menuModelArray : [FTPopOverMenuModel] = [FTPopOverMenuModel(title: "Share", image: "Pokemon_Go_01", selected: self.selectedIndex == 0),
+        let menuModelArray: [FTPopOverMenuModel] = [FTPopOverMenuModel(title: "Share", image: "Pokemon_Go_01", selected: self.selectedIndex == 0),
                                                      FTPopOverMenuModel(title: "Delete", image: "Pokemon_Go_02", selected: self.selectedIndex == 1),
                                                      FTPopOverMenuModel(title: "Upload", image: "Pokemon_Go_03", selected: self.selectedIndex == 2),
                                                      FTPopOverMenuModel(title: "Download", image: "Pokemon_Go_04", selected: self.selectedIndex == 3),
@@ -41,19 +35,27 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
         config.selectedCellBackgroundColor = UIColor.yellow
         
         
-        FTPopOverMenu.showForEvent(event: event,
-                                   with: menuModelArray,
-                                   config: config,
-                                   done: { (selectedIndex) -> () in
-                                    self.selectedIndex = selectedIndex
-        },
-                                   cancel: {
-                                    
-        })
+        self.popOverMenu.showForSender(sender: event.allTouches?.first?.view!, or: nil, with: menuModelArray, config: config) { (selectedIndex) in
+            self.selectedIndex = selectedIndex
+            
+        } cancel: {
+            
+        }
+
+        
+//        FTPopOverMenu.showForEvent(event: event,
+//                                   with: menuModelArray,
+//                                   config: config,
+//                                   done: { (selectedIndex) -> () in
+//                                    self.selectedIndex = selectedIndex
+//        },
+//                                   cancel: {
+//
+//        })
         
     }
 
-    // MARK: - Table view data source
+    // MARK: - Table view data source -
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 2
@@ -68,7 +70,7 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell : MoreTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MoreCellIdentifier", for: indexPath) as! MoreTableViewCell
+        let cell: MoreTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MoreCellIdentifier", for: indexPath) as! MoreTableViewCell
         cell.delegate = self
         return cell
     }
@@ -78,18 +80,18 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
     }
     
     
-    // MARK: - MoreTableViewCellDelegate
+    // MARK: - MoreTableViewCellDelegate -
     
     func moreTableViewCellDidTappedButton(sender: UIButton) {
         
-//        FTPopOverMenu.showFromSenderFrame(senderFrame: sender.frame,
-//                                          with: ["Share"],
-//                                          done: { (selectedIndex) -> () in
-//                                            
-//        }) {
-//            
-//        }
-
+        var menuOptionNameArray: [String] {
+            return ["Share","Delete","Upload","Download","Share", "Share","Delete","Upload","Download","Share", "Share","Delete","Upload","Download","Share", "Share","Delete","Upload","Download","Share"]
+        }
+        
+        var menuImageNameArray: [String] {
+            return ["Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01", "Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01", "Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01","Pokemon_Go_01","Pokemon_Go_02","Pokemon_Go_03","Pokemon_Go_04","Pokemon_Go_01"]
+        }
+        
         FTPopOverMenu.showForSender(sender: sender,
                                     with: menuOptionNameArray,
                                     menuImageArray: menuImageNameArray,
@@ -101,6 +103,10 @@ class MoreTableViewController: UITableViewController, MoreTableViewCellDelegate{
             
         }
         
+    }
+    
+    deinit {
+        print("deinit")
     }
 
 }
