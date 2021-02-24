@@ -27,4 +27,5 @@
 | 0.3.3 | 2020.04.16 | @ethi1989: control popover position above the sender or under the sender or automatic |
 | 0.4.0 | 2021.01.29 | fix some issue |
 | 0.4.1 | 2021.01.29 | Change the name of framework |
+| 0.4.2 | 2021.02.24 | change Package.swift |
 
