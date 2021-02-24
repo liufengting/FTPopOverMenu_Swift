@@ -9,8 +9,7 @@ let package = Package(
         .library(name: "FTPopOverMenu", targets: ["FTPopOverMenu_Swift"]),
     ],
     targets: [
-        .target(name: "FTPopOverMenu_Swift",
-                path: "FTPopOverMenu_Swift")
+        .target(name: "FTPopOverMenu_Swift", path: "FTPopOverMenu")
     ],
     swiftLanguageVersions: [.v4_2, .v5]
 )
