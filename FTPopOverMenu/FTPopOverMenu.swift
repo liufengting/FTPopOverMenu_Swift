@@ -48,8 +48,12 @@ public class FTPopOverMenu: NSObject, FTPopOverMenuViewDelegate {
     
     fileprivate lazy var backgroundView: UIView = {
         let view = UIView(frame: UIScreen.main.bounds)
-        if self.configuration.globalShadow {
-            view.backgroundColor = UIColor.black.withAlphaComponent(self.configuration.shadowAlpha)
+        if let adapter = self.configuration.globalShadowAdapter {
+            adapter(view)
+        } else {
+            if self.configuration.globalShadow {
+                view.backgroundColor = UIColor.black.withAlphaComponent(self.configuration.shadowAlpha)
+            }
         }
         view.addGestureRecognizer(self.tapGesture)
         return view
@@ -385,15 +389,19 @@ fileprivate class FTPopOverMenuView: UIControl {
         backgroundLayer.fillColor = configuration.backgoundTintColor.cgColor
         backgroundLayer.strokeColor = configuration.borderColor.cgColor
         backgroundLayer.lineWidth = configuration.borderWidth
-        if configuration.localShadow {
-            backgroundLayer.shadowColor = UIColor.black.cgColor
-            backgroundLayer.shadowOffset = CGSize(width: 0.0, height: 2.0)
-            backgroundLayer.shadowRadius = 24.0
-            backgroundLayer.shadowOpacity = 0.9
-            backgroundLayer.masksToBounds = false
-            backgroundLayer.shouldRasterize = true
-            backgroundLayer.rasterizationScale = UIScreen.main.scale
-            
+        
+        if let adpater = self.configuration.localShadowAdapter {
+            adpater(backgroundLayer)
+        } else {
+            if configuration.localShadow {
+                backgroundLayer.shadowColor = UIColor.black.cgColor
+                backgroundLayer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+                backgroundLayer.shadowRadius = 24.0
+                backgroundLayer.shadowOpacity = 0.9
+                backgroundLayer.masksToBounds = false
+                backgroundLayer.shouldRasterize = true
+                backgroundLayer.rasterizationScale = UIScreen.main.scale
+            }
         }
         self.layer.insertSublayer(backgroundLayer, at: 0)
         //        backgroundLayer.transform = CATransform3DMakeAffineTransform(CGAffineTransform(rotationAngle: CGFloat(M_PI))) //CATransform3DMakeRotation(CGFloat(M_PI), 1, 1, 0)

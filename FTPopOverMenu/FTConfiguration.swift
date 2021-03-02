@@ -19,9 +19,13 @@ public class FTConfiguration: NSObject {
     public var menuSeparatorColor = UIColor.lightGray
     public var menuSeparatorInset = UIEdgeInsets(top: 0, left: FT.DefaultCellMargin, bottom: 0, right: FT.DefaultCellMargin)
     public var cellSelectionStyle = UITableViewCell.SelectionStyle.none
+    /// v1
     public var globalShadow = false
     public var shadowAlpha: CGFloat = 0.6
     public var localShadow = false
+    /// v2 shadow
+    public var globalShadowAdapter: ((_ backgroundView: UIView) -> Void)?
+    public var localShadowAdapter: ((_ backgroundLayer: CAShapeLayer) -> Void)?
     
     // cell configs
     public var textColor: UIColor = UIColor.white
