@@ -28,4 +28,5 @@
 | 0.4.0 | 2021.01.29 | fix some issue |
 | 0.4.1 | 2021.01.29 | Change the name of framework |
 | 0.4.2 | 2021.02.24 | change Package.swift |
+| 0.4.3 | 2021.03.03 | @grand-china : add shadow adapter |
 
