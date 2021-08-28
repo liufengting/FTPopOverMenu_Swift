@@ -253,7 +253,7 @@ public class FTPopOverMenu: NSObject, FTPopOverMenuViewDelegate {
     }
     
     fileprivate func doneActionWithSelectedIndex(selectedIndex: NSInteger) {
-        if let nodismss = configuration.noDismissalIndexes, let _ = nodismss.firstIndex(of: selectedIndex) {
+        if configuration.noDismissalIndexes?.firstIndex(of: selectedIndex) != nil {
             self.done?(selectedIndex)
             return
         }
