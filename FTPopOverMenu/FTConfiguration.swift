@@ -37,5 +37,8 @@ public class FTConfiguration: NSObject {
     public var selectedTextColor: UIColor = UIColor.darkText
     public var selectedCellBackgroundColor: UIColor = UIColor.red
     
+    /// indexes that will not dismiss on selection
+    public var noDismissalIndexes: [Int]?
+    
 }
 
