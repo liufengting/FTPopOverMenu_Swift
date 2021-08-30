@@ -253,6 +253,11 @@ public class FTPopOverMenu: NSObject, FTPopOverMenuViewDelegate {
     }
     
     fileprivate func doneActionWithSelectedIndex(selectedIndex: NSInteger) {
+        if configuration.noDismissalIndexes?.firstIndex(of: selectedIndex) != nil {
+            self.done?(selectedIndex)
+            return
+        }
+        
         self.isOnScreen = false
         
         UIView.animate(withDuration: FT.DefaultAnimationDuration,
