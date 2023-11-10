@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MlA-XN-3E7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22138.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MlA-XN-3E7">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22113"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,7 +17,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vza-Cv-LCe">
@@ -42,21 +42,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jj-rD-LEC">
-                                <rect key="frame" x="16" y="541" width="31" height="30"/>
+                                <rect key="frame" x="16" y="521" width="31" height="30"/>
                                 <state key="normal" title="Four"/>
                                 <connections>
                                     <action selector="handleButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yak-wy-lRP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P83-xK-0Te">
-                                <rect key="frame" x="172.5" y="541" width="30" height="30"/>
+                                <rect key="frame" x="172.5" y="521" width="30" height="30"/>
                                 <state key="normal" title="Five"/>
                                 <connections>
                                     <action selector="handleButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VrS-7F-hHO"/>
                                 </connections>
                             </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bov-Ok-pdl">
-                                <rect key="frame" x="0.0" y="579" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="559" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="CYM-4j-GNW"/>
                                 </constraints>
@@ -83,14 +83,14 @@
                                 <color key="barTintColor" red="0.2156862745" green="0.72549019609999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyU-1J-Q0W">
-                                <rect key="frame" x="329" y="541" width="30" height="30"/>
+                                <rect key="frame" x="329" y="521" width="30" height="30"/>
                                 <state key="normal" title="Six"/>
                                 <connections>
                                     <action selector="handleButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TgK-HA-7Sz"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Xxj-mK-OVk">
-                                <rect key="frame" x="16" y="296" width="343" height="32"/>
+                                <rect key="frame" x="16" y="286" width="343" height="32"/>
                                 <segments>
                                     <segment title="Default"/>
                                     <segment title="WeChat"/>
@@ -108,18 +108,22 @@
                             <constraint firstItem="Bov-Ok-pdl" firstAttribute="top" secondItem="VyU-1J-Q0W" secondAttribute="bottom" constant="8" id="1ZG-E6-UOA"/>
                             <constraint firstItem="Xxj-mK-OVk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3hJ-Zi-NMO"/>
                             <constraint firstItem="vza-Cv-LCe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="4eJ-Ha-oDp"/>
+                            <constraint firstItem="XIM-bl-sGS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kD6-43-2c4" secondAttribute="trailing" constant="8" symbolic="YES" id="5rM-Ob-FfM"/>
                             <constraint firstItem="XIM-bl-sGS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="9Mb-tb-wP0"/>
                             <constraint firstItem="Xxj-mK-OVk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="GUx-t9-Qpw"/>
                             <constraint firstItem="Bov-Ok-pdl" firstAttribute="top" secondItem="7Jj-rD-LEC" secondAttribute="bottom" constant="8" id="HWR-aZ-w4v"/>
                             <constraint firstItem="Bov-Ok-pdl" firstAttribute="top" secondItem="P83-xK-0Te" secondAttribute="bottom" constant="8" id="HdA-V6-3Qg"/>
                             <constraint firstItem="7Jj-rD-LEC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="J8C-xK-nYa"/>
                             <constraint firstItem="P83-xK-0Te" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LQq-13-P4g"/>
+                            <constraint firstItem="VyU-1J-Q0W" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="P83-xK-0Te" secondAttribute="trailing" constant="8" symbolic="YES" id="ThQ-kh-3NP"/>
                             <constraint firstAttribute="trailing" secondItem="XIM-bl-sGS" secondAttribute="trailing" constant="16" id="Yh5-Zu-fBA"/>
                             <constraint firstItem="kD6-43-2c4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gS4-gs-1yS"/>
+                            <constraint firstItem="P83-xK-0Te" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7Jj-rD-LEC" secondAttribute="trailing" constant="8" symbolic="YES" id="hKG-bW-7Gs"/>
                             <constraint firstAttribute="trailing" secondItem="Bov-Ok-pdl" secondAttribute="trailing" id="kgk-qa-aav"/>
                             <constraint firstAttribute="trailing" secondItem="VyU-1J-Q0W" secondAttribute="trailing" constant="16" id="lP8-dg-epG"/>
                             <constraint firstItem="Bov-Ok-pdl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lon-0J-xzF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bov-Ok-pdl" secondAttribute="bottom" id="nj4-oN-Odo"/>
+                            <constraint firstItem="kD6-43-2c4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vza-Cv-LCe" secondAttribute="trailing" constant="8" symbolic="YES" id="vnf-R1-koQ"/>
                             <constraint firstAttribute="trailing" secondItem="Xxj-mK-OVk" secondAttribute="trailing" constant="16" id="yWI-PU-3n7"/>
                             <constraint firstItem="vza-Cv-LCe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="z5P-Lv-S3Z"/>
                         </constraints>
@@ -153,7 +157,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="MoreTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hih-eR-aOV" customClass="MoreTableViewController" customModule="FTPopOverMenuDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="105" sectionHeaderHeight="18" sectionFooterHeight="18" id="fDa-v0-nNb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
@@ -183,6 +187,7 @@
                                         <constraint firstItem="ho7-be-ibN" firstAttribute="centerY" secondItem="rr0-j6-tc6" secondAttribute="centerY" id="Sel-7F-qfR"/>
                                         <constraint firstAttribute="trailing" secondItem="h8F-q1-VK1" secondAttribute="trailing" constant="8" id="XEP-nZ-Ck0"/>
                                         <constraint firstItem="h8F-q1-VK1" firstAttribute="centerY" secondItem="rr0-j6-tc6" secondAttribute="centerY" id="ZCM-8i-ztt"/>
+                                        <constraint firstItem="h8F-q1-VK1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ho7-be-ibN" secondAttribute="trailing" constant="8" symbolic="YES" id="ejI-Z4-QD7"/>
                                         <constraint firstItem="ho7-be-ibN" firstAttribute="leading" secondItem="rr0-j6-tc6" secondAttribute="leading" constant="8" id="kdo-hq-KuS"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -212,7 +217,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MlA-XN-3E7" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Nms-Em-fyI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.2156862745" green="0.72549019609999998" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>

@@ -18,7 +18,6 @@ class AnotherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
@@ -38,6 +37,5 @@ class AnotherViewController: UIViewController {
     deinit {
         print("deinit")
     }
-
 
 }

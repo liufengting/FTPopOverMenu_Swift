@@ -534,4 +534,3 @@ extension FTPopOverMenuView: UITableViewDataSource {
     }
     
 }
-
