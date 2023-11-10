@@ -30,4 +30,5 @@
 | 0.4.2 | 2021.02.24 | change Package.swift |
 | 0.4.3 | 2021.03.03 | @grand-china : add shadow adapter |
 | 0.4.4 | 2021.08.19 | update swiftPM |
+| 0.4.5 | 2023.11.10 | update pod version.. |
 
